@@ -1,6 +1,6 @@
 # Lab 1: Git version-control system, Online simulator 
 
-<img src="https://github.com/Marxs31/Digital-electronics-1-/blob/master/Labs/01-gates/scheme.png" />
+<img src="https://github.com/xalkan00/Digital-electronics-1/blob/master/01-gates/2ukol.png" />
 
 | **A** | **NOT** |
 | :-: | :-: |
@@ -68,7 +68,7 @@ De Morgan's laws
 
 
 
-![logic](../../01-gates/circuit1.png)
+<img src="https://github.com/xalkan00/Digital-electronics-1/blob/master/01-gates/circuit1.png" />
 
 | **A** | **B** | **Q3** | **Q2** | **Q1** | **Q0** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
