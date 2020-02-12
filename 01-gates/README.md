@@ -1,6 +1,6 @@
 # Lab 1: Git version-control system, Online simulator 
 
-![and_gates](../../01-gates/2ukol.png)
+<img src="https://github.com/Marxs31/Digital-electronics-1-/blob/master/Labs/01-gates/scheme.png" />
 
 | **A** | **NOT** |
 | :-: | :-: |
