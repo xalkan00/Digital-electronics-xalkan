@@ -1,5 +1,5 @@
 2. Run any text editor, such as Visual Studio Code, open `Digital-electronics-1/Labs/01-gates/README.md` file, create/complete tables with logical values, and add a screenshot from the simulator.
-![and_gates](../../Documents/alkan00/01-gates/2. ukol.png) 
+![and_gates](../../Documents/alkan00/01-gates/2. ukol.png) ok
 
    | **A** | **NOT** |
     | :-: | :-: |
