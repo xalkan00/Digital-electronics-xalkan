@@ -1,6 +1,6 @@
 # Lab 1: Git version-control system, Online simulator 
 
-![and_gates](../../Images/01-gates/2ukol.png)
+![and_gates](../../01-gates/2ukol.png)
 
 | **A** | **NOT** |
 | :-: | :-: |
@@ -68,7 +68,7 @@ De Morgan's laws
 
 
 
-![logic](../../Images/01-gates/circuit1.png)
+![logic](../../01-gates/circuit1.png)
 
 | **A** | **B** | **Q3** | **Q2** | **Q1** | **Q0** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
