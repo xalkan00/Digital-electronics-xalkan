@@ -36,7 +36,7 @@
     Create K-maps for all three functions.
 
     &nbsp;
-    ![equation](https://charlie-coleman.com/experiments/kmap/)
+        <a href="https://charlie-coleman.com/experiments/kmap/" target="_blank"></a>
     &nbsp;
 
   
