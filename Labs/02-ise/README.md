@@ -25,7 +25,7 @@
 
     &nbsp;
     
-    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3DB%7D%5E%7BSoP%7D%3D)
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3DB%7D%5E%7BSoP%7D%3D \overline{A&space;}&space;\cdot&space;\overline{&space;B}&space;&plus;&space;A&space;\cdot&space;B)
     
     &nbsp;
     
