@@ -29,7 +29,7 @@
     
     &nbsp;
     
-    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%7D%3D)
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%7D%3D(A&plus;B)\cdot&space;(\overline{A}&plus;B)\cdot&space;(\overline{A}&plus;\overline{B}))
     
     &nbsp;
 
