@@ -36,7 +36,7 @@
     Create K-maps for all three functions.
 
     &nbsp;
-        <a href="https://charlie-coleman.com/experiments/kmap/" target="_blank">Ověření funkcí a Karnaughovi mapy ZDE.</a>
+       ##-<a href="https://charlie-coleman.com/experiments/kmap/" target="_blank">Ověření funkcí a Karnaughovi mapy ZDE.</a>
     &nbsp;
 
   
