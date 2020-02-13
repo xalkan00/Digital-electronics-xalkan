@@ -36,16 +36,10 @@
     Create K-maps for all three functions.
 
     &nbsp;
-
+    ![equation](https://charlie-coleman.com/experiments/kmap/)
     &nbsp;
 
-    &nbsp;
-
-    &nbsp;
-
-    &nbsp;
-
-    &nbsp;
+  
 
     Use the K-map to create the minimum ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D) function.
 
