@@ -21,7 +21,7 @@
 
     &nbsp;
 
-    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3EB%7D%5E%7BSoP%7D%3D=/gif.latex?\overline{A}\cdot&space;B)
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3EB%7D%5E%7BSoP%7D%3D=\overline{A}\cdot&space;B)
 
     &nbsp;
     
