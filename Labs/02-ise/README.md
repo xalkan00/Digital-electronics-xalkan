@@ -51,7 +51,7 @@
 
     &nbsp;
 
-    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D%20%3D/gif.latex?\overline{A}\cdot&space;B)
+    ![equation](https://latex.codecogs.com/gif.latex?y_%7BA%3CB%7D%5E%7BPoS%2Cmin%7D%20%3D\overline{A}\cdot&space;B)
     
     &nbsp;
 
