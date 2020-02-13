@@ -13,9 +13,9 @@
     | **A** | **B** | **A>B** | **A=B** | **A<B** |
     | :-: | :-: | :-: | :-: | :-: |
     | 0 | 0 | 0 | 1 | 0 |
-    | 0 | 1 |  |   |   |
-    | 1 | 0 |  |   |   |
-    | 1 | 1 |  |   |   |
+    | 0 | 1 | 0 | 0 | 1 |
+    | 1 | 0 | 1 | 0 | 0 |
+    | 1 | 1 | 0 | 1 | 0 |
 
     According to the truth table, create canonical SoP (Sum of Product) or PoS (Product of Sum) output forms as follows:
 
