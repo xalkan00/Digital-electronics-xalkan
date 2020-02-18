@@ -3,80 +3,33 @@
 #### Contents
 
 1. [Prerequisites](#Prerequisites)
-2. [Used hardware components](#Used-hardware-components)
-3. [Synchronize Git and create a new folder](#Synchronize-Git-and-create-a-new-folder)
-4. [Hex to seven-segment VHDL code](#Hex-to-seven-segment-VHDL-code)
-5. [Top level VHDL code](#Top-level-VHDL-code)
-5. [Clean project and synchronize git](#Clean-project-and-synchronize-git)
-6. [Ideas for other tasks](#Ideas-for-other-tasks)
+
 
 
 ## Prerequisites
 
-1. See [schematic](../../Docs/coolrunner-ii_sch.pdf) or [reference manual](../../Docs/coolrunner-ii_rm.pdf) of the board and find out the connection of 7-segment display. How can you change the position of the character on the display?
-
-2. Complete the decoder conversion table for common anode display. Sketch the symbols to be displayed.
 
     | **Hex** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
     | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
     | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
     | 1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
-    | 2 |      |   |   |   |   |   |   |   |
-    | 3 |      |   |   |   |   |   |   |   |
-    | 4 |      |   |   |   |   |   |   |   |
-    | 5 |      |   |   |   |   |   |   |   |
-    | 6 |      |   |   |   |   |   |   |   |
-    | 7 |      |   |   |   |   |   |   |   |
-    | 8 |      |   |   |   |   |   |   |   |
-    | 9 |      |   |   |   |   |   |   |   |
-    | A |      |   |   |   |   |   |   |   |
-    | b |      |   |   |   |   |   |   |   |
-    | C |      |   |   |   |   |   |   |   |
-    | d |      |   |   |   |   |   |   |   |
+    | 2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+    | 3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+    | 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+    | 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+    | 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+    | 7 | 0111 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
+    | 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+    | 9 | 1001 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+    | A | 1010 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
+    | b | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+    | C | 1100 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+    | d | 1101 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
     | E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
     | F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 
-
-## Used hardware components
-
-1. CoolRunner-II CPLD starter board ([XC2C256-TQ144](../../Docs/xc2c256_cpld.pdf)): [Manual](../../Docs/coolrunner-ii_rm.pdf), [Schematic](../../Docs/coolrunner-ii_sch.pdf).
-
-![cpld_leds](../../Images/coolrunner_leds.jpg)
-
-
-## Synchronize Git and create a new folder
-
-1. Open a Linux terminal, use `cd` commands to change path to your Digital-electronics-1 working directory, and [synchronize the contents](https://github.com/joshnh/Git-Commands) with GitHub.
-
-    ```bash
-    $ pwd
-    /home/lab661
-    $ cd Documents/your-name/Digital-electronics-1/
-    $ pwd
-    /home/lab661/Documents/your-name/Digital-electronics-1
-    $ git pull
-    ```
-
-2. Create a new folder `Labs/03-segment`
-
-    ```bash
-    $ cd Labs/
-    $ mkdir 03-segment
-    $ cd 03-segment/
-    $ touch README.md
-    $ ls
-    README.md
-    ```
-
-
 ## Hex to seven-segment VHDL code
-
-1. Follow instructions from wiki, [create a new project in ISE](https://github.com/tomas-fryza/Digital-electronics-1/wiki) titled `hex_to_segment` for XC2C256-TQ144 CPLD device.
-
-2. Create a new source file **Project > New Source... > VHDL Module**, name it `hex_to_7seg` and copy + paste the following code template.
-
-![hex_to_7seg](../../Images/hex_to_7seg.svg)
 
 ```vhdl
 ------------------------------------------------------------------------
@@ -129,14 +82,7 @@ begin
 end architecture Behavioral;
 ```
 
-3. Complete the decoding table for all input combinations and define the output signals to display hexadecimal symbols (0, 1, ..., 9, A, b, C, d, E, F). Use VHDL construction `when`-`else`. Save all files in menu **File > Save All**.
-
-
 ## Top level VHDL code
-
-1. Create a new source file **Project > New Source... > VHDL Module**, name it `top` and copy + paste the following code template.
-
-![top](../../Images/top___hex_to_7seg.svg)
 
 ```vhdl
 ------------------------------------------------------------------------
@@ -206,48 +152,3 @@ begin
 
 end architecture Behavioral;
 ```
-
-2. How is the sub-block of hex to 7-segment decoder connected to the top module?
-
-3. Follow instructions from wiki, create a constraints file, and [implement your design](https://github.com/tomas-fryza/Digital-electronics-1/wiki) to CoolRunner-II CPLD starter board.
-
-4. Write combination functions for LEDs.
-
-5. In menu **Tools > Schematic Viewer > RTL...** select **Start with a schematic of top-level block** and check the hierarchical structure of the module.
-
-6. In menu **Project > Design Summary/Reports** check **CPLD Fitter Report (Text)** for implemented functions.
-
-
-## Clean project and synchronize git
-
-1. In Xilinx ISE clean up all generated files in menu **Project > Cleanup Project Files...** and close the project using **File > Close Project**.
-
-    > **Note:** In the file manager, make sure there is no large files in the project folder.
-    >
-
-2. Use `cd ..` command in Linux terminal and change working directory to `Digital-electronics-1`. Then use [git commands](https://github.com/joshnh/Git-Commands) to add, commit, and push all local changes to your remote repository. Check the repository at GitHub web page for changes.
-
-    ```bash
-    $ pwd
-    /home/lab661/Documents/your-name/Digital-electronics-1/Labs/03-segment
-
-    $ cd ..
-    $ cd ..
-    $ pwd
-    /home/lab661/Documents/your-name/Digital-electronics-1
-
-    $ git status
-    $ git add <your-modified-files>
-    $ git status
-    $ git commit -m "[LAB] Adding 03-segment lab"
-    $ git status
-    $ git push
-    $ git status
-    ```
-
-
-## Ideas for other tasks
-
-1. TBD
-
-2. Complete your `README.md` file with notes and screenshots from the implementation.
