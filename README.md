@@ -13,4 +13,4 @@
 | ... | Lab 7: ... |
 | ... | Lab 8: ... |
 | ... | Lab 9: ... |
-| [project](project) | Lab 10-13: Final project |
+| [project](Labs/project) | Lab 10-13: Final project |
