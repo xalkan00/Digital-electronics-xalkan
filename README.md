@@ -6,7 +6,7 @@
 | :-- | :-- |
 | [01-gates](Labs/01-gates) | Lab 1: Git version-control system, Online digital circuit simulator |
 | [02-ise](Labs/02-ise) | Lab 2: Introduction to Xilinx ISE |
-| ... | Lab 3: ... |
+| [03-segment](Labs/03-segment) | Lab 3: Hex to seven-segment decoder |
 | ... | Lab 4: ... |
 | ... | Lab 5: ... |
 | ... | Lab 6: ... |
