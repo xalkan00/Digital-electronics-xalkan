@@ -3,14 +3,6 @@
 The purpose of this laboratory exercise is to design an adder. It is a type of digital circuit that performs the operation of additions of two numbers. We will use slide switches on the CPLD expansion board as inputs and 7-segment display on the Coolrunner-II board as output device.
 
 
-#### Contents
-
-1. [Materials](#1-Materials)
-2. [Synchronize Git and create a new folder](#2-Synchronize-Git-and-create-a-new-folder)
-3. [Half adder VHDL code](#3-Half-adder-VHDL-code)
-4. [Full adder VHDL code](#4-Full-adder-VHDL-code)
-5. [Top level implementation of 4-bit adder](#5-Top-level-implementation-of-4-bit-adder)
-6. [Clean project and synchronize git](#6-Clean-project-and-synchronize-git)
 
 
 ## Preparation tasks (done before the lab at home)
