@@ -156,14 +156,26 @@ begin
     -- Turn on LD3 if the input value is equal to "0000"
     -- WRITE YOUR CODE HERE
 
+LD3 <= s_hex(3) or s_hex(2) or s_hex(1) or s_hex(0);    --vše zároveň v 0
+
     -- Turn on LD2 if the input value is A, B, C, D, E, or F
     -- WRITE YOUR CODE HERE
 
+
+
     -- Turn on LD1 if the input value is odd, ie 1, 2, 3, etc.
     -- WRITE YOUR CODE HERE
-
+   
+LD1 <= not s_hex(0);    --0 je stlacena
+        
     -- Turn on LD0 if the input value is a power of two, ie 1, 2, 4, or 8.
     -- WRITE YOUR CODE HERE
+    
+LD0 <=      '0' when (s_hex = "0001") else 
+	        '0' when (s_hex = "0010") else
+			'0' when (s_hex = "0100") else	
+			'0' when (s_hex = "1000") else				  
+			'1';
+
 
 end architecture Behavioral;
-```
