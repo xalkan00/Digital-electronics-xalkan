@@ -1,0 +1,29 @@
+V3 14
+FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/03-segment/hex_to_7seg/hex_to_7seg.vhd 2020/02/20.08:48:02 P.20131013
+EN work/hex_to_7seg 1582792967 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/03-segment/hex_to_7seg/hex_to_7seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/hex_to_7seg/Behavioral 1582792968 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/03-segment/hex_to_7seg/hex_to_7seg.vhd \
+      EN work/hex_to_7seg 1582792967
+FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/03-segment/hex_to_7seg/top.vhd 2020/02/20.09:54:34 P.20131013
+EN work/top 1582792969 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/03-segment/hex_to_7seg/top.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/top/Behavioral 1582792970 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/03-segment/hex_to_7seg/top.vhd \
+      EN work/top 1582792969 CP work/hex_to_7seg
+FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/full_adder.vhd 2020/02/27.08:41:24 P.20131013
+EN work/full_adder 1582792812 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/full_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/full_adder/Behavioral 1582792813 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/full_adder.vhd \
+      EN work/full_adder 1582792812 CP work/half_adder
+FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/half_adder.vhd 2020/02/27.08:17:18 P.20131013
+EN work/half_adder 1582792810 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/half_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/half_adder/Behavioral 1582792811 \
+      FL /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/half_adder.vhd \
+      EN work/half_adder 1582792810

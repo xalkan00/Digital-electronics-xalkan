@@ -1,0 +1,5 @@
+vhdl isim_temp "half_adder.vhd"
+vhdl isim_temp "../../03-segment/hex_to_7seg/hex_to_7seg.vhd"
+vhdl isim_temp "full_adder.vhd"
+vhdl isim_temp "../../03-segment/hex_to_7seg/top.vhd"
+vhdl isim_temp "top.vhd"

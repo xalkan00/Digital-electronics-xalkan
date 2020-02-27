@@ -1,0 +1,13 @@
+[Inputs]
+SW0_CPLD
+SW1_CPLD
+SW2_CPLD
+SW3_CPLD
+SW8_CPLD
+SW9_CPLD
+SW10_CPLD
+SW11_CPLD
+[Outputs]
+=disp_seg_o[6:0]=
+=disp_dig_o[3:0]=
+[BiDir]

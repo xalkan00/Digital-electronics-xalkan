@@ -1,0 +1,2 @@
+vhdtdtfi -lib work half_adder.vhd -lib work ../../03-segment/hex_to_7seg/hex_to_7seg.vhd -lib work full_adder.vhd -lib work ../../03-segment/hex_to_7seg/top.vhd -lib work top.vhd -prj Adder -o top.spl -module top -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr top.spl /home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/top.sym 

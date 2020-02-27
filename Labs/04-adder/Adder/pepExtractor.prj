@@ -1,0 +1,5 @@
+work	"../../03-segment/hex_to_7seg/hex_to_7seg.vhd"
+work	"../../03-segment/hex_to_7seg/top.vhd"
+work	"full_adder.vhd"
+work	"half_adder.vhd"
+work	"top.vhd"

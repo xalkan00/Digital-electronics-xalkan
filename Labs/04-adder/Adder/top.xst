@@ -1,0 +1,5 @@
+set -tmpdir "/home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/xst/projnav.tmp"
+set -xsthdpdir "/home/lab661/Documents/alkan00/Digital-electronics-1/Labs/04-adder/Adder/xst"
+elaborate
+-ifn top.prj
+-ifmt mixed
