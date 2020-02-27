@@ -42,7 +42,16 @@ begin
 
     -- Combine two 4-bit inputs to internal signals s_dataA and s_dataB
     -- WRITE YOUR CODE HERE
+	
+	s_dataA(0) <= SW0_CPLD;
+	s_dataA(1) <= SW1_CPLD;
+	s_dataA(2) <= SW2_CPLD;
+	s_dataA(3) <= SW3_CPLD;
 
+	s_dataB(0) <= SW8_CPLD;
+	s_dataB(1) <= SW9_CPLD;
+	s_dataB(2) <= SW10_CPLD;
+	s_dataB(3) <= SW11_CPLD;
 
     --------------------------------------------------------------------
     -- Sub-blocks of four full_adders
@@ -108,20 +117,20 @@ begin
     -- WRITE YOUR CODE HERE
 	
 	
-	disp_dig_o <= s_result;
+	 LD8_CPLD <= s_carryOut;
 	
 	
     -- Show two 4-bit inputs on CPLD expansion LEDs
     -- WRITE YOUR CODE HERE
 	 
-	 s_dataA(0) <= SW0_CPLD;
-	 s_dataA(1) <= SW1_CPLD;
-	 s_dataA(2) <= SW2_CPLD;
-	 s_dataA(3) <= SW3_CPLD;
-	 
-	 s_dataB(0) <= SW8_CPLD;
-	 s_dataB(1) <= SW9_CPLD;
-	 s_dataB(2) <= SW10_CPLD;
-	 s_dataB(3) <= SW11_CPLD;
+	 LD0_CPLD <= s_dataA(0);
+	  LD1_CPLD <= s_dataA(1);
+	  LD2_CPLD <= s_dataA(2);
+	  LD3_CPLD <= s_dataA(3);
+	  LD4_CPLD <= s_dataB(0);
+	  LD5_CPLD <= s_dataB(1);
+	  LD6_CPLD <= s_dataB(2);
+	  LD7_CPLD <= s_dataB(3);
+
 
 end architecture Behavioral;
