@@ -161,12 +161,21 @@ LD3 <= s_hex(3) or s_hex(2) or s_hex(1) or s_hex(0);    --vše zároveň v 0
     -- Turn on LD2 if the input value is A, B, C, D, E, or F
     -- WRITE YOUR CODE HERE
 
-
+LD2 <= not ( (s_hex(1) and s_hex(3)) or (s_hex(2) and s_hex(3)) );
 
     -- Turn on LD1 if the input value is odd, ie 1, 2, 3, etc.
     -- WRITE YOUR CODE HERE
-   
-LD1 <= not s_hex(0);    --0 je stlacena
+
+LD1 <= '0' when s_hex = "0001" else --1
+			'0' when s_hex = "0010" else	--2
+			'0' when s_hex = "0011" else	--3
+			'0' when s_hex = "0100" else	--4
+			'0' when s_hex = "0101" else	--5
+			'0' when s_hex = "0110" else 	--6
+			'0' when s_hex = "0111" else 	--7
+			'0' when s_hex = "1000" else 	--8
+			'0' when s_hex = "1001" else 	--9
+			'1';
         
     -- Turn on LD0 if the input value is a power of two, ie 1, 2, 4, or 8.
     -- WRITE YOUR CODE HERE
