@@ -16,10 +16,10 @@ The purpose of this laboratory exercise is to design a counter.
 
     | **Freq** | **Time** | **Number of periods** | **Number of periods in binary** | **Number of periods in hexa** |
     | :-: | :-: | :-: | :-: | :-: |
-    | 100&nbsp;Hz | 10&nbsp;ms | 100 | 1100100 | 64 |
-    | 4&nbsp;Hz | 250&nbsp;ms | 2500 | 100111000100 | 9C4 |
-    | 2&nbsp;Hz | 500&nbsp;ms | 5000 | 1001110001000 | 1388 |
-    | 1&nbsp;Hz | 1&nbsp;sec | 10000 | 10011100010000 | 2710 |
+    | 100&nbsp;Hz | 10&nbsp;ms | 100 | 110 0100 | 64 |
+    | 4&nbsp;Hz | 250&nbsp;ms | 2500 | 1001 1100 0100 | 9C4 |
+    | 2&nbsp;Hz | 500&nbsp;ms | 5000 | 1 0011 1000 1000 | 1388 |
+    | 1&nbsp;Hz | 1&nbsp;sec | 10000 | 10 0111 0001 0000 | 2710 |
 
 2. See how to create a [synchronous operation](https://github.com/tomas-fryza/Digital-electronics-1/wiki/VHDL-cheat-sheet#processes) in the VHDL.
 
