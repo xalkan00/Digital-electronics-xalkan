@@ -6,7 +6,10 @@ The purpose of this laboratory exercise is to design a counter.
 
 ## Preparation tasks (done before the lab at home)
 
-    ![equation](https://latex.codecogs.com/gif.latex?T_%7Bclk%7D%20%3D%20%5Cfrac%7B1%7D%7Bf_%7Bclk%7D%7D%20%3D)0,1ms (1 takt)
+1. Calculate how many periods of clock signal with ![equation](https://latex.codecogs.com/gif.latex?f_%7Bclk%7D%20%3D%2010%5C%2C%5Ctext%7BkHz%7D) contain time intervals 10&nbsp;ms, 250&nbsp;ms, 500&nbsp;ms, and 1&nbsp;s. Write values in decimal, binary, and hexadecimal forms.
+    
+    &nbsp;
+    
     <a href="https://www.codecogs.com/eqnedit.php?latex=T_{clk}&space;=&space;\frac{1}{f_{clk}}=&space;1ms\:(1takt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_{clk}&space;=&space;\frac{1}{f_{clk}}=&space;1ms\:(1takt)" title="T_{clk} = \frac{1}{f_{clk}}= 1ms\:(1takt)" /></a>
     
     &nbsp;
