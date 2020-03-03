@@ -10,7 +10,7 @@ The purpose of this laboratory exercise is to design a counter.
 
     &nbsp;
     
-    ![equation](https://latex.codecogs.com/gif.latex?T_%7Bclk%7D%20%3D%20%5Cfrac%7B1%7D%7Bf_%7Bclk%7D%7D%20%3D)0,1ms
+    ![equation](https://latex.codecogs.com/gif.latex?T_%7Bclk%7D%20%3D%20%5Cfrac%7B1%7D%7Bf_%7Bclk%7D%7D%20%3D)0,1ms (1 takt)
     
     &nbsp;
 
