@@ -10,7 +10,7 @@ The purpose of this laboratory exercise is to design a counter.
     
     &nbsp;
     
-    <a href="https://www.codecogs.com/eqnedit.php?latex=T_{clk}&space;=&space;\frac{1}{f_{clk}}=&space;1ms\:(1takt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_{clk}&space;=&space;\frac{1}{f_{clk}}=&space;1ms\:(1takt)" title="T_{clk} = \frac{1}{f_{clk}}= 1ms\:(1takt)" /></a>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=T_{clk}&space;=&space;\frac{1}{f_{clk}}=&space;1ms\:(1takt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T_{clk}&space;=&space;\frac{1}{f_{clk}}=&space;0,1ms\:(1takt)" title="T_{clk} = \frac{1}{f_{clk}}= 1ms\:(1takt)" /></a>
     
     &nbsp;
 
