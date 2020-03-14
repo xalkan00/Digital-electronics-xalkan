@@ -49,9 +49,9 @@ begin
 		 generic map (
 		 g_NPERIOD => x"0028"
 		)
-		port map(   srst_n_i => srst_n_i,
-					clk_i => clk_i,
-					clock_enable_o => s_en	
+		port map(	srst_n_i => srst_n_i,
+				clk_i => clk_i,
+				clock_enable_o => s_en	
 		);
 
 
@@ -60,8 +60,8 @@ begin
     --- WRITE YOUR CODE HERE
         
         HEX_TO_7SEG: entity work.hex_to_7seg
-		port map( hex_i => s_hex,
-				 seg_o => seg_o
+		port map( 	hex_i => s_hex,
+				seg_o => seg_o
 		);
 
 
