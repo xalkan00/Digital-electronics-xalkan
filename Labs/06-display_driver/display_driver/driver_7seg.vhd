@@ -1,5 +1,4 @@
 ------------------------------------------------------------------------
---
 -- Driver for seven-segment displays.
 -- Xilinx XC2C256-TQ144 CPLD, ISE Design Suite 14.7
 --
