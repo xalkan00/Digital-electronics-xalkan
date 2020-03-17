@@ -14,7 +14,7 @@ port(
    ce_100Hz_i : in  std_logic;   -- clock enable
      cnt_en_i : in  std_logic    -- stopwatch enable
     );
-    end entity stopwatch;
+end entity stopwatch;
 
 architecture Behavioral of stopwatch is
     signal s_cnt0 : unsigned(4-1 downto 0) := (others => '0');
@@ -63,7 +63,7 @@ else
 
     end if;
     end if;
-    end process;
+    end process stopwatch_0;
             
     hth_l_o <= std_logic_vector(s_cnt0);
 end architecture Behavioral;
