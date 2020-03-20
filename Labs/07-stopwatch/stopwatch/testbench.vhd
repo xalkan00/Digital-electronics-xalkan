@@ -25,19 +25,19 @@
 -- to guarantee that the testbench will bind correctly to the post-implementation 
 -- simulation model.
 --------------------------------------------------------------------------------
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
- 
-ENTITY testbench IS
-END testbench;
- 
+library IEEE;
+use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity testbench is
+--empty
+end testbench;
+
+architecture tb of testbench is
+-- DUT component
 component driver_7seg is
 port(
-	 clk_i    : in  std_logic;
+	clk_i    : in  std_logic;
     srst_n_i : in  std_logic;   -- Synchronous reset (active low)
     cnt_en_i : in  std_logic;	
     seg_o    : out unsigned(7-1 downto 0);
@@ -45,26 +45,26 @@ port(
 );
 end component;
 
-signal clk_in   	:  std_logic := '0';
-signal srst_n_in 	:  std_logic := '0';   
-signal cnt_en_in	:  std_logic := '0';
+signal clk_in   	: std_logic := '0';
+signal srst_n_in 	:   std_logic := '0';   
+signal cnt_en_in	:   std_logic := '0';
 signal seg_out   	:  unsigned(7-1 downto 0);
 signal dig_out    	:  unsigned(4-1 downto 0);
 
 
 BEGIN
-UUT: driver_7seg port map(
-     	clk_i => clk_in, 
-     	srst_n_i => srst_n_in, 
-    	cnt_en_i => cnt_en_in,
-      	seg_o => seg_out, 
-      	dig_o => dig_out
-    			);
+	UUT: driver_7seg port map(
+     						clk_i => clk_in, 
+     						srst_n_i => srst_n_in, 
+    						cnt_en_i => cnt_en_in,
+      						seg_o => seg_out, 
+      						dig_o => dig_out
+    						);
 
 
-	Clk_gen: process	
+	Clk_gen: process	-- NEW
   	begin
-    	while Now < 1000 NS loop		
+    	while Now < 1000 NS loop		-- NEW: DEFINE SIMULATION TIME
       		clk_in <= '0';
       		wait for 0.5 NS;
       		clk_in <= '1';
@@ -78,15 +78,14 @@ UUT: driver_7seg port map(
    begin		
  
       srst_n_in <= '1';
-      wait until rising_edge(clk_in);
-      wait until rising_edge(clk_in);
+      wait until rising_edge(clk_in);	-- NEW
+      wait until rising_edge(clk_in);	-- NEW
       srst_n_in <= '0';
-      wait until rising_edge(clk_in);	
-      wait until rising_edge(clk_in);	
-      wait until rising_edge(clk_in);	
+      wait until rising_edge(clk_in);	-- NEW
+      wait until rising_edge(clk_in);	-- NEW
+      wait until rising_edge(clk_in);	-- NEW
       srst_n_in <= '1';
       
       wait;
    end process;
-
-END;
+end tb;
