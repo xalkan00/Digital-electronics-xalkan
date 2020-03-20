@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/display_driver/driver_7seg.xst" -ofn "/home/ise/Desktop/display_driver/driver_7seg.syr" 
+xst -intstyle ise -ifn "/home/ise/Desktop/display_driver/driver_7seg.xst" -ofn "/home/ise/Desktop/display_driver/driver_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 driver_7seg.ngc driver_7seg.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 driver_7seg.ngd 
+XSLTProcess driver_7seg_build.xml 
+tsim -intstyle ise driver_7seg driver_7seg.nga 
+taengine -intstyle ise -f driver_7seg -w --format html1 -l driver_7seg_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i driver_7seg 
+xst -intstyle ise -ifn "/home/ise/Desktop/display_driver/driver_7seg.xst" -ofn "/home/ise/Desktop/display_driver/driver_7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 driver_7seg.ngc driver_7seg.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 driver_7seg.ngd 
+XSLTProcess driver_7seg_build.xml 
+tsim -intstyle ise driver_7seg driver_7seg.nga 
+hprep6 -s IEEE1149 -i driver_7seg 
+XSLTProcess driver_7seg_build.xml 

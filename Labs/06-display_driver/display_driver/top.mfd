@@ -1,0 +1,595 @@
+MDF Database:  version 1.0
+MDF_INFO | top | XC2C256-6-TQ144
+MACROCELL | 0 | 13 | disp_dig_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>
+INPUTMC | 2 | 1 | 9 | 1 | 8
+EQ | 1 | 
+   !disp_dig_o<0> = !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 9 | DRIVER_7SEG/s_cnt<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 16 | 1 | 9 | 0 | 13 | 1 | 3 | 1 | 4 | 1 | 12 | 1 | 11 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 15 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+INPUTS | 4 | DRIVER_7SEG/s_cnt<1>  | BTN0  | DRIVER_7SEG/s_cnt<0>  | DRIVER_7SEG/s_en
+INPUTMC | 3 | 1 | 9 | 1 | 8 | 1 | 1
+INPUTP | 1 | 10
+EQ | 3 | 
+   DRIVER_7SEG/s_cnt<1>.T := DRIVER_7SEG/s_cnt<1> & !BTN0
+	# BTN0 & DRIVER_7SEG/s_cnt<0> & DRIVER_7SEG/s_en;	// (2 pt, 4 inp)
+   DRIVER_7SEG/s_cnt<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 8 | DRIVER_7SEG/s_cnt<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 17 | 1 | 8 | 1 | 9 | 0 | 13 | 1 | 3 | 1 | 4 | 1 | 12 | 1 | 11 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 15 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+INPUTS | 3 | BTN0  | DRIVER_7SEG/s_cnt<0>  | DRIVER_7SEG/s_en
+INPUTMC | 2 | 1 | 8 | 1 | 1
+INPUTP | 1 | 10
+EQ | 3 | 
+   DRIVER_7SEG/s_cnt<0> := BTN0 & DRIVER_7SEG/s_cnt<0> & !DRIVER_7SEG/s_en
+	# BTN0 & !DRIVER_7SEG/s_cnt<0> & DRIVER_7SEG/s_en;	// (2 pt, 3 inp)
+   DRIVER_7SEG/s_cnt<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 1 | DRIVER_7SEG/s_en_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 1 | 8 | 1 | 9
+INPUTS | 15 | BTN0  | DRIVER_7SEG/CL_ENABLE/s_cnt<10>  | DRIVER_7SEG/CL_ENABLE/s_cnt<11>  | DRIVER_7SEG/CL_ENABLE/s_cnt<12>  | DRIVER_7SEG/CL_ENABLE/s_cnt<13>  | DRIVER_7SEG/CL_ENABLE/s_cnt<14>  | DRIVER_7SEG/CL_ENABLE/s_cnt<5>  | DRIVER_7SEG/CL_ENABLE/s_cnt<6>  | DRIVER_7SEG/CL_ENABLE/s_cnt<7>  | DRIVER_7SEG/CL_ENABLE/s_cnt<8>  | DRIVER_7SEG/CL_ENABLE/s_cnt<9>  | DRIVER_7SEG/CL_ENABLE/s_cnt<15>  | DRIVER_7SEG/CL_ENABLE/s_cnt<3>  | N_PZ_158  | DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+INPUTMC | 14 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 1 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 1 | 13 | 0 | 6 | 1 | 7 | 2 | 10 | 1 | 5
+INPUTP | 1 | 10
+EQ | 15 | 
+   !DRIVER_7SEG/s_en := !BTN0
+	# !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & !DRIVER_7SEG/CL_ENABLE/s_cnt<6> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<7> & !DRIVER_7SEG/CL_ENABLE/s_cnt<8> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<9> & !DRIVER_7SEG/CL_ENABLE/s_cnt<15>
+	# !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<3> & !DRIVER_7SEG/CL_ENABLE/s_cnt<6> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<7> & !DRIVER_7SEG/CL_ENABLE/s_cnt<8> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<9> & !DRIVER_7SEG/CL_ENABLE/s_cnt<15> & !N_PZ_158 & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<4>;	// (3 pt, 15 inp)
+   DRIVER_7SEG/s_en.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 14 | DRIVER_7SEG/CL_ENABLE/s_cnt<10>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<10> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<10>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 10 | DRIVER_7SEG/CL_ENABLE/s_cnt<11>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<11> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<11>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 9 | DRIVER_7SEG/CL_ENABLE/s_cnt<12>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<12> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<12>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 8 | DRIVER_7SEG/CL_ENABLE/s_cnt<13>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<13> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<13>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 7 | DRIVER_7SEG/CL_ENABLE/s_cnt<14>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<14> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<14>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 6 | DRIVER_7SEG/CL_ENABLE/s_cnt<5>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 15 | BTN0  | DRIVER_7SEG/CL_ENABLE/s_cnt<10>  | DRIVER_7SEG/CL_ENABLE/s_cnt<11>  | DRIVER_7SEG/CL_ENABLE/s_cnt<12>  | DRIVER_7SEG/CL_ENABLE/s_cnt<13>  | DRIVER_7SEG/CL_ENABLE/s_cnt<14>  | DRIVER_7SEG/CL_ENABLE/s_cnt<5>  | DRIVER_7SEG/CL_ENABLE/s_cnt<3>  | DRIVER_7SEG/CL_ENABLE/s_cnt<6>  | DRIVER_7SEG/CL_ENABLE/s_cnt<7>  | DRIVER_7SEG/CL_ENABLE/s_cnt<8>  | DRIVER_7SEG/CL_ENABLE/s_cnt<9>  | DRIVER_7SEG/CL_ENABLE/s_cnt<15>  | N_PZ_158  | DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+INPUTMC | 14 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 1 | 6 | 1 | 7 | 0 | 4 | 0 | 1 | 0 | 0 | 1 | 13 | 0 | 6 | 2 | 10 | 1 | 5
+INPUTP | 1 | 10
+EQ | 15 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<5> := BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	DRIVER_7SEG/CL_ENABLE/s_cnt<5> & !DRIVER_7SEG/CL_ENABLE/s_cnt<3> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<6> & !DRIVER_7SEG/CL_ENABLE/s_cnt<7> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<8> & !DRIVER_7SEG/CL_ENABLE/s_cnt<9> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<15> & !N_PZ_158 & !DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+	# BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & DRIVER_7SEG/CL_ENABLE/s_cnt<3> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<6> & !DRIVER_7SEG/CL_ENABLE/s_cnt<7> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<8> & !DRIVER_7SEG/CL_ENABLE/s_cnt<9> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<15> & N_PZ_158 & DRIVER_7SEG/CL_ENABLE/s_cnt<4>;	// (2 pt, 15 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<5>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 7 | DRIVER_7SEG/CL_ENABLE/s_cnt<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 14 | BTN0  | DRIVER_7SEG/CL_ENABLE/s_cnt<10>  | DRIVER_7SEG/CL_ENABLE/s_cnt<11>  | DRIVER_7SEG/CL_ENABLE/s_cnt<12>  | DRIVER_7SEG/CL_ENABLE/s_cnt<13>  | DRIVER_7SEG/CL_ENABLE/s_cnt<14>  | DRIVER_7SEG/CL_ENABLE/s_cnt<5>  | DRIVER_7SEG/CL_ENABLE/s_cnt<3>  | DRIVER_7SEG/CL_ENABLE/s_cnt<6>  | DRIVER_7SEG/CL_ENABLE/s_cnt<7>  | DRIVER_7SEG/CL_ENABLE/s_cnt<8>  | DRIVER_7SEG/CL_ENABLE/s_cnt<9>  | DRIVER_7SEG/CL_ENABLE/s_cnt<15>  | N_PZ_158
+INPUTMC | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 1 | 6 | 1 | 7 | 0 | 4 | 0 | 1 | 0 | 0 | 1 | 13 | 0 | 6 | 2 | 10
+INPUTP | 1 | 10
+EQ | 15 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<3> := BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & DRIVER_7SEG/CL_ENABLE/s_cnt<3> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<6> & !DRIVER_7SEG/CL_ENABLE/s_cnt<7> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<8> & !DRIVER_7SEG/CL_ENABLE/s_cnt<9> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<15> & !N_PZ_158
+	# BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & !DRIVER_7SEG/CL_ENABLE/s_cnt<3> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<6> & !DRIVER_7SEG/CL_ENABLE/s_cnt<7> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<8> & !DRIVER_7SEG/CL_ENABLE/s_cnt<9> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<15> & N_PZ_158;	// (2 pt, 14 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 4 | DRIVER_7SEG/CL_ENABLE/s_cnt<6>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<6> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<6>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 1 | DRIVER_7SEG/CL_ENABLE/s_cnt<7>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<7> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<7>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 0 | DRIVER_7SEG/CL_ENABLE/s_cnt<8>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<8> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<8>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 13 | DRIVER_7SEG/CL_ENABLE/s_cnt<9>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<9> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<9>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 6 | DRIVER_7SEG/CL_ENABLE/s_cnt<15>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 0
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<15> := Gnd;	// (0 pt, 0 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<15>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 10 | N_PZ_158_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 1 | 5 | 2 | 11 | 1 | 7 | 1 | 6 | 1 | 1
+INPUTS | 3 | DRIVER_7SEG/CL_ENABLE/s_cnt<0>  | DRIVER_7SEG/CL_ENABLE/s_cnt<1>  | DRIVER_7SEG/CL_ENABLE/s_cnt<2>
+INPUTMC | 3 | 2 | 14 | 2 | 12 | 2 | 11
+EQ | 2 | 
+   N_PZ_158 = DRIVER_7SEG/CL_ENABLE/s_cnt<0> & 
+	DRIVER_7SEG/CL_ENABLE/s_cnt<1> & DRIVER_7SEG/CL_ENABLE/s_cnt<2>;	// (1 pt, 3 inp)
+
+MACROCELL | 2 | 14 | DRIVER_7SEG/CL_ENABLE/s_cnt<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 2 | 14 | 2 | 12 | 2 | 11 | 2 | 10
+INPUTS | 2 | DRIVER_7SEG/CL_ENABLE/s_cnt<0>  | N_PZ_214
+INPUTMC | 2 | 2 | 14 | 1 | 14
+EQ | 2 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<0> := !DRIVER_7SEG/CL_ENABLE/s_cnt<0> & N_PZ_214;	// (1 pt, 2 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 14 | N_PZ_214_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 2 | 14 | 2 | 12 | 2 | 11
+INPUTS | 14 | BTN0  | DRIVER_7SEG/CL_ENABLE/s_cnt<10>  | DRIVER_7SEG/CL_ENABLE/s_cnt<11>  | DRIVER_7SEG/CL_ENABLE/s_cnt<12>  | DRIVER_7SEG/CL_ENABLE/s_cnt<13>  | DRIVER_7SEG/CL_ENABLE/s_cnt<14>  | DRIVER_7SEG/CL_ENABLE/s_cnt<5>  | DRIVER_7SEG/CL_ENABLE/s_cnt<6>  | DRIVER_7SEG/CL_ENABLE/s_cnt<7>  | DRIVER_7SEG/CL_ENABLE/s_cnt<8>  | DRIVER_7SEG/CL_ENABLE/s_cnt<9>  | DRIVER_7SEG/CL_ENABLE/s_cnt<15>  | DRIVER_7SEG/CL_ENABLE/s_cnt<3>  | DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+INPUTMC | 13 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 1 | 6 | 0 | 4 | 0 | 1 | 0 | 0 | 1 | 13 | 0 | 6 | 1 | 7 | 1 | 5
+INPUTP | 1 | 10
+EQ | 13 | 
+   N_PZ_214 = BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & !DRIVER_7SEG/CL_ENABLE/s_cnt<6> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<7> & !DRIVER_7SEG/CL_ENABLE/s_cnt<8> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<9> & !DRIVER_7SEG/CL_ENABLE/s_cnt<15>
+	# BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<3> & !DRIVER_7SEG/CL_ENABLE/s_cnt<6> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<7> & !DRIVER_7SEG/CL_ENABLE/s_cnt<8> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<9> & !DRIVER_7SEG/CL_ENABLE/s_cnt<15> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<4>;	// (2 pt, 14 inp)
+
+MACROCELL | 1 | 5 | DRIVER_7SEG/CL_ENABLE/s_cnt<4>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 1 | 5 | 1 | 14 | 1 | 6 | 1 | 1
+INPUTS | 15 | BTN0  | DRIVER_7SEG/CL_ENABLE/s_cnt<10>  | DRIVER_7SEG/CL_ENABLE/s_cnt<11>  | DRIVER_7SEG/CL_ENABLE/s_cnt<12>  | DRIVER_7SEG/CL_ENABLE/s_cnt<13>  | DRIVER_7SEG/CL_ENABLE/s_cnt<14>  | DRIVER_7SEG/CL_ENABLE/s_cnt<5>  | DRIVER_7SEG/CL_ENABLE/s_cnt<3>  | DRIVER_7SEG/CL_ENABLE/s_cnt<6>  | DRIVER_7SEG/CL_ENABLE/s_cnt<7>  | DRIVER_7SEG/CL_ENABLE/s_cnt<8>  | DRIVER_7SEG/CL_ENABLE/s_cnt<9>  | DRIVER_7SEG/CL_ENABLE/s_cnt<15>  | DRIVER_7SEG/CL_ENABLE/s_cnt<4>  | N_PZ_158
+INPUTMC | 14 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 1 | 6 | 1 | 7 | 0 | 4 | 0 | 1 | 0 | 0 | 1 | 13 | 0 | 6 | 1 | 5 | 2 | 10
+INPUTP | 1 | 10
+EQ | 22 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<4> := BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & !DRIVER_7SEG/CL_ENABLE/s_cnt<3> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<6> & !DRIVER_7SEG/CL_ENABLE/s_cnt<7> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<8> & !DRIVER_7SEG/CL_ENABLE/s_cnt<9> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<15> & DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+	# BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & !DRIVER_7SEG/CL_ENABLE/s_cnt<6> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<7> & !DRIVER_7SEG/CL_ENABLE/s_cnt<8> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<9> & !DRIVER_7SEG/CL_ENABLE/s_cnt<15> & !N_PZ_158 & 
+	DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+	# BTN0 & !DRIVER_7SEG/CL_ENABLE/s_cnt<10> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<11> & !DRIVER_7SEG/CL_ENABLE/s_cnt<12> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<13> & !DRIVER_7SEG/CL_ENABLE/s_cnt<14> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<5> & DRIVER_7SEG/CL_ENABLE/s_cnt<3> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<6> & !DRIVER_7SEG/CL_ENABLE/s_cnt<7> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<8> & !DRIVER_7SEG/CL_ENABLE/s_cnt<9> & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<15> & N_PZ_158 & !DRIVER_7SEG/CL_ENABLE/s_cnt<4>;	// (3 pt, 15 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<4>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 12 | DRIVER_7SEG/CL_ENABLE/s_cnt<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 2 | 12 | 2 | 11 | 2 | 10
+INPUTS | 3 | DRIVER_7SEG/CL_ENABLE/s_cnt<0>  | N_PZ_214  | DRIVER_7SEG/CL_ENABLE/s_cnt<1>
+INPUTMC | 3 | 2 | 14 | 1 | 14 | 2 | 12
+EQ | 5 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<1> := DRIVER_7SEG/CL_ENABLE/s_cnt<0> & N_PZ_214 & 
+	!DRIVER_7SEG/CL_ENABLE/s_cnt<1>
+	# !DRIVER_7SEG/CL_ENABLE/s_cnt<0> & N_PZ_214 & 
+	DRIVER_7SEG/CL_ENABLE/s_cnt<1>;	// (2 pt, 3 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 11 | DRIVER_7SEG/CL_ENABLE/s_cnt<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 2 | 11 | 2 | 10
+INPUTS | 5 | N_PZ_158  | N_PZ_214  | DRIVER_7SEG/CL_ENABLE/s_cnt<2>  | DRIVER_7SEG/CL_ENABLE/s_cnt<0>  | DRIVER_7SEG/CL_ENABLE/s_cnt<1>
+INPUTMC | 5 | 2 | 10 | 1 | 14 | 2 | 11 | 2 | 14 | 2 | 12
+EQ | 5 | 
+   DRIVER_7SEG/CL_ENABLE/s_cnt<2> := !N_PZ_158 & N_PZ_214 & 
+	DRIVER_7SEG/CL_ENABLE/s_cnt<2>
+	# !N_PZ_158 & DRIVER_7SEG/CL_ENABLE/s_cnt<0> & 
+	N_PZ_214 & DRIVER_7SEG/CL_ENABLE/s_cnt<1>;	// (2 pt, 5 inp)
+   DRIVER_7SEG/CL_ENABLE/s_cnt<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 3 | disp_dig_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>
+INPUTMC | 2 | 1 | 9 | 1 | 8
+EQ | 1 | 
+   !disp_dig_o<1> = !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 4 | disp_dig_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>
+INPUTMC | 2 | 1 | 9 | 1 | 8
+EQ | 1 | 
+   !disp_dig_o<2> = DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 12 | disp_dig_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>
+INPUTMC | 2 | 1 | 9 | 1 | 8
+EQ | 1 | 
+   !disp_dig_o<3> = DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 11 | disp_dp_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>
+INPUTMC | 2 | 1 | 9 | 1 | 8
+EQ | 1 | 
+   !disp_dp = DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 2 | disp_seg_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW13_CPLD  | SW14_CPLD  | SW15_CPLD  | SW9_CPLD  | SW10_CPLD  | SW11_CPLD  | SW5_CPLD  | SW6_CPLD  | SW7_CPLD  | SW1_CPLD  | SW2_CPLD  | SW3_CPLD  | SW12_CPLD  | SW8_CPLD  | SW4_CPLD  | SW0_CPLD
+INPUTMC | 2 | 1 | 9 | 1 | 8
+INPUTP | 16 | 204 | 199 | 197 | 52 | 208 | 207 | 19 | 20 | 21 | 15 | 16 | 17 | 206 | 23 | 18 | 12
+EQ | 24 | 
+   disp_seg_o<0> = DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW13_CPLD & !SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW9_CPLD & !SW10_CPLD & !SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW5_CPLD & !SW6_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW1_CPLD & !SW2_CPLD & !SW3_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & SW13_CPLD & SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW12_CPLD & !SW13_CPLD & SW14_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & SW9_CPLD & SW10_CPLD & !SW11_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW8_CPLD & !SW9_CPLD & SW10_CPLD & SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & SW5_CPLD & SW6_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW4_CPLD & !SW5_CPLD & SW6_CPLD & SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & SW1_CPLD & SW2_CPLD & !SW3_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW0_CPLD & !SW1_CPLD & SW2_CPLD & SW3_CPLD;	// (12 pt, 18 inp)
+
+MACROCELL | 0 | 12 | disp_seg_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 19 | N_PZ_207  | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW13_CPLD  | SW15_CPLD  | SW14_CPLD  | SW8_CPLD  | SW9_CPLD  | SW11_CPLD  | SW10_CPLD  | SW4_CPLD  | SW5_CPLD  | SW7_CPLD  | SW6_CPLD  | SW0_CPLD  | SW1_CPLD  | SW3_CPLD  | SW2_CPLD
+INPUTMC | 3 | 0 | 15 | 1 | 9 | 1 | 8
+INPUTP | 16 | 206 | 204 | 197 | 199 | 23 | 52 | 207 | 208 | 18 | 19 | 21 | 20 | 12 | 15 | 17 | 16
+EQ | 27 | 
+   disp_seg_o<1> = N_PZ_207
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & SW13_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW13_CPLD & !SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & SW9_CPLD & !SW11_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & !SW10_CPLD & !SW11_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW9_CPLD & !SW10_CPLD & !SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & SW5_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & !SW6_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW5_CPLD & !SW6_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & SW1_CPLD & !SW3_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & !SW2_CPLD & !SW3_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW1_CPLD & !SW2_CPLD & !SW3_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW13_CPLD & SW14_CPLD & SW15_CPLD;	// (14 pt, 19 inp)
+
+MACROCELL | 0 | 15 | N_PZ_207_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 12 | 1 | 0 | 0 | 2
+INPUTS | 14 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW8_CPLD  | SW9_CPLD  | SW10_CPLD  | SW11_CPLD  | SW4_CPLD  | SW5_CPLD  | SW6_CPLD  | SW7_CPLD  | SW0_CPLD  | SW1_CPLD  | SW2_CPLD  | SW3_CPLD
+INPUTMC | 2 | 1 | 9 | 1 | 8
+INPUTP | 12 | 23 | 52 | 208 | 207 | 18 | 19 | 20 | 21 | 12 | 15 | 16 | 17
+EQ | 6 | 
+   N_PZ_207 = DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & !SW9_CPLD & SW10_CPLD & SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & !SW5_CPLD & SW6_CPLD & SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & !SW1_CPLD & SW2_CPLD & SW3_CPLD;	// (3 pt, 14 inp)
+
+MACROCELL | 0 | 3 | disp_seg_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 20 | N_PZ_181  | N_PZ_182  | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW15_CPLD  | SW8_CPLD  | SW11_CPLD  | SW4_CPLD  | SW7_CPLD  | SW0_CPLD  | SW3_CPLD  | SW13_CPLD  | SW14_CPLD  | SW9_CPLD  | SW10_CPLD  | SW5_CPLD  | SW6_CPLD  | SW1_CPLD  | SW2_CPLD
+INPUTMC | 4 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8
+INPUTP | 16 | 206 | 197 | 23 | 207 | 18 | 21 | 12 | 17 | 204 | 199 | 52 | 208 | 19 | 20 | 15 | 16
+EQ | 18 | 
+   disp_seg_o<2> = N_PZ_181
+	# N_PZ_182
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & !SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & !SW3_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW13_CPLD & !SW14_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & !SW9_CPLD & !SW10_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & !SW5_CPLD & !SW6_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & !SW1_CPLD & !SW2_CPLD;	// (10 pt, 20 inp)
+
+MACROCELL | 1 | 15 | N_PZ_181_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 2
+INPUTS | 10 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW13_CPLD  | SW14_CPLD  | SW15_CPLD  | SW0_CPLD  | SW1_CPLD  | SW2_CPLD  | SW3_CPLD
+INPUTMC | 2 | 1 | 9 | 1 | 8
+INPUTP | 8 | 206 | 204 | 199 | 197 | 12 | 15 | 16 | 17
+EQ | 4 | 
+   N_PZ_181 = DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW12_CPLD & !SW13_CPLD & SW14_CPLD & !SW15_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW0_CPLD & !SW1_CPLD & SW2_CPLD & !SW3_CPLD;	// (2 pt, 10 inp)
+
+MACROCELL | 1 | 10 | N_PZ_182_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 0 | 3 | 0 | 5 | 0 | 11 | 0 | 2
+INPUTS | 10 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW8_CPLD  | SW9_CPLD  | SW10_CPLD  | SW11_CPLD  | SW4_CPLD  | SW5_CPLD  | SW6_CPLD  | SW7_CPLD
+INPUTMC | 2 | 1 | 9 | 1 | 8
+INPUTP | 8 | 23 | 52 | 208 | 207 | 18 | 19 | 20 | 21
+EQ | 4 | 
+   N_PZ_182 = DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW8_CPLD & !SW9_CPLD & SW10_CPLD & !SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW4_CPLD & !SW5_CPLD & SW6_CPLD & !SW7_CPLD;	// (2 pt, 10 inp)
+
+MACROCELL | 0 | 5 | disp_seg_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 20 | N_PZ_181  | N_PZ_182  | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW13_CPLD  | SW14_CPLD  | SW8_CPLD  | SW9_CPLD  | SW10_CPLD  | SW4_CPLD  | SW5_CPLD  | SW6_CPLD  | SW0_CPLD  | SW1_CPLD  | SW2_CPLD  | SW15_CPLD  | SW11_CPLD  | SW7_CPLD  | SW3_CPLD
+INPUTMC | 4 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8
+INPUTP | 16 | 206 | 204 | 199 | 23 | 52 | 208 | 18 | 19 | 20 | 12 | 15 | 16 | 197 | 207 | 21 | 17
+EQ | 26 | 
+   disp_seg_o<3> = N_PZ_181
+	# N_PZ_182
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & SW13_CPLD & SW14_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW13_CPLD & !SW14_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & SW9_CPLD & SW10_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & !SW9_CPLD & !SW10_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & SW5_CPLD & SW6_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & !SW5_CPLD & !SW6_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & SW1_CPLD & SW2_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & !SW1_CPLD & !SW2_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW12_CPLD & SW13_CPLD & !SW14_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW8_CPLD & SW9_CPLD & !SW10_CPLD & SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW4_CPLD & SW5_CPLD & !SW6_CPLD & SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW0_CPLD & SW1_CPLD & !SW2_CPLD & SW3_CPLD;	// (14 pt, 20 inp)
+
+MACROCELL | 1 | 0 | disp_seg_o<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 19 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW14_CPLD  | SW15_CPLD  | SW13_CPLD  | SW10_CPLD  | SW11_CPLD  | N_PZ_207  | SW6_CPLD  | SW7_CPLD  | SW2_CPLD  | SW3_CPLD  | SW8_CPLD  | SW9_CPLD  | SW4_CPLD  | SW5_CPLD  | SW0_CPLD  | SW1_CPLD
+INPUTMC | 3 | 1 | 9 | 1 | 8 | 0 | 15
+INPUTP | 16 | 206 | 199 | 197 | 204 | 208 | 207 | 20 | 21 | 16 | 17 | 23 | 52 | 18 | 19 | 12 | 15
+EQ | 18 | 
+   disp_seg_o<4> = DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW12_CPLD & SW14_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW13_CPLD & SW14_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW10_CPLD & SW11_CPLD & !N_PZ_207
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW6_CPLD & SW7_CPLD & !N_PZ_207
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW2_CPLD & SW3_CPLD & !N_PZ_207
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW12_CPLD & SW13_CPLD & !SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW8_CPLD & SW9_CPLD & !SW10_CPLD & !SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW4_CPLD & SW5_CPLD & !SW6_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW0_CPLD & SW1_CPLD & !SW2_CPLD & !SW3_CPLD;	// (9 pt, 19 inp)
+
+MACROCELL | 0 | 11 | disp_seg_o<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 20 | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW13_CPLD  | SW15_CPLD  | SW14_CPLD  | N_PZ_181  | SW8_CPLD  | SW9_CPLD  | SW11_CPLD  | SW10_CPLD  | N_PZ_182  | SW4_CPLD  | SW5_CPLD  | SW7_CPLD  | SW6_CPLD  | SW0_CPLD  | SW1_CPLD  | SW3_CPLD  | SW2_CPLD
+INPUTMC | 4 | 1 | 9 | 1 | 8 | 1 | 15 | 1 | 10
+INPUTP | 16 | 206 | 204 | 197 | 199 | 23 | 52 | 207 | 208 | 18 | 19 | 21 | 20 | 12 | 15 | 17 | 16
+EQ | 24 | 
+   disp_seg_o<5> = DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & SW13_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW12_CPLD & SW14_CPLD & !N_PZ_181
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & SW9_CPLD & SW11_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW8_CPLD & SW10_CPLD & !N_PZ_182
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & SW5_CPLD & SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW4_CPLD & SW6_CPLD & !N_PZ_182
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & SW1_CPLD & SW3_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW0_CPLD & SW2_CPLD & !N_PZ_181
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW13_CPLD & SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW9_CPLD & SW10_CPLD & !SW11_CPLD & !N_PZ_182
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	!SW5_CPLD & SW6_CPLD & !SW7_CPLD & !N_PZ_182
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	!SW1_CPLD & SW2_CPLD & !SW3_CPLD & !N_PZ_181;	// (12 pt, 20 inp)
+
+MACROCELL | 0 | 2 | disp_seg_o<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 21 | N_PZ_207  | N_PZ_181  | N_PZ_182  | DRIVER_7SEG/s_cnt<1>  | DRIVER_7SEG/s_cnt<0>  | SW12_CPLD  | SW13_CPLD  | SW14_CPLD  | SW15_CPLD  | SW8_CPLD  | SW9_CPLD  | SW10_CPLD  | SW11_CPLD  | SW4_CPLD  | SW5_CPLD  | SW6_CPLD  | SW7_CPLD  | SW0_CPLD  | SW1_CPLD  | SW2_CPLD  | SW3_CPLD
+INPUTMC | 5 | 0 | 15 | 1 | 15 | 1 | 10 | 1 | 9 | 1 | 8
+INPUTP | 16 | 206 | 204 | 199 | 197 | 23 | 52 | 208 | 207 | 18 | 19 | 20 | 21 | 12 | 15 | 16 | 17
+EQ | 21 | 
+   disp_seg_o<6> = N_PZ_207
+	# N_PZ_181
+	# N_PZ_182
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & SW13_CPLD & !SW14_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW13_CPLD & SW14_CPLD & SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW12_CPLD & !SW13_CPLD & !SW14_CPLD & !SW15_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & SW9_CPLD & !SW10_CPLD & SW11_CPLD
+	# DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW8_CPLD & !SW9_CPLD & !SW10_CPLD & !SW11_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & SW5_CPLD & !SW6_CPLD & SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & DRIVER_7SEG/s_cnt<0> & 
+	SW4_CPLD & !SW5_CPLD & !SW6_CPLD & !SW7_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & SW1_CPLD & !SW2_CPLD & SW3_CPLD
+	# !DRIVER_7SEG/s_cnt<1> & !DRIVER_7SEG/s_cnt<0> & 
+	SW0_CPLD & !SW1_CPLD & !SW2_CPLD & !SW3_CPLD;	// (12 pt, 21 inp)
+
+PIN | BTN0 | 64 | 16 | LVCMOS18 | 10 | 7 | 1 | 5 | 1 | 14 | 1 | 7 | 1 | 6 | 1 | 1 | 1 | 8 | 1 | 9
+PIN | SW0_CPLD | 64 | 16 | LVCMOS18 | 12 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW10_CPLD | 64 | 16 | LVCMOS18 | 208 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW11_CPLD | 64 | 16 | LVCMOS18 | 207 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW12_CPLD | 64 | 16 | LVCMOS18 | 206 | 8 | 1 | 2 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW13_CPLD | 64 | 16 | LVCMOS18 | 204 | 8 | 1 | 2 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW14_CPLD | 64 | 16 | LVCMOS18 | 199 | 8 | 1 | 2 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW15_CPLD | 64 | 16 | LVCMOS18 | 197 | 8 | 1 | 2 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW1_CPLD | 64 | 16 | LVCMOS18 | 15 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW2_CPLD | 64 | 16 | LVCMOS18 | 16 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW3_CPLD | 64 | 16 | LVCMOS18 | 17 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 15 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW4_CPLD | 64 | 16 | LVCMOS18 | 18 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW5_CPLD | 64 | 16 | LVCMOS18 | 19 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW6_CPLD | 64 | 16 | LVCMOS18 | 20 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW7_CPLD | 64 | 16 | LVCMOS18 | 21 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW8_CPLD | 64 | 16 | LVCMOS18 | 23 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | SW9_CPLD | 64 | 16 | LVCMOS18 | 52 | 9 | 1 | 2 | 0 | 15 | 0 | 12 | 1 | 10 | 0 | 3 | 0 | 5 | 1 | 0 | 0 | 11 | 0 | 2
+PIN | clk_i | 8192 | 16 | LVCMOS18 | 50 | 19 | 0 | 14 | 0 | 10 | 0 | 9 | 0 | 8 | 0 | 7 | 0 | 4 | 0 | 1 | 0 | 0 | 1 | 13 | 0 | 6 | 1 | 5 | 2 | 14 | 2 | 12 | 2 | 11 | 1 | 7 | 1 | 6 | 1 | 1 | 1 | 8 | 1 | 9
+PIN | disp_dig_o<0> | 536871040 | 0 | LVCMOS18 | 211
+PIN | disp_dig_o<1> | 536871040 | 0 | LVCMOS18 | 4
+PIN | disp_dig_o<2> | 536871040 | 0 | LVCMOS18 | 5
+PIN | disp_dig_o<3> | 536871040 | 0 | LVCMOS18 | 8
+PIN | disp_dp | 536871040 | 0 | LVCMOS18 | 7
+PIN | disp_seg_o<0> | 536871040 | 0 | LVCMOS18 | 3
+PIN | disp_seg_o<1> | 536871040 | 0 | LVCMOS18 | 212
+PIN | disp_seg_o<2> | 536871040 | 0 | LVCMOS18 | 217
+PIN | disp_seg_o<3> | 536871040 | 0 | LVCMOS18 | 214
+PIN | disp_seg_o<4> | 536871040 | 0 | LVCMOS18 | 1
+PIN | disp_seg_o<5> | 536871040 | 0 | LVCMOS18 | 213
+PIN | disp_seg_o<6> | 536871040 | 0 | LVCMOS18 | 218

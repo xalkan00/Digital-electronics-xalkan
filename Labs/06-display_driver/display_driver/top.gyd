@@ -1,0 +1,65 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+BTN0 S:PIN9
+SW0_CPLD S:PIN10
+SW10_CPLD S:PIN136
+SW11_CPLD S:PIN135
+SW12_CPLD S:PIN134
+SW13_CPLD S:PIN133
+SW14_CPLD S:PIN132
+SW15_CPLD S:PIN131
+SW1_CPLD S:PIN11
+SW2_CPLD S:PIN12
+SW3_CPLD S:PIN13
+SW4_CPLD S:PIN14
+SW5_CPLD S:PIN15
+SW6_CPLD S:PIN16
+SW7_CPLD S:PIN17
+SW8_CPLD S:PIN18
+SW9_CPLD S:PIN33
+clk_i S:PIN32
+disp_dig_o<0> S:PIN137
+disp_dig_o<1> S:PIN4
+disp_dig_o<2> S:PIN5
+disp_dig_o<3> S:PIN7
+disp_dp S:PIN6
+disp_seg_o<0> S:PIN3
+disp_seg_o<1> S:PIN138
+disp_seg_o<2> S:PIN142
+disp_seg_o<3> S:PIN140
+disp_seg_o<4> S:PIN2
+disp_seg_o<5> S:PIN139
+disp_seg_o<6> S:PIN143
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 DRIVER_7SEG/CL_ENABLE/s_cnt<8> DRIVER_7SEG/CL_ENABLE/s_cnt<7> disp_seg_o<6> disp_seg_o<2>
+		 DRIVER_7SEG/CL_ENABLE/s_cnt<6> disp_seg_o<3> DRIVER_7SEG/CL_ENABLE/s_cnt<15> DRIVER_7SEG/CL_ENABLE/s_cnt<14>
+		 DRIVER_7SEG/CL_ENABLE/s_cnt<13> DRIVER_7SEG/CL_ENABLE/s_cnt<12> DRIVER_7SEG/CL_ENABLE/s_cnt<11> disp_seg_o<5>
+		 disp_seg_o<1> disp_dig_o<0> DRIVER_7SEG/CL_ENABLE/s_cnt<10> N_PZ_207
+		
+PARTITION FB2_1 disp_seg_o<4> DRIVER_7SEG/s_en disp_seg_o<0> disp_dig_o<1>
+		 disp_dig_o<2> DRIVER_7SEG/CL_ENABLE/s_cnt<4> DRIVER_7SEG/CL_ENABLE/s_cnt<5> DRIVER_7SEG/CL_ENABLE/s_cnt<3>
+		 DRIVER_7SEG/s_cnt<0> DRIVER_7SEG/s_cnt<1> N_PZ_182 disp_dp
+		 disp_dig_o<3> DRIVER_7SEG/CL_ENABLE/s_cnt<9> N_PZ_214 N_PZ_181
+		
+PARTITION FB3_11 N_PZ_158 DRIVER_7SEG/CL_ENABLE/s_cnt<2> DRIVER_7SEG/CL_ENABLE/s_cnt<1>
+PARTITION FB3_15 DRIVER_7SEG/CL_ENABLE/s_cnt<0>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

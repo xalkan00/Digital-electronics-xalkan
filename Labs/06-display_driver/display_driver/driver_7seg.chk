@@ -1,0 +1,128 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK1: 1=clk_i.p
+----------------- B l o c k 0 ------------------
+PLApt(56/56), Fanin(20/38), Clk(1/3), Bct(0/4), Pin(6/6), Mcell(16/16)
+PLApts[56/56] 10 15 19 20 31 36 39 40 51 56 59 60 71 76 79 80 6 14 27 35 47 55 67 75 104 108 5 13 26 34 46 54 
+              66 74 7 17 28 48 68 105 106 107 109 110 111 112 12 23 33 43 53 63 73 83 18 78
+Fanins[20] N_PZ_181.n N_PZ_182.n s_cnt<0>.n s_cnt<1>.n data0_i<0>.p data0_i<1>.p data0_i<2>.p data0_i<3>.p 
+           data1_i<0>.p data1_i<1>.p data1_i<2>.p data1_i<3>.p data2_i<0>.p data2_i<1>.p data2_i<2>.p 
+           data2_i<3>.p data3_i<0>.p data3_i<1>.p data3_i<2>.p data3_i<3>.p
+clk[1] clk_i 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[17] [seg_o<1>(157),seg_o<1>(138)] [seg_o<2>(148),seg_o<2>(142)] [seg_o<3>(147),seg_o<3>(143)]  
+           [seg_o<5>(156),seg_o<5>(139)] [seg_o<6>(150),seg_o<6>(140)] [data0_i<0>(137)] [N_PZ_181(160)]  
+           [CL_ENABLE/s_cnt<10>(159)] [CL_ENABLE/s_cnt<11>(155)] [CL_ENABLE/s_cnt<12>(154)]  
+           [CL_ENABLE/s_cnt<13>(153)] [CL_ENABLE/s_cnt<14>(152)] [CL_ENABLE/s_cnt<15>(151)]  
+           [CL_ENABLE/s_cnt<6>(149)] [CL_ENABLE/s_cnt<7>(146)] [CL_ENABLE/s_cnt<8>(145)]  
+           [CL_ENABLE/s_cnt<9>(158)] 
+Signal[17] [ 0: CL_ENABLE/s_cnt<8>(145)  ][ 1: CL_ENABLE/s_cnt<7>(146)  ][ 2: seg_o<3>(147) seg_o<3>(143)  ] 
+           [ 3: seg_o<2>(148) seg_o<2>(142)  ][ 4: CL_ENABLE/s_cnt<6>(149)  ][ 5: seg_o<6>(150)  
+           seg_o<6>(140)  ][ 6: CL_ENABLE/s_cnt<15>(151)  ][ 7: CL_ENABLE/s_cnt<14>(152)  ][ 8:  
+           CL_ENABLE/s_cnt<13>(153)  ][ 9: CL_ENABLE/s_cnt<12>(154)  ][ 10: CL_ENABLE/s_cnt<11>(155)  ][ 11:  
+           seg_o<5>(156) seg_o<5>(139)  ][ 12: seg_o<1>(157) seg_o<1>(138)  ][ 13: CL_ENABLE/s_cnt<9>(158)  
+           data0_i<0>(137)  ][ 14: CL_ENABLE/s_cnt<10>(159)  ][ 15: N_PZ_181(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(50/56), Fanin(38/38), Clk(1/3), Bct(0/4), Pin(8/8), Mcell(15/16)
+PLApts[50/50] 4 25 45 65 11 16 22 32 37 42 52 57 62 72 77 82 8 9 21 64 29 30 24 41 49 50 61 69 70 81 38 58 2 
+              89 90 91 95 100 96 99 88 97 101 44 0 86 3 98 85 87
+Fanins[38] CL_ENABLE/s_cnt<10>.n CL_ENABLE/s_cnt<11>.n CL_ENABLE/s_cnt<12>.n CL_ENABLE/s_cnt<13>.n 
+           CL_ENABLE/s_cnt<14>.n CL_ENABLE/s_cnt<15>.n CL_ENABLE/s_cnt<3>.n CL_ENABLE/s_cnt<4>.n 
+           CL_ENABLE/s_cnt<5>.n CL_ENABLE/s_cnt<6>.n CL_ENABLE/s_cnt<7>.n CL_ENABLE/s_cnt<8>.n 
+           CL_ENABLE/s_cnt<9>.n N_PZ_158.n s_cnt<0>.n s_cnt<1>.n s_en.n data0_i<0>.p data0_i<1>.p 
+           data0_i<2>.p data0_i<3>.p data1_i<0>.p data1_i<1>.p data1_i<2>.p data1_i<3>.p data2_i<0>.p 
+           data2_i<1>.p data2_i<2>.p data2_i<3>.p data3_i<0>.p data3_i<1>.p data3_i<2>.p data3_i<3>.p 
+           dp_i<0>.p dp_i<1>.p dp_i<2>.p dp_i<3>.p srst_n_i.p
+clk[1] clk_i 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [dig_o<0>(164),dig_o<0>(4)] [dig_o<1>(165),dig_o<1>(5)] [dig_o<2>(172),dig_o<2>(6)]  
+           [dig_o<3>(173),dig_o<3>(7)] [dp_o(174),dp_o(9)] [seg_o<0>(161),seg_o<0>(2)]  
+           [seg_o<4>(163),seg_o<4>(3)] [data0_i<1>(10)] [N_PZ_182(176)] [s_cnt<1>(171)] [s_cnt<0>(170)]  
+           [CL_ENABLE/s_cnt<3>(169)] [CL_ENABLE/s_cnt<5>(168)] [CL_ENABLE/s_cnt<4>(167)] [s_en(166)]  
+           [N_PZ_214(162)] 
+Signal[16] [ 0: seg_o<0>(161) seg_o<0>(2)  ][ 1: N_PZ_214(162)  ][ 2: seg_o<4>(163) seg_o<4>(3)  ][ 3:  
+           dig_o<0>(164) dig_o<0>(4)  ][ 4: dig_o<1>(165) dig_o<1>(5)  ][ 5: s_en(166)  ][ 6:  
+           CL_ENABLE/s_cnt<4>(167)  ][ 7: CL_ENABLE/s_cnt<5>(168)  ][ 8: CL_ENABLE/s_cnt<3>(169)  ][ 9:  
+           s_cnt<0>(170)  ][ 10: s_cnt<1>(171)  ][ 11: dig_o<2>(172) dig_o<2>(6)  ][ 12: dig_o<3>(173)  
+           dig_o<3>(7)  ][ 13: dp_o(174) dp_o(9)  ][ 14: data0_i<1>(10)  ][ 15: N_PZ_182(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(6/56), Fanin(5/38), Clk(1/3), Bct(0/4), Pin(6/6), Mcell(4/16)
+PLApts[6/53] 93 94 102 103 () () () () () () () () () () () () () () () () () () () () () () () () () () () 
+             () () () () () () () () () 84 () () () () () () () () () () () 92
+Fanins[ 5] CL_ENABLE/s_cnt<0>.n CL_ENABLE/s_cnt<1>.n CL_ENABLE/s_cnt<2>.n N_PZ_158.n N_PZ_214.n
+clk[1] clk_i 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[10] [data0_i<2>(136)] [data0_i<3>(135)] [data1_i<0>(134)] [data1_i<1>(133)] [data1_i<2>(132)]  
+           [data1_i<3>(131)] [CL_ENABLE/s_cnt<0>(191)] [CL_ENABLE/s_cnt<1>(189)] [CL_ENABLE/s_cnt<2>(188)]  
+           [N_PZ_158(187)] 
+Signal[10] [ 0: data0_i<2>(136)  ][ 1: data0_i<3>(135)  ][ 2: data1_i<0>(134)  ][ 3:  ][ 4: data1_i<1>(133)  
+            ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: N_PZ_158(187)  ][ 11: CL_ENABLE/s_cnt<2>(188)  ][ 12:  
+           CL_ENABLE/s_cnt<1>(189)  ][ 13: data1_i<2>(132)  ][ 14: CL_ENABLE/s_cnt<0>(191)  ][ 15:  
+           data1_i<3>(131)  ]
+----------------- B l o c k 3 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(8/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 8] [data2_i<0>(11)] [data2_i<1>(12)] [data2_i<2>(13)] [data2_i<3>(14)] [data3_i<0>(15)]  
+           [data3_i<1>(16)] [data3_i<2>(17)] [data3_i<3>(18)] 
+Signal[ 8] [ 0: data2_i<0>(11)  ][ 1: data2_i<1>(12)  ][ 2: data2_i<2>(13)  ][ 3: data2_i<3>(14)  ][ 4:  
+           data3_i<0>(15)  ][ 5: data3_i<1>(16)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: data3_i<2>(17)  ] 
+           [ 12:  ][ 13: data3_i<3>(18)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 4 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(5/5), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 5] [clk_i(32)] [dp_i<0>(33)] [dp_i<1>(31)] [dp_i<2>(30)] [dp_i<3>(28)] 
+Signal[ 5] [ 0:  ][ 1: dp_i<0>(33)  ][ 2:  ][ 3: clk_i(32)  ][ 4: dp_i<1>(31)  ][ 5: dp_i<2>(30)  ][ 6:  ] 
+           [ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: dp_i<3>(28)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 5 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(1/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 1] [srst_n_i(34)] 
+Signal[ 1] [ 0: srst_n_i(34)  ][ 1: (35)  ][ 2:  ][ 3: (38)  ][ 4:  ][ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ] 
+           [ 10:  ][ 11: (39)  ][ 12: (40)  ][ 13: (41)  ][ 14: (42)  ][ 15: (43)  ]
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

@@ -1,0 +1,128 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK1: 1=clk_i.p
+----------------- B l o c k 0 ------------------
+PLApt(56/56), Fanin(21/38), Clk(1/3), Bct(0/4), Pin(6/6), Mcell(16/16)
+PLApts[56/56] 9 14 18 19 32 35 36 49 52 53 66 69 70 103 5 13 25 31 42 48 59 65 94 98 4 12 24 30 41 47 58 64 6 
+              16 26 43 60 95 96 97 99 100 101 102 11 22 29 39 46 57 56 63 73 27 44 61
+Fanins[21] DRIVER_7SEG/s_cnt<0>.n DRIVER_7SEG/s_cnt<1>.n N_PZ_181.n N_PZ_182.n N_PZ_207.n SW0_CPLD.p 
+           SW10_CPLD.p SW11_CPLD.p SW12_CPLD.p SW13_CPLD.p SW14_CPLD.p SW15_CPLD.p SW1_CPLD.p SW2_CPLD.p 
+           SW3_CPLD.p SW4_CPLD.p SW5_CPLD.p SW6_CPLD.p SW7_CPLD.p SW8_CPLD.p SW9_CPLD.p
+clk[1] clk_i 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [disp_dig_o<0>(158),disp_dig_o<0>(137)] [disp_seg_o<1>(157),disp_seg_o<1>(138)]  
+           [disp_seg_o<2>(148),disp_seg_o<2>(142)] [disp_seg_o<3>(150),disp_seg_o<3>(140)]  
+           [disp_seg_o<5>(156),disp_seg_o<5>(139)] [disp_seg_o<6>(147),disp_seg_o<6>(143)] [N_PZ_207(160)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<10>(159)] [DRIVER_7SEG/CL_ENABLE/s_cnt<11>(155)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<12>(154)] [DRIVER_7SEG/CL_ENABLE/s_cnt<13>(153)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<14>(152)] [DRIVER_7SEG/CL_ENABLE/s_cnt<15>(151)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<6>(149)] [DRIVER_7SEG/CL_ENABLE/s_cnt<7>(146)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<8>(145)] 
+Signal[16] [ 0: DRIVER_7SEG/CL_ENABLE/s_cnt<8>(145)  ][ 1: DRIVER_7SEG/CL_ENABLE/s_cnt<7>(146)  ][ 2:  
+           disp_seg_o<6>(147) disp_seg_o<6>(143)  ][ 3: disp_seg_o<2>(148) disp_seg_o<2>(142)  ][ 4:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<6>(149)  ][ 5: disp_seg_o<3>(150) disp_seg_o<3>(140)  ][ 6:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<15>(151)  ][ 7: DRIVER_7SEG/CL_ENABLE/s_cnt<14>(152)  ][ 8:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<13>(153)  ][ 9: DRIVER_7SEG/CL_ENABLE/s_cnt<12>(154)  ][ 10:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<11>(155)  ][ 11: disp_seg_o<5>(156) disp_seg_o<5>(139)  ][ 12:  
+           disp_seg_o<1>(157) disp_seg_o<1>(138)  ][ 13: disp_dig_o<0>(158) disp_dig_o<0>(137)  ][ 14:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<10>(159)  ][ 15: N_PZ_207(160)  ]
+----------------- B l o c k 1 ------------------
+PLApt(45/56), Fanin(35/38), Clk(1/3), Bct(0/4), Pin(8/8), Mcell(16/16)
+PLApts[45/47] 10 15 21 28 33 38 45 50 55 62 67 72 7 8 20 37 54 71 104 23 105 106 40 17 68 34 51 2 79 80 81 85 
+              90 86 89 78 87 91 0 76 88 75 77 40 () () 3
+Fanins[35] DRIVER_7SEG/CL_ENABLE/s_cnt<10>.n DRIVER_7SEG/CL_ENABLE/s_cnt<11>.n 
+           DRIVER_7SEG/CL_ENABLE/s_cnt<12>.n DRIVER_7SEG/CL_ENABLE/s_cnt<13>.n 
+           DRIVER_7SEG/CL_ENABLE/s_cnt<14>.n DRIVER_7SEG/CL_ENABLE/s_cnt<15>.n 
+           DRIVER_7SEG/CL_ENABLE/s_cnt<3>.n DRIVER_7SEG/CL_ENABLE/s_cnt<4>.n DRIVER_7SEG/CL_ENABLE/s_cnt<5>.n 
+           DRIVER_7SEG/CL_ENABLE/s_cnt<6>.n DRIVER_7SEG/CL_ENABLE/s_cnt<7>.n DRIVER_7SEG/CL_ENABLE/s_cnt<8>.n 
+           DRIVER_7SEG/CL_ENABLE/s_cnt<9>.n DRIVER_7SEG/s_cnt<0>.n DRIVER_7SEG/s_cnt<1>.n DRIVER_7SEG/s_en.n 
+           N_PZ_158.n N_PZ_207.n BTN0.p SW0_CPLD.p SW10_CPLD.p SW11_CPLD.p SW12_CPLD.p SW13_CPLD.p 
+           SW14_CPLD.p SW15_CPLD.p SW1_CPLD.p SW2_CPLD.p SW3_CPLD.p SW4_CPLD.p SW5_CPLD.p SW6_CPLD.p 
+           SW7_CPLD.p SW8_CPLD.p SW9_CPLD.p
+clk[1] clk_i 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[18] [disp_dig_o<1>(164),disp_dig_o<1>(4)] [disp_dig_o<2>(165),disp_dig_o<2>(5)]  
+           [disp_dig_o<3>(173),disp_dig_o<3>(7)] [disp_dp(172),disp_dp(6)]  
+           [disp_seg_o<0>(163),disp_seg_o<0>(3)] [disp_seg_o<4>(161),disp_seg_o<4>(2)] [BTN0(9)]  
+           [SW0_CPLD(10)] [N_PZ_181(176)] [N_PZ_182(171)] [DRIVER_7SEG/s_cnt<1>(170)]  
+           [DRIVER_7SEG/s_cnt<0>(169)] [DRIVER_7SEG/CL_ENABLE/s_cnt<3>(168)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<5>(167)] [DRIVER_7SEG/CL_ENABLE/s_cnt<4>(166)]  
+           [DRIVER_7SEG/s_en(162)] [N_PZ_214(175)] [DRIVER_7SEG/CL_ENABLE/s_cnt<9>(174)] 
+Signal[18] [ 0: disp_seg_o<4>(161) disp_seg_o<4>(2)  ][ 1: DRIVER_7SEG/s_en(162)  ][ 2: disp_seg_o<0>(163)  
+           disp_seg_o<0>(3)  ][ 3: disp_dig_o<1>(164) disp_dig_o<1>(4)  ][ 4: disp_dig_o<2>(165)  
+           disp_dig_o<2>(5)  ][ 5: DRIVER_7SEG/CL_ENABLE/s_cnt<4>(166)  ][ 6:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<5>(167)  ][ 7: DRIVER_7SEG/CL_ENABLE/s_cnt<3>(168)  ][ 8:  
+           DRIVER_7SEG/s_cnt<0>(169)  ][ 9: DRIVER_7SEG/s_cnt<1>(170)  ][ 10: N_PZ_182(171)  ][ 11:  
+           disp_dp(172) disp_dp(6)  ][ 12: disp_dig_o<3>(173) disp_dig_o<3>(7)  ][ 13:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<9>(174) BTN0(9)  ][ 14: N_PZ_214(175) SW0_CPLD(10)  ][ 15:  
+           N_PZ_181(176)  ]
+----------------- B l o c k 2 ------------------
+PLApt(6/56), Fanin(5/38), Clk(1/3), Bct(0/4), Pin(6/6), Mcell(4/16)
+PLApts[6/53] 83 84 92 93 () () () () () () () () () () () () () () () () () () () () () () () () () () () () 
+             () () () () () () () () 74 () () () () () () () () () () () 82
+Fanins[ 5] DRIVER_7SEG/CL_ENABLE/s_cnt<0>.n DRIVER_7SEG/CL_ENABLE/s_cnt<1>.n DRIVER_7SEG/CL_ENABLE/s_cnt<2>.n 
+           N_PZ_158.n N_PZ_214.n
+clk[1] clk_i 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[10] [SW10_CPLD(136)] [SW11_CPLD(135)] [SW12_CPLD(134)] [SW13_CPLD(133)] [SW14_CPLD(132)]  
+           [SW15_CPLD(131)] [DRIVER_7SEG/CL_ENABLE/s_cnt<0>(191)] [DRIVER_7SEG/CL_ENABLE/s_cnt<1>(189)]  
+           [DRIVER_7SEG/CL_ENABLE/s_cnt<2>(188)] [N_PZ_158(187)] 
+Signal[10] [ 0: SW10_CPLD(136)  ][ 1: SW11_CPLD(135)  ][ 2: SW12_CPLD(134)  ][ 3:  ][ 4: SW13_CPLD(133)  ] 
+           [ 5:  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10: N_PZ_158(187)  ][ 11:  
+           DRIVER_7SEG/CL_ENABLE/s_cnt<2>(188)  ][ 12: DRIVER_7SEG/CL_ENABLE/s_cnt<1>(189)  ][ 13:  
+           SW14_CPLD(132)  ][ 14: DRIVER_7SEG/CL_ENABLE/s_cnt<0>(191)  ][ 15: SW15_CPLD(131)  ]
+----------------- B l o c k 3 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(8/8), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 8] [SW1_CPLD(11)] [SW2_CPLD(12)] [SW3_CPLD(13)] [SW4_CPLD(14)] [SW5_CPLD(15)] [SW6_CPLD(16)]  
+           [SW7_CPLD(17)] [SW8_CPLD(18)] 
+Signal[ 8] [ 0: SW1_CPLD(11)  ][ 1: SW2_CPLD(12)  ][ 2: SW3_CPLD(13)  ][ 3: SW4_CPLD(14)  ][ 4: SW5_CPLD(15)  
+            ][ 5: SW6_CPLD(16)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: SW7_CPLD(17)  ][ 12:  ][ 13:  
+           SW8_CPLD(18)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 4 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(2/5), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 2] [SW9_CPLD(33)] [clk_i(32)] 
+Signal[ 2] [ 0:  ][ 1: SW9_CPLD(33)  ][ 2:  ][ 3: clk_i(32)  ][ 4: (31)  ][ 5: (30)  ][ 6:  ][ 7:  ][ 8:  ] 
+           [ 9:  ][ 10:  ][ 11:  ][ 12:  ][ 13: (28)  ][ 14:  ][ 15:  ]
+----------------- B l o c k 5 ------------------
+----------------- B l o c k 6 ------------------
+----------------- B l o c k 7 ------------------
+----------------- B l o c k 8 ------------------
+----------------- B l o c k 9 ------------------
+----------------- B l o c k 10 ------------------
+----------------- B l o c k 11 ------------------
+----------------- B l o c k 12 ------------------
+----------------- B l o c k 13 ------------------
+----------------- B l o c k 14 ------------------
+----------------- B l o c k 15 ------------------

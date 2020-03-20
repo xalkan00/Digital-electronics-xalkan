@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/Desktop/display_driver/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/Desktop/display_driver/xst"
+elaborate
+-ifn hex_to_7seg.prj
+-ifmt mixed

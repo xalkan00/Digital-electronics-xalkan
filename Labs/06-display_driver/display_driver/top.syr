@@ -1,0 +1,298 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/Desktop/display_driver/clock_enable.vhd" in Library work.
+Architecture behavioral of Entity clock_enable is up to date.
+Compiling vhdl file "/home/ise/Desktop/display_driver/hex_to_7seg.vhd" in Library work.
+Architecture behavioral of Entity hex_to_7seg is up to date.
+Compiling vhdl file "/home/ise/Desktop/display_driver/display_driver.vhd" in Library work.
+Architecture behavioral of Entity driver_7seg is up to date.
+Compiling vhdl file "/home/ise/Desktop/display_driver/top.vhd" in Library work.
+Entity <top> compiled.
+Entity <top> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <driver_7seg> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clock_enable> in library <work> (architecture <Behavioral>) with generics.
+	g_NPERIOD = "0000000000101000"
+
+Analyzing hierarchy for entity <hex_to_7seg> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <Behavioral>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <driver_7seg> in library <work> (Architecture <Behavioral>).
+Entity <driver_7seg> analyzed. Unit <driver_7seg> generated.
+
+Analyzing generic Entity <clock_enable> in library <work> (Architecture <Behavioral>).
+	g_NPERIOD = "0000000000101000"
+Entity <clock_enable> analyzed. Unit <clock_enable> generated.
+
+Analyzing Entity <hex_to_7seg> in library <work> (Architecture <Behavioral>).
+Entity <hex_to_7seg> analyzed. Unit <hex_to_7seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock_enable>.
+    Related source file is "/home/ise/Desktop/display_driver/clock_enable.vhd".
+    Found 1-bit register for signal <clock_enable_o>.
+    Found 16-bit comparator less for signal <clock_enable_o$cmp_lt0000> created at line 50.
+    Found 16-bit up counter for signal <s_cnt>.
+    Found 16-bit comparator greatequal for signal <s_cnt$cmp_ge0000> created at line 50.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <clock_enable> synthesized.
+
+
+Synthesizing Unit <hex_to_7seg>.
+    Related source file is "/home/ise/Desktop/display_driver/hex_to_7seg.vhd".
+    Found 16x7-bit ROM for signal <seg_o>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex_to_7seg> synthesized.
+
+
+Synthesizing Unit <driver_7seg>.
+    Related source file is "/home/ise/Desktop/display_driver/display_driver.vhd".
+    Found 4x1-bit ROM for signal <dp_o>.
+    Found 1-of-4 decoder for signal <dig_o>.
+    Found 2-bit up counter for signal <s_cnt>.
+    Found 4-bit 4-to-1 multiplexer for signal <s_hex>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   1 Decoder(s).
+Unit <driver_7seg> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "/home/ise/Desktop/display_driver/top.vhd".
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 2
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 4x1-bit ROM                                           : 1
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <hex_to_7seg> ...
+
+Optimizing unit <clock_enable> ...
+  implementation constraint: INIT=r	 : s_cnt_15
+  implementation constraint: INIT=r	 : s_cnt_0
+  implementation constraint: INIT=r	 : s_cnt_1
+  implementation constraint: INIT=r	 : s_cnt_2
+  implementation constraint: INIT=r	 : s_cnt_3
+  implementation constraint: INIT=r	 : s_cnt_4
+  implementation constraint: INIT=r	 : s_cnt_5
+  implementation constraint: INIT=r	 : s_cnt_6
+  implementation constraint: INIT=r	 : s_cnt_7
+  implementation constraint: INIT=r	 : s_cnt_8
+  implementation constraint: INIT=r	 : s_cnt_9
+  implementation constraint: INIT=r	 : s_cnt_10
+  implementation constraint: INIT=r	 : s_cnt_11
+  implementation constraint: INIT=r	 : s_cnt_12
+  implementation constraint: INIT=r	 : s_cnt_13
+  implementation constraint: INIT=r	 : s_cnt_14
+
+Optimizing unit <driver_7seg> ...
+  implementation constraint: INIT=r	 : s_cnt_0
+  implementation constraint: INIT=r	 : s_cnt_1
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 30
+
+Cell Usage :
+# BELS                             : 281
+#      AND2                        : 87
+#      AND3                        : 8
+#      AND4                        : 4
+#      GND                         : 1
+#      INV                         : 101
+#      OR2                         : 62
+#      OR3                         : 2
+#      XOR2                        : 16
+# FlipFlops/Latches                : 19
+#      FD                          : 17
+#      FDCE                        : 2
+# IO Buffers                       : 30
+#      IBUF                        : 18
+#      OBUF                        : 12
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 17.28 secs
+ 
+--> 
+
+
+Total memory usage is 613172 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

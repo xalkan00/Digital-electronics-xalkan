@@ -1,0 +1,2484 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C256144 | XC2C256-6-TQ144
+
+DEVICE | 2C256 | 2C256144 | 
+
+NETWORK | driver_7seg | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_i_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk_i | 5967 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | data0_i<0>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data0_i<0> | 5968 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data0_i<1>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data0_i<1> | 5969 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data0_i<2>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data0_i<2> | 5970 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data0_i<3>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data0_i<3> | 5971 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data1_i<0>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data1_i<0> | 5972 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data1_i<1>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data1_i<1> | 5973 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data1_i<2>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data1_i<2> | 5974 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data1_i<3>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data1_i<3> | 5975 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data2_i<0>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data2_i<0> | 5976 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data2_i<1>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data2_i<1> | 5977 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data2_i<2>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data2_i<2> | 5978 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data2_i<3>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data2_i<3> | 5979 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data3_i<0>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data3_i<0> | 5980 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data3_i<1>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data3_i<1> | 5981 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data3_i<2>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data3_i<2> | 5982 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data3_i<3>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data3_i<3> | 5983 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv | dig_o<0>_MC | driver_7seg_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | dig_o<0>_MC.Q | 6096 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<0>_MC.Q | dig_o<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | dig_o<0>_MC.SI | dig_o<0>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dig_o<0>_MC.D1 | 5985 | ? | 0 | 0 | dig_o<0>_MC | NULL | NULL | dig_o<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dig_o<0>_MC.D2 | 5986 | ? | 0 | 0 | dig_o<0>_MC | NULL | NULL | dig_o<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dig_o<0>_MC.REG | dig_o<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dig_o<0>_MC.D | 5984 | ? | 0 | 0 | dig_o<0>_MC | NULL | NULL | dig_o<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dig_o<0>_MC.Q | 6095 | ? | 0 | 0 | dig_o<0>_MC | NULL | NULL | dig_o<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | s_cnt<1>_MC | driver_7seg_COPY_0_COPY_0 | 5120 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_en | 5999 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_en_MC.Q | s_en_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | s_cnt<1>_MC.SI | s_cnt<1>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_en | 5999 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_en_MC.Q | s_en_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | s_cnt<1>_MC.D1 | 5991 | ? | 0 | 0 | s_cnt<1>_MC | NULL | NULL | s_cnt<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | s_cnt<1>_MC.D2 | 5990 | ? | 0 | 0 | s_cnt<1>_MC | NULL | NULL | s_cnt<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | s_cnt<1> | IV_FALSE | srst_n_i_II/UIM
+SPPTERM | 3 | IV_TRUE | srst_n_i_II/UIM | IV_TRUE | s_cnt<0> | IV_TRUE | s_en
+
+SRFF_INSTANCE | s_cnt<1>_MC.REG | s_cnt<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | s_cnt<1>_MC.D | 5989 | ? | 0 | 0 | s_cnt<1>_MC | NULL | NULL | s_cnt<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | s_cnt<1>_MC.Q | 5988 | ? | 0 | 0 | s_cnt<1>_MC | NULL | NULL | s_cnt<1>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | srst_n_i_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | srst_n_i | 5992 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | s_cnt<0>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_en | 5999 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_en_MC.Q | s_en_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | s_cnt<0>_MC.SI | s_cnt<0>_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_en | 5999 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_en_MC.Q | s_en_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | s_cnt<0>_MC.D1 | 5998 | ? | 0 | 0 | s_cnt<0>_MC | NULL | NULL | s_cnt<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | s_cnt<0>_MC.D2 | 5997 | ? | 0 | 0 | s_cnt<0>_MC | NULL | NULL | s_cnt<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | srst_n_i_II/UIM | IV_TRUE | s_cnt<0> | IV_FALSE | s_en
+SPPTERM | 3 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | s_cnt<0> | IV_TRUE | s_en
+
+SRFF_INSTANCE | s_cnt<0>_MC.REG | s_cnt<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | s_cnt<0>_MC.D | 5996 | ? | 0 | 0 | s_cnt<0>_MC | NULL | NULL | s_cnt<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | s_cnt<0>_MC.Q | 5995 | ? | 0 | 0 | s_cnt<0>_MC | NULL | NULL | s_cnt<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow | s_en_MC | driver_7seg_COPY_0_COPY_0 | 1280 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | s_en | 5999 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_en_MC.Q | s_en_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | s_en_MC.SI | s_en_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | s_en_MC.D1 | 6003 | ? | 0 | 0 | s_en_MC | NULL | NULL | s_en_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | s_en_MC.D2 | 6002 | ? | 0 | 0 | s_en_MC | NULL | NULL | s_en_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | srst_n_i_II/UIM
+SPPTERM | 11 | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15>
+SPPTERM | 13 | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158 | IV_FALSE | CL_ENABLE/s_cnt<4>
+
+SRFF_INSTANCE | s_en_MC.REG | s_en_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | s_en_MC.D | 6001 | ? | 0 | 0 | s_en_MC | NULL | NULL | s_en_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | s_en_MC.Q | 6000 | ? | 0 | 0 | s_en_MC | NULL | NULL | s_en_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<10>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<10>_MC.SI | CL_ENABLE/s_cnt<10>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<10>_MC.D1 | 6008 | ? | 0 | 0 | CL_ENABLE/s_cnt<10>_MC | NULL | NULL | CL_ENABLE/s_cnt<10>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<10>_MC.D2 | 6007 | ? | 0 | 0 | CL_ENABLE/s_cnt<10>_MC | NULL | NULL | CL_ENABLE/s_cnt<10>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<10>_MC.REG | CL_ENABLE/s_cnt<10>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<10>_MC.D | 6006 | ? | 0 | 0 | CL_ENABLE/s_cnt<10>_MC | NULL | NULL | CL_ENABLE/s_cnt<10>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<10>_MC.Q | 6005 | ? | 0 | 0 | CL_ENABLE/s_cnt<10>_MC | NULL | NULL | CL_ENABLE/s_cnt<10>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<11>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<11>_MC.SI | CL_ENABLE/s_cnt<11>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<11>_MC.D1 | 6014 | ? | 0 | 0 | CL_ENABLE/s_cnt<11>_MC | NULL | NULL | CL_ENABLE/s_cnt<11>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<11>_MC.D2 | 6013 | ? | 0 | 0 | CL_ENABLE/s_cnt<11>_MC | NULL | NULL | CL_ENABLE/s_cnt<11>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<11>_MC.REG | CL_ENABLE/s_cnt<11>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<11>_MC.D | 6012 | ? | 0 | 0 | CL_ENABLE/s_cnt<11>_MC | NULL | NULL | CL_ENABLE/s_cnt<11>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<11>_MC.Q | 6011 | ? | 0 | 0 | CL_ENABLE/s_cnt<11>_MC | NULL | NULL | CL_ENABLE/s_cnt<11>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<12>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<12>_MC.SI | CL_ENABLE/s_cnt<12>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<12>_MC.D1 | 6019 | ? | 0 | 0 | CL_ENABLE/s_cnt<12>_MC | NULL | NULL | CL_ENABLE/s_cnt<12>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<12>_MC.D2 | 6018 | ? | 0 | 0 | CL_ENABLE/s_cnt<12>_MC | NULL | NULL | CL_ENABLE/s_cnt<12>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<12>_MC.REG | CL_ENABLE/s_cnt<12>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<12>_MC.D | 6017 | ? | 0 | 0 | CL_ENABLE/s_cnt<12>_MC | NULL | NULL | CL_ENABLE/s_cnt<12>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<12>_MC.Q | 6016 | ? | 0 | 0 | CL_ENABLE/s_cnt<12>_MC | NULL | NULL | CL_ENABLE/s_cnt<12>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<13>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<13>_MC.SI | CL_ENABLE/s_cnt<13>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<13>_MC.D1 | 6024 | ? | 0 | 0 | CL_ENABLE/s_cnt<13>_MC | NULL | NULL | CL_ENABLE/s_cnt<13>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<13>_MC.D2 | 6023 | ? | 0 | 0 | CL_ENABLE/s_cnt<13>_MC | NULL | NULL | CL_ENABLE/s_cnt<13>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<13>_MC.REG | CL_ENABLE/s_cnt<13>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<13>_MC.D | 6022 | ? | 0 | 0 | CL_ENABLE/s_cnt<13>_MC | NULL | NULL | CL_ENABLE/s_cnt<13>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<13>_MC.Q | 6021 | ? | 0 | 0 | CL_ENABLE/s_cnt<13>_MC | NULL | NULL | CL_ENABLE/s_cnt<13>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<14>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<14>_MC.SI | CL_ENABLE/s_cnt<14>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<14>_MC.D1 | 6029 | ? | 0 | 0 | CL_ENABLE/s_cnt<14>_MC | NULL | NULL | CL_ENABLE/s_cnt<14>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<14>_MC.D2 | 6028 | ? | 0 | 0 | CL_ENABLE/s_cnt<14>_MC | NULL | NULL | CL_ENABLE/s_cnt<14>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<14>_MC.REG | CL_ENABLE/s_cnt<14>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<14>_MC.D | 6027 | ? | 0 | 0 | CL_ENABLE/s_cnt<14>_MC | NULL | NULL | CL_ENABLE/s_cnt<14>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<14>_MC.Q | 6026 | ? | 0 | 0 | CL_ENABLE/s_cnt<14>_MC | NULL | NULL | CL_ENABLE/s_cnt<14>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<5>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<5>_MC.SI | CL_ENABLE/s_cnt<5>_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<5>_MC.D1 | 6034 | ? | 0 | 0 | CL_ENABLE/s_cnt<5>_MC | NULL | NULL | CL_ENABLE/s_cnt<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<5>_MC.D2 | 6033 | ? | 0 | 0 | CL_ENABLE/s_cnt<5>_MC | NULL | NULL | CL_ENABLE/s_cnt<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 15 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_TRUE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158 | IV_FALSE | CL_ENABLE/s_cnt<4>
+SPPTERM | 15 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_TRUE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | N_PZ_158 | IV_TRUE | CL_ENABLE/s_cnt<4>
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<5>_MC.REG | CL_ENABLE/s_cnt<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<5>_MC.D | 6032 | ? | 0 | 0 | CL_ENABLE/s_cnt<5>_MC | NULL | NULL | CL_ENABLE/s_cnt<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<5>_MC.Q | 6031 | ? | 0 | 0 | CL_ENABLE/s_cnt<5>_MC | NULL | NULL | CL_ENABLE/s_cnt<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<3>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<3>_MC.SI | CL_ENABLE/s_cnt<3>_MC | 0 | 14 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<3>_MC.D1 | 6039 | ? | 0 | 0 | CL_ENABLE/s_cnt<3>_MC | NULL | NULL | CL_ENABLE/s_cnt<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<3>_MC.D2 | 6038 | ? | 0 | 0 | CL_ENABLE/s_cnt<3>_MC | NULL | NULL | CL_ENABLE/s_cnt<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_TRUE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | N_PZ_158
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<3>_MC.REG | CL_ENABLE/s_cnt<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<3>_MC.D | 6037 | ? | 0 | 0 | CL_ENABLE/s_cnt<3>_MC | NULL | NULL | CL_ENABLE/s_cnt<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<3>_MC.Q | 6036 | ? | 0 | 0 | CL_ENABLE/s_cnt<3>_MC | NULL | NULL | CL_ENABLE/s_cnt<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<6>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<6>_MC.SI | CL_ENABLE/s_cnt<6>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<6>_MC.D1 | 6044 | ? | 0 | 0 | CL_ENABLE/s_cnt<6>_MC | NULL | NULL | CL_ENABLE/s_cnt<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<6>_MC.D2 | 6043 | ? | 0 | 0 | CL_ENABLE/s_cnt<6>_MC | NULL | NULL | CL_ENABLE/s_cnt<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<6>_MC.REG | CL_ENABLE/s_cnt<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<6>_MC.D | 6042 | ? | 0 | 0 | CL_ENABLE/s_cnt<6>_MC | NULL | NULL | CL_ENABLE/s_cnt<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<6>_MC.Q | 6041 | ? | 0 | 0 | CL_ENABLE/s_cnt<6>_MC | NULL | NULL | CL_ENABLE/s_cnt<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<7>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<7>_MC.SI | CL_ENABLE/s_cnt<7>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<7>_MC.D1 | 6049 | ? | 0 | 0 | CL_ENABLE/s_cnt<7>_MC | NULL | NULL | CL_ENABLE/s_cnt<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<7>_MC.D2 | 6048 | ? | 0 | 0 | CL_ENABLE/s_cnt<7>_MC | NULL | NULL | CL_ENABLE/s_cnt<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<7>_MC.REG | CL_ENABLE/s_cnt<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<7>_MC.D | 6047 | ? | 0 | 0 | CL_ENABLE/s_cnt<7>_MC | NULL | NULL | CL_ENABLE/s_cnt<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<7>_MC.Q | 6046 | ? | 0 | 0 | CL_ENABLE/s_cnt<7>_MC | NULL | NULL | CL_ENABLE/s_cnt<7>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<8>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<8>_MC.SI | CL_ENABLE/s_cnt<8>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<8>_MC.D1 | 6054 | ? | 0 | 0 | CL_ENABLE/s_cnt<8>_MC | NULL | NULL | CL_ENABLE/s_cnt<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<8>_MC.D2 | 6053 | ? | 0 | 0 | CL_ENABLE/s_cnt<8>_MC | NULL | NULL | CL_ENABLE/s_cnt<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<8>_MC.REG | CL_ENABLE/s_cnt<8>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<8>_MC.D | 6052 | ? | 0 | 0 | CL_ENABLE/s_cnt<8>_MC | NULL | NULL | CL_ENABLE/s_cnt<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<8>_MC.Q | 6051 | ? | 0 | 0 | CL_ENABLE/s_cnt<8>_MC | NULL | NULL | CL_ENABLE/s_cnt<8>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<9>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<9>_MC.SI | CL_ENABLE/s_cnt<9>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<9>_MC.D1 | 6059 | ? | 0 | 0 | CL_ENABLE/s_cnt<9>_MC | NULL | NULL | CL_ENABLE/s_cnt<9>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<9>_MC.D2 | 6058 | ? | 0 | 0 | CL_ENABLE/s_cnt<9>_MC | NULL | NULL | CL_ENABLE/s_cnt<9>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<9>_MC.REG | CL_ENABLE/s_cnt<9>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<9>_MC.D | 6057 | ? | 0 | 0 | CL_ENABLE/s_cnt<9>_MC | NULL | NULL | CL_ENABLE/s_cnt<9>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<9>_MC.Q | 6056 | ? | 0 | 0 | CL_ENABLE/s_cnt<9>_MC | NULL | NULL | CL_ENABLE/s_cnt<9>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<15>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<15>_MC.SI | CL_ENABLE/s_cnt<15>_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<15>_MC.D1 | 6064 | ? | 0 | 0 | CL_ENABLE/s_cnt<15>_MC | NULL | NULL | CL_ENABLE/s_cnt<15>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<15>_MC.D2 | 6063 | ? | 0 | 0 | CL_ENABLE/s_cnt<15>_MC | NULL | NULL | CL_ENABLE/s_cnt<15>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<15>_MC.REG | CL_ENABLE/s_cnt<15>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<15>_MC.D | 6062 | ? | 0 | 0 | CL_ENABLE/s_cnt<15>_MC | NULL | NULL | CL_ENABLE/s_cnt<15>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<15>_MC.Q | 6061 | ? | 0 | 0 | CL_ENABLE/s_cnt<15>_MC | NULL | NULL | CL_ENABLE/s_cnt<15>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_158_MC | driver_7seg_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<2> | 6090 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<2>_MC.Q | CL_ENABLE/s_cnt<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_158_MC.SI | N_PZ_158_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<2> | 6090 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<2>_MC.Q | CL_ENABLE/s_cnt<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_158_MC.D1 | 6068 | ? | 0 | 0 | N_PZ_158_MC | NULL | NULL | N_PZ_158_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 3 | IV_TRUE | CL_ENABLE/s_cnt<0> | IV_TRUE | CL_ENABLE/s_cnt<1> | IV_TRUE | CL_ENABLE/s_cnt<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_158_MC.D2 | 6069 | ? | 0 | 0 | N_PZ_158_MC | NULL | NULL | N_PZ_158_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | N_PZ_158_MC.REG | N_PZ_158_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_158_MC.D | 6067 | ? | 0 | 0 | N_PZ_158_MC | NULL | NULL | N_PZ_158_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_158_MC.Q | 6066 | ? | 0 | 0 | N_PZ_158_MC | NULL | NULL | N_PZ_158_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<0>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<0>_MC.SI | CL_ENABLE/s_cnt<0>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<0>_MC.D1 | 6073 | ? | 0 | 0 | CL_ENABLE/s_cnt<0>_MC | NULL | NULL | CL_ENABLE/s_cnt<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<0>_MC.D2 | 6074 | ? | 0 | 0 | CL_ENABLE/s_cnt<0>_MC | NULL | NULL | CL_ENABLE/s_cnt<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<0>_MC.REG | CL_ENABLE/s_cnt<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<0>_MC.D | 6072 | ? | 0 | 0 | CL_ENABLE/s_cnt<0>_MC | NULL | NULL | CL_ENABLE/s_cnt<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<0>_MC.Q | 6071 | ? | 0 | 0 | CL_ENABLE/s_cnt<0>_MC | NULL | NULL | CL_ENABLE/s_cnt<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_214_MC | driver_7seg_COPY_0_COPY_0 | 0 | 14 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_214_MC.SI | N_PZ_214_MC | 0 | 14 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_214_MC.D1 | 6079 | ? | 0 | 0 | N_PZ_214_MC | NULL | NULL | N_PZ_214_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_214_MC.D2 | 6078 | ? | 0 | 0 | N_PZ_214_MC | NULL | NULL | N_PZ_214_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 12 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15>
+SPPTERM | 13 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | CL_ENABLE/s_cnt<4>
+
+SRFF_INSTANCE | N_PZ_214_MC.REG | N_PZ_214_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_214_MC.D | 6077 | ? | 0 | 0 | N_PZ_214_MC | NULL | NULL | N_PZ_214_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_214_MC.Q | 6076 | ? | 0 | 0 | N_PZ_214_MC | NULL | NULL | N_PZ_214_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<4>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<4>_MC.SI | CL_ENABLE/s_cnt<4>_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | srst_n_i_II/UIM | 5993 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | srst_n_i_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<10> | 6004 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<10>_MC.Q | CL_ENABLE/s_cnt<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<11> | 6010 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<11>_MC.Q | CL_ENABLE/s_cnt<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<12> | 6015 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<12>_MC.Q | CL_ENABLE/s_cnt<12>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<13> | 6020 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<13>_MC.Q | CL_ENABLE/s_cnt<13>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<14> | 6025 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<14>_MC.Q | CL_ENABLE/s_cnt<14>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<5> | 6030 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<5>_MC.Q | CL_ENABLE/s_cnt<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<3> | 6035 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<3>_MC.Q | CL_ENABLE/s_cnt<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<6> | 6040 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<6>_MC.Q | CL_ENABLE/s_cnt<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<7> | 6045 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<7>_MC.Q | CL_ENABLE/s_cnt<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<8> | 6050 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<8>_MC.Q | CL_ENABLE/s_cnt<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<9> | 6055 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<9>_MC.Q | CL_ENABLE/s_cnt<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<15> | 6060 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<15>_MC.Q | CL_ENABLE/s_cnt<15>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<4> | 6080 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<4>_MC.Q | CL_ENABLE/s_cnt<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<4>_MC.D1 | 6084 | ? | 0 | 0 | CL_ENABLE/s_cnt<4>_MC | NULL | NULL | CL_ENABLE/s_cnt<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<4>_MC.D2 | 6083 | ? | 0 | 0 | CL_ENABLE/s_cnt<4>_MC | NULL | NULL | CL_ENABLE/s_cnt<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | CL_ENABLE/s_cnt<4>
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158 | IV_TRUE | CL_ENABLE/s_cnt<4>
+SPPTERM | 15 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_TRUE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | N_PZ_158 | IV_FALSE | CL_ENABLE/s_cnt<4>
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<4>_MC.REG | CL_ENABLE/s_cnt<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<4>_MC.D | 6082 | ? | 0 | 0 | CL_ENABLE/s_cnt<4>_MC | NULL | NULL | CL_ENABLE/s_cnt<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<4>_MC.Q | 6081 | ? | 0 | 0 | CL_ENABLE/s_cnt<4>_MC | NULL | NULL | CL_ENABLE/s_cnt<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<1>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<1>_MC.SI | CL_ENABLE/s_cnt<1>_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<1>_MC.D1 | 6089 | ? | 0 | 0 | CL_ENABLE/s_cnt<1>_MC | NULL | NULL | CL_ENABLE/s_cnt<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<1>_MC.D2 | 6088 | ? | 0 | 0 | CL_ENABLE/s_cnt<1>_MC | NULL | NULL | CL_ENABLE/s_cnt<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214 | IV_FALSE | CL_ENABLE/s_cnt<1>
+SPPTERM | 3 | IV_FALSE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214 | IV_TRUE | CL_ENABLE/s_cnt<1>
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<1>_MC.REG | CL_ENABLE/s_cnt<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<1>_MC.D | 6087 | ? | 0 | 0 | CL_ENABLE/s_cnt<1>_MC | NULL | NULL | CL_ENABLE/s_cnt<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<1>_MC.Q | 6086 | ? | 0 | 0 | CL_ENABLE/s_cnt<1>_MC | NULL | NULL | CL_ENABLE/s_cnt<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | CL_ENABLE/s_cnt<2>_MC | driver_7seg_COPY_0_COPY_0 | 1024 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<2> | 6090 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<2>_MC.Q | CL_ENABLE/s_cnt<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CL_ENABLE/s_cnt<2> | 6090 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<2>_MC.Q | CL_ENABLE/s_cnt<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CL_ENABLE/s_cnt<2>_MC.SI | CL_ENABLE/s_cnt<2>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_158 | 6065 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_158_MC.Q | N_PZ_158_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_214 | 6075 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_214_MC.Q | N_PZ_214_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<2> | 6090 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<2>_MC.Q | CL_ENABLE/s_cnt<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<0> | 6070 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<0>_MC.Q | CL_ENABLE/s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CL_ENABLE/s_cnt<1> | 6085 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | CL_ENABLE/s_cnt<1>_MC.Q | CL_ENABLE/s_cnt<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CL_ENABLE/s_cnt<2>_MC.D1 | 6094 | ? | 0 | 0 | CL_ENABLE/s_cnt<2>_MC | NULL | NULL | CL_ENABLE/s_cnt<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CL_ENABLE/s_cnt<2>_MC.D2 | 6093 | ? | 0 | 0 | CL_ENABLE/s_cnt<2>_MC | NULL | NULL | CL_ENABLE/s_cnt<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | N_PZ_158 | IV_TRUE | N_PZ_214 | IV_TRUE | CL_ENABLE/s_cnt<2>
+SPPTERM | 4 | IV_FALSE | N_PZ_158 | IV_TRUE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214 | IV_TRUE | CL_ENABLE/s_cnt<1>
+
+SRFF_INSTANCE | CL_ENABLE/s_cnt<2>_MC.REG | CL_ENABLE/s_cnt<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CL_ENABLE/s_cnt<2>_MC.D | 6092 | ? | 0 | 0 | CL_ENABLE/s_cnt<2>_MC | NULL | NULL | CL_ENABLE/s_cnt<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_i_II/FCLK | 6009 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | clk_i_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CL_ENABLE/s_cnt<2>_MC.Q | 6091 | ? | 0 | 0 | CL_ENABLE/s_cnt<2>_MC | NULL | NULL | CL_ENABLE/s_cnt<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | dig_o<0> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | dig_o<0>_MC.Q | 6096 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<0>_MC.Q | dig_o<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | dig_o<0> | 6097 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dig_o<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | dig_o<1>_MC | driver_7seg_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | dig_o<1>_MC.Q | 6102 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<1>_MC.Q | dig_o<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | dig_o<1>_MC.SI | dig_o<1>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dig_o<1>_MC.D1 | 6099 | ? | 0 | 0 | dig_o<1>_MC | NULL | NULL | dig_o<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dig_o<1>_MC.D2 | 6100 | ? | 0 | 0 | dig_o<1>_MC | NULL | NULL | dig_o<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dig_o<1>_MC.REG | dig_o<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dig_o<1>_MC.D | 6098 | ? | 0 | 0 | dig_o<1>_MC | NULL | NULL | dig_o<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dig_o<1>_MC.Q | 6101 | ? | 0 | 0 | dig_o<1>_MC | NULL | NULL | dig_o<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | dig_o<1> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | dig_o<1>_MC.Q | 6102 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<1>_MC.Q | dig_o<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | dig_o<1> | 6103 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dig_o<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | dig_o<2>_MC | driver_7seg_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | dig_o<2>_MC.Q | 6108 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<2>_MC.Q | dig_o<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | dig_o<2>_MC.SI | dig_o<2>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dig_o<2>_MC.D1 | 6105 | ? | 0 | 0 | dig_o<2>_MC | NULL | NULL | dig_o<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dig_o<2>_MC.D2 | 6106 | ? | 0 | 0 | dig_o<2>_MC | NULL | NULL | dig_o<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dig_o<2>_MC.REG | dig_o<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dig_o<2>_MC.D | 6104 | ? | 0 | 0 | dig_o<2>_MC | NULL | NULL | dig_o<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dig_o<2>_MC.Q | 6107 | ? | 0 | 0 | dig_o<2>_MC | NULL | NULL | dig_o<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | dig_o<2> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | dig_o<2>_MC.Q | 6108 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<2>_MC.Q | dig_o<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | dig_o<2> | 6109 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dig_o<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Inv | dig_o<3>_MC | driver_7seg_COPY_0_COPY_0 | 256 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | dig_o<3>_MC.Q | 6114 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<3>_MC.Q | dig_o<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | dig_o<3>_MC.SI | dig_o<3>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dig_o<3>_MC.D1 | 6111 | ? | 0 | 0 | dig_o<3>_MC | NULL | NULL | dig_o<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dig_o<3>_MC.D2 | 6112 | ? | 0 | 0 | dig_o<3>_MC | NULL | NULL | dig_o<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dig_o<3>_MC.REG | dig_o<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dig_o<3>_MC.D | 6110 | ? | 0 | 0 | dig_o<3>_MC | NULL | NULL | dig_o<3>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dig_o<3>_MC.Q | 6113 | ? | 0 | 0 | dig_o<3>_MC | NULL | NULL | dig_o<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | dig_o<3> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | dig_o<3>_MC.Q | 6114 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dig_o<3>_MC.Q | dig_o<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | dig_o<3> | 6115 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dig_o<3> | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | dp_i<0>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | dp_i<0> | 6116 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | dp_i<0>_II/UIM | 6126 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | dp_i<1>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | dp_i<1> | 6117 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | dp_i<1>_II/UIM | 6124 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | dp_i<2>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | dp_i<2> | 6118 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | dp_i<2>_II/UIM | 6125 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | dp_i<3>_II | driver_7seg_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | dp_i<3> | 6119 | PI | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | dp_i<3>_II/UIM | 6123 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<3>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Inv | dp_o_MC | driver_7seg_COPY_0_COPY_0 | 256 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<3>_II/UIM | 6123 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<2>_II/UIM | 6125 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<1>_II/UIM | 6124 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<0>_II/UIM | 6126 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | dp_o_MC.Q | 6128 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dp_o_MC.Q | dp_o_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | dp_o_MC.SI | dp_o_MC | 0 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<3>_II/UIM | 6123 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<2>_II/UIM | 6125 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<1>_II/UIM | 6124 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dp_i<0>_II/UIM | 6126 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dp_o_MC.D1 | 6122 | ? | 0 | 0 | dp_o_MC | NULL | NULL | dp_o_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dp_o_MC.D2 | 6121 | ? | 0 | 0 | dp_o_MC | NULL | NULL | dp_o_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | dp_i<3>_II/UIM
+SPPTERM | 3 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | dp_i<2>_II/UIM
+SPPTERM | 3 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | dp_i<1>_II/UIM
+SPPTERM | 3 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | dp_i<0>_II/UIM
+
+SRFF_INSTANCE | dp_o_MC.REG | dp_o_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dp_o_MC.D | 6120 | ? | 0 | 0 | dp_o_MC | NULL | NULL | dp_o_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dp_o_MC.Q | 6127 | ? | 0 | 0 | dp_o_MC | NULL | NULL | dp_o_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | dp_o | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | dp_o_MC.Q | 6128 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | dp_o_MC.Q | dp_o_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | dp_o | 6129 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | dp_o | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<0>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<0>_MC.Q | 6150 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<0>_MC.Q | seg_o<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<0>_MC.SI | seg_o<0>_MC | 0 | 18 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<0>_MC.D1 | 6132 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<0>_MC.D2 | 6131 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+
+SRFF_INSTANCE | seg_o<0>_MC.REG | seg_o<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<0>_MC.D | 6130 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<0>_MC.Q | 6149 | ? | 0 | 0 | seg_o<0>_MC | NULL | NULL | seg_o<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<0> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<0>_MC.Q | 6150 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<0>_MC.Q | seg_o<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<0> | 6151 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<1>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<1>_MC.Q | 6156 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<1>_MC.Q | seg_o<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<1>_MC.SI | seg_o<1>_MC | 0 | 18 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<1>_MC.D1 | 6154 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<1>_MC.D2 | 6153 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+
+SRFF_INSTANCE | seg_o<1>_MC.REG | seg_o<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<1>_MC.D | 6152 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<1>_MC.Q | 6155 | ? | 0 | 0 | seg_o<1>_MC | NULL | NULL | seg_o<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<1> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<1>_MC.Q | 6156 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<1>_MC.Q | seg_o<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<1> | 6157 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<2>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 20 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<2>_MC.Q | 6172 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<2>_MC.Q | seg_o<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<2>_MC.SI | seg_o<2>_MC | 0 | 20 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<2>_MC.D1 | 6160 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<2>_MC.D2 | 6159 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | N_PZ_181
+SPPTERM | 1 | IV_TRUE | N_PZ_182
+SPPTERM | 4 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 4 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 4 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 4 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM
+
+SRFF_INSTANCE | seg_o<2>_MC.REG | seg_o<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<2>_MC.D | 6158 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<2>_MC.Q | 6171 | ? | 0 | 0 | seg_o<2>_MC | NULL | NULL | seg_o<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_181_MC | driver_7seg_COPY_0_COPY_0 | 0 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_181_MC.SI | N_PZ_181_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_181_MC.D1 | 6165 | ? | 0 | 0 | N_PZ_181_MC | NULL | NULL | N_PZ_181_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_181_MC.D2 | 6164 | ? | 0 | 0 | N_PZ_181_MC | NULL | NULL | N_PZ_181_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+
+SRFF_INSTANCE | N_PZ_181_MC.REG | N_PZ_181_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_181_MC.D | 6163 | ? | 0 | 0 | N_PZ_181_MC | NULL | NULL | N_PZ_181_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_181_MC.Q | 6162 | ? | 0 | 0 | N_PZ_181_MC | NULL | NULL | N_PZ_181_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_182_MC | driver_7seg_COPY_0_COPY_0 | 0 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_182_MC.SI | N_PZ_182_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_182_MC.D1 | 6170 | ? | 0 | 0 | N_PZ_182_MC | NULL | NULL | N_PZ_182_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_182_MC.D2 | 6169 | ? | 0 | 0 | N_PZ_182_MC | NULL | NULL | N_PZ_182_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+
+SRFF_INSTANCE | N_PZ_182_MC.REG | N_PZ_182_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_182_MC.D | 6168 | ? | 0 | 0 | N_PZ_182_MC | NULL | NULL | N_PZ_182_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_182_MC.Q | 6167 | ? | 0 | 0 | N_PZ_182_MC | NULL | NULL | N_PZ_182_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<2> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<2>_MC.Q | 6172 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<2>_MC.Q | seg_o<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<2> | 6173 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<3>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 20 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<3>_MC.Q | 6178 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<3>_MC.Q | seg_o<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<3>_MC.SI | seg_o<3>_MC | 0 | 20 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<3>_MC.D1 | 6176 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<3>_MC.D2 | 6175 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | N_PZ_181
+SPPTERM | 1 | IV_TRUE | N_PZ_182
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+
+SRFF_INSTANCE | seg_o<3>_MC.REG | seg_o<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<3>_MC.D | 6174 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<3>_MC.Q | 6177 | ? | 0 | 0 | seg_o<3>_MC | NULL | NULL | seg_o<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<3> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<3>_MC.Q | 6178 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<3>_MC.Q | seg_o<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<3> | 6179 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<3> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<4>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<4>_MC.Q | 6184 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<4>_MC.Q | seg_o<4>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<4>_MC.SI | seg_o<4>_MC | 0 | 18 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<4>_MC.D1 | 6182 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<4>_MC.D2 | 6181 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+
+SRFF_INSTANCE | seg_o<4>_MC.REG | seg_o<4>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<4>_MC.D | 6180 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<4>_MC.Q | 6183 | ? | 0 | 0 | seg_o<4>_MC | NULL | NULL | seg_o<4>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<4> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<4>_MC.Q | 6184 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<4>_MC.Q | seg_o<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<4> | 6185 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<4> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<5>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 20 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<5>_MC.Q | 6190 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<5>_MC.Q | seg_o<5>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<5>_MC.SI | seg_o<5>_MC | 0 | 20 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<5>_MC.D1 | 6188 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<5>_MC.D2 | 6187 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | N_PZ_181
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | N_PZ_182
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | N_PZ_182
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | N_PZ_181
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM | IV_FALSE | N_PZ_182
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM | IV_FALSE | N_PZ_182
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM | IV_FALSE | N_PZ_181
+
+SRFF_INSTANCE | seg_o<5>_MC.REG | seg_o<5>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<5>_MC.D | 6186 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<5>_MC.Q | 6189 | ? | 0 | 0 | seg_o<5>_MC | NULL | NULL | seg_o<5>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<5> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<5>_MC.Q | 6190 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<5>_MC.Q | seg_o<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<5> | 6191 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<5> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | seg_o<6>_MC | driver_7seg_COPY_0_COPY_0 | 0 | 20 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | seg_o<6>_MC.Q | 6196 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<6>_MC.Q | seg_o<6>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | seg_o<6>_MC.SI | seg_o<6>_MC | 0 | 20 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_181 | 6161 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_181_MC.Q | N_PZ_181_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_182 | 6166 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | N_PZ_182_MC.Q | N_PZ_182_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<1> | 5987 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<1>_MC.Q | s_cnt<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | s_cnt<0> | 5994 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | s_cnt<0>_MC.Q | s_cnt<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<0>_II/UIM | 6133 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<1>_II/UIM | 6134 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<2>_II/UIM | 6135 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data3_i<3>_II/UIM | 6136 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data3_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<0>_II/UIM | 6141 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<1>_II/UIM | 6142 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<2>_II/UIM | 6143 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data2_i<3>_II/UIM | 6144 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data2_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<0>_II/UIM | 6137 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<1>_II/UIM | 6138 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<2>_II/UIM | 6139 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data1_i<3>_II/UIM | 6140 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data1_i<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<0>_II/UIM | 6145 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<1>_II/UIM | 6146 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<2>_II/UIM | 6147 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data0_i<3>_II/UIM | 6148 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | data0_i<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | seg_o<6>_MC.D1 | 6194 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | seg_o<6>_MC.D2 | 6193 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | N_PZ_181
+SPPTERM | 1 | IV_TRUE | N_PZ_182
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+
+SRFF_INSTANCE | seg_o<6>_MC.REG | seg_o<6>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | seg_o<6>_MC.D | 6192 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | seg_o<6>_MC.Q | 6195 | ? | 0 | 0 | seg_o<6>_MC | NULL | NULL | seg_o<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | seg_o<6> | driver_7seg_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | seg_o<6>_MC.Q | 6196 | ? | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | seg_o<6>_MC.Q | seg_o<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | seg_o<6> | 6197 | PO | 0 | 0 | driver_7seg_COPY_0_COPY_0 | NULL | NULL | seg_o<6> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | CL_ENABLE/s_cnt<8>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 2 | CL_ENABLE/s_cnt<7>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 3 | seg_o<3>_MC | 1 | NULL | 0 | seg_o<3> | 1 | 143 | 51200
+FBPIN | 4 | seg_o<2>_MC | 1 | NULL | 0 | seg_o<2> | 1 | 142 | 49152
+FBPIN | 5 | CL_ENABLE/s_cnt<6>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 6 | seg_o<6>_MC | 1 | NULL | 0 | seg_o<6> | 1 | 140 | 49152
+FBPIN | 7 | CL_ENABLE/s_cnt<15>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | CL_ENABLE/s_cnt<14>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | CL_ENABLE/s_cnt<13>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | CL_ENABLE/s_cnt<12>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | CL_ENABLE/s_cnt<11>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | seg_o<5>_MC | 1 | NULL | 0 | seg_o<5> | 1 | 139 | 49152
+FBPIN | 13 | seg_o<1>_MC | 1 | NULL | 0 | seg_o<1> | 1 | 138 | 49152
+FBPIN | 14 | CL_ENABLE/s_cnt<9>_MC | 1 | data0_i<0>_II | 1 | NULL | 0 | 137 | 49152
+FBPIN | 15 | CL_ENABLE/s_cnt<10>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | N_PZ_181_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | seg_o<0>_MC | 1 | NULL | 0 | seg_o<0> | 1 | 2 | 53248
+FBPIN | 2 | N_PZ_214_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 3 | seg_o<4>_MC | 1 | NULL | 0 | seg_o<4> | 1 | 3 | 53248
+FBPIN | 4 | dig_o<0>_MC | 1 | NULL | 0 | dig_o<0> | 1 | 4 | 49152
+FBPIN | 5 | dig_o<1>_MC | 1 | NULL | 0 | dig_o<1> | 1 | 5 | 53248
+FBPIN | 6 | s_en_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 7 | CL_ENABLE/s_cnt<4>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | CL_ENABLE/s_cnt<5>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | CL_ENABLE/s_cnt<3>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | s_cnt<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | s_cnt<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | dig_o<2>_MC | 1 | NULL | 0 | dig_o<2> | 1 | 6 | 53248
+FBPIN | 13 | dig_o<3>_MC | 1 | NULL | 0 | dig_o<3> | 1 | 7 | 49152
+FBPIN | 14 | dp_o_MC | 1 | NULL | 0 | dp_o | 1 | 9 | 49152
+FBPIN | 15 | NULL | 0 | data0_i<1>_II | 1 | NULL | 0 | 10 | 49152
+FBPIN | 16 | N_PZ_182_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR3_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | data0_i<2>_II | 1 | NULL | 0 | 136 | 49152
+FBPIN | 2 | NULL | 0 | data0_i<3>_II | 1 | NULL | 0 | 135 | 49152
+FBPIN | 3 | NULL | 0 | data1_i<0>_II | 1 | NULL | 0 | 134 | 49152
+FBPIN | 5 | NULL | 0 | data1_i<1>_II | 1 | NULL | 0 | 133 | 49152
+FBPIN | 11 | N_PZ_158_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | CL_ENABLE/s_cnt<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 13 | CL_ENABLE/s_cnt<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 14 | NULL | 0 | data1_i<2>_II | 1 | NULL | 0 | 132 | 49152
+FBPIN | 15 | CL_ENABLE/s_cnt<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | NULL | 0 | data1_i<3>_II | 1 | NULL | 0 | 131 | 49152
+
+FB_INSTANCE | FOOBAR4_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | data2_i<0>_II | 1 | NULL | 0 | 11 | 49152
+FBPIN | 2 | NULL | 0 | data2_i<1>_II | 1 | NULL | 0 | 12 | 49152
+FBPIN | 3 | NULL | 0 | data2_i<2>_II | 1 | NULL | 0 | 13 | 49152
+FBPIN | 4 | NULL | 0 | data2_i<3>_II | 1 | NULL | 0 | 14 | 49152
+FBPIN | 5 | NULL | 0 | data3_i<0>_II | 1 | NULL | 0 | 15 | 49152
+FBPIN | 6 | NULL | 0 | data3_i<1>_II | 1 | NULL | 0 | 16 | 49152
+FBPIN | 12 | NULL | 0 | data3_i<2>_II | 1 | NULL | 0 | 17 | 49152
+FBPIN | 14 | NULL | 0 | data3_i<3>_II | 1 | NULL | 0 | 18 | 49152
+
+FB_INSTANCE | FOOBAR5_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | NULL | 0 | dp_i<0>_II | 1 | NULL | 0 | 33 | 49152
+FBPIN | 4 | NULL | 0 | clk_i_II | 1 | NULL | 0 | 32 | 57344
+FBPIN | 5 | NULL | 0 | dp_i<1>_II | 1 | NULL | 0 | 31 | 49152
+FBPIN | 6 | NULL | 0 | dp_i<2>_II | 1 | NULL | 0 | 30 | 57344
+FBPIN | 14 | NULL | 0 | dp_i<3>_II | 1 | NULL | 0 | 28 | 49152
+
+FB_INSTANCE | FOOBAR6_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | srst_n_i_II | 1 | NULL | 0 | 34 | 49152
+
+FB_INSTANCE | FOOBAR7_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR9_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR10_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR11_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR12_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR13_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR14_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR15_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR16_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR17_ | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR9_ | FOOBAR9__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR10_ | FOOBAR10__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR11_ | FOOBAR11__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR12_ | FOOBAR12__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR13_ | FOOBAR13__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR14_ | FOOBAR14__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR15_ | FOOBAR15__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR16_ | FOOBAR16__ctinst | driver_7seg_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 56
+PLA_TERM | 0 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 9 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 10 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 11 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 12 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 14 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 15 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 16 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM
+PLA_TERM | 17 | 
+SPPTERM | 4 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 18 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 4 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 20 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM
+PLA_TERM | 21 | 
+SPPTERM | 4 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 22 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM
+PLA_TERM | 23 | 
+SPPTERM | 4 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 24 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_181
+PLA_TERM | 25 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_182
+PLA_TERM | 26 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM
+PLA_TERM | 27 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 28 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM
+PLA_TERM | 29 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 30 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM
+PLA_TERM | 31 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 32 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM
+PLA_TERM | 33 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 34 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 35 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 36 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 37 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 38 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 39 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | N_PZ_181
+PLA_TERM | 40 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | N_PZ_181
+PLA_TERM | 41 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM | IV_FALSE | N_PZ_181
+PLA_TERM | 42 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | N_PZ_182
+PLA_TERM | 43 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM | IV_FALSE | N_PZ_182
+PLA_TERM | 44 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | N_PZ_182
+PLA_TERM | 45 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM | IV_FALSE | N_PZ_182
+PLA_TERM | 46 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 47 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 48 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 49 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 50 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 51 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 52 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 53 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 54 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 55 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+
+PLA | FOOBAR2_ | 50
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | dp_i<3>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | dp_i<1>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 3 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | dp_i<2>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | dp_i<0>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_FALSE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 6 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 9 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 10 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 11 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 12 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_FALSE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 14 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 15 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 16 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 17 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data3_i<1>_II/UIM | IV_TRUE | data3_i<2>_II/UIM | IV_TRUE | data3_i<3>_II/UIM
+PLA_TERM | 18 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data3_i<0>_II/UIM | IV_TRUE | data3_i<1>_II/UIM | IV_FALSE | data3_i<2>_II/UIM | IV_FALSE | data3_i<3>_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0>
+PLA_TERM | 20 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 21 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_TRUE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_TRUE | data1_i<3>_II/UIM
+PLA_TERM | 22 | 
+SPPTERM | 2 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0>
+PLA_TERM | 23 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_TRUE | data1_i<1>_II/UIM | IV_FALSE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 24 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 5 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_TRUE | data2_i<3>_II/UIM
+PLA_TERM | 26 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_TRUE | data2_i<1>_II/UIM | IV_FALSE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 27 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 28 | 
+SPPTERM | 5 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_TRUE | data0_i<1>_II/UIM | IV_TRUE | data0_i<2>_II/UIM | IV_TRUE | data0_i<3>_II/UIM
+PLA_TERM | 29 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data0_i<0>_II/UIM | IV_TRUE | data0_i<1>_II/UIM | IV_FALSE | data0_i<2>_II/UIM | IV_FALSE | data0_i<3>_II/UIM
+PLA_TERM | 30 | 
+SPPTERM | 6 | IV_FALSE | s_cnt<1> | IV_TRUE | s_cnt<0> | IV_FALSE | data1_i<0>_II/UIM | IV_FALSE | data1_i<1>_II/UIM | IV_TRUE | data1_i<2>_II/UIM | IV_FALSE | data1_i<3>_II/UIM
+PLA_TERM | 31 | 
+SPPTERM | 6 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0> | IV_FALSE | data2_i<0>_II/UIM | IV_FALSE | data2_i<1>_II/UIM | IV_TRUE | data2_i<2>_II/UIM | IV_FALSE | data2_i<3>_II/UIM
+PLA_TERM | 32 | 
+SPPTERM | 2 | IV_TRUE | s_cnt<1> | IV_FALSE | srst_n_i_II/UIM
+PLA_TERM | 33 | 
+SPPTERM | 3 | IV_TRUE | srst_n_i_II/UIM | IV_TRUE | s_cnt<0> | IV_TRUE | s_en
+PLA_TERM | 34 | 
+SPPTERM | 3 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | s_cnt<0> | IV_TRUE | s_en
+PLA_TERM | 35 | 
+SPPTERM | 3 | IV_TRUE | srst_n_i_II/UIM | IV_TRUE | s_cnt<0> | IV_FALSE | s_en
+PLA_TERM | 36 | 
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | N_PZ_158
+PLA_TERM | 37 | 
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_TRUE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158
+PLA_TERM | 38 | 
+SPPTERM | 15 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_TRUE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | N_PZ_158 | IV_TRUE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 39 | 
+SPPTERM | 15 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_TRUE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158 | IV_FALSE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 40 | 
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 41 | 
+SPPTERM | 15 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_TRUE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_TRUE | N_PZ_158 | IV_FALSE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 42 | 
+SPPTERM | 14 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158 | IV_TRUE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 43 | 
+SPPTERM | 2 | IV_TRUE | s_cnt<1> | IV_FALSE | s_cnt<0>
+PLA_TERM | 44 | 
+SPPTERM | 1 | IV_FALSE | srst_n_i_II/UIM
+PLA_TERM | 45 | 
+SPPTERM | 11 | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15>
+PLA_TERM | 46 | 
+SPPTERM | 2 | IV_TRUE | s_cnt<1> | IV_TRUE | s_cnt<0>
+PLA_TERM | 47 | 
+SPPTERM | 13 | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | N_PZ_158 | IV_FALSE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 48 | 
+SPPTERM | 13 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<3> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15> | IV_FALSE | CL_ENABLE/s_cnt<4>
+PLA_TERM | 49 | 
+SPPTERM | 12 | IV_TRUE | srst_n_i_II/UIM | IV_FALSE | CL_ENABLE/s_cnt<10> | IV_FALSE | CL_ENABLE/s_cnt<11> | IV_FALSE | CL_ENABLE/s_cnt<12> | IV_FALSE | CL_ENABLE/s_cnt<13> | IV_FALSE | CL_ENABLE/s_cnt<14> | IV_FALSE | CL_ENABLE/s_cnt<5> | IV_FALSE | CL_ENABLE/s_cnt<6> | IV_FALSE | CL_ENABLE/s_cnt<7> | IV_FALSE | CL_ENABLE/s_cnt<8> | IV_FALSE | CL_ENABLE/s_cnt<9> | IV_FALSE | CL_ENABLE/s_cnt<15>
+
+PLA | FOOBAR3_ | 6
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_FALSE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214 | IV_TRUE | CL_ENABLE/s_cnt<1>
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_TRUE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214 | IV_FALSE | CL_ENABLE/s_cnt<1>
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_FALSE | N_PZ_158 | IV_TRUE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214 | IV_TRUE | CL_ENABLE/s_cnt<1>
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_FALSE | N_PZ_158 | IV_TRUE | N_PZ_214 | IV_TRUE | CL_ENABLE/s_cnt<2>
+PLA_TERM | 40 | 
+SPPTERM | 3 | IV_TRUE | CL_ENABLE/s_cnt<0> | IV_TRUE | CL_ENABLE/s_cnt<1> | IV_TRUE | CL_ENABLE/s_cnt<2>
+PLA_TERM | 52 | 
+SPPTERM | 2 | IV_FALSE | CL_ENABLE/s_cnt<0> | IV_TRUE | N_PZ_214
+
+BUSINFO | DATA0_I<3:0> | 4 | 0 | 0 | data0_i<0> | 3 | data0_i<1> | 2 | data0_i<2> | 1 | data0_i<3> | 0
+BUSINFO | DATA1_I<3:0> | 4 | 0 | 0 | data1_i<0> | 3 | data1_i<1> | 2 | data1_i<2> | 1 | data1_i<3> | 0
+BUSINFO | DATA2_I<3:0> | 4 | 0 | 0 | data2_i<0> | 3 | data2_i<1> | 2 | data2_i<2> | 1 | data2_i<3> | 0
+BUSINFO | DATA3_I<3:0> | 4 | 0 | 0 | data3_i<0> | 3 | data3_i<1> | 2 | data3_i<2> | 1 | data3_i<3> | 0
+BUSINFO | DIG_O<3:0> | 4 | 0 | 1 | dig_o<0> | 3 | dig_o<1> | 2 | dig_o<2> | 1 | dig_o<3> | 0
+BUSINFO | DP_I<3:0> | 4 | 0 | 0 | dp_i<0> | 3 | dp_i<1> | 2 | dp_i<2> | 1 | dp_i<3> | 0
+BUSINFO | SEG_O<6:0> | 7 | 0 | 1 | seg_o<0> | 6 | seg_o<1> | 5 | seg_o<2> | 4 | seg_o<3> | 3 | seg_o<4> | 2 | seg_o<5> | 1 | seg_o<6> | 0
+
+IOSTD | LVCMOS18
+clk_i | LVCMOS18
+data0_i<0> | LVCMOS18
+data0_i<1> | LVCMOS18
+data0_i<2> | LVCMOS18
+data0_i<3> | LVCMOS18
+data1_i<0> | LVCMOS18
+data1_i<1> | LVCMOS18
+data1_i<2> | LVCMOS18
+data1_i<3> | LVCMOS18
+data2_i<0> | LVCMOS18
+data2_i<1> | LVCMOS18
+data2_i<2> | LVCMOS18
+data2_i<3> | LVCMOS18
+data3_i<0> | LVCMOS18
+data3_i<1> | LVCMOS18
+data3_i<2> | LVCMOS18
+data3_i<3> | LVCMOS18
+srst_n_i | LVCMOS18
+dig_o<0> | LVCMOS18
+dig_o<1> | LVCMOS18
+dig_o<2> | LVCMOS18
+dig_o<3> | LVCMOS18
+dp_i<0> | LVCMOS18
+dp_i<1> | LVCMOS18
+dp_i<2> | LVCMOS18
+dp_i<3> | LVCMOS18
+dp_o | LVCMOS18
+seg_o<0> | LVCMOS18
+seg_o<1> | LVCMOS18
+seg_o<2> | LVCMOS18
+seg_o<3> | LVCMOS18
+seg_o<4> | LVCMOS18
+seg_o<5> | LVCMOS18
+seg_o<6> | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | data2_i<3> | 14 | 1 | data3_i<1> | 16 | 2 | data0_i<1> | 10 | 3 | s_cnt<0> | NULL | 4 | data2_i<1> | 12
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | s_cnt<1> | NULL | 6 | data0_i<3> | 135 | 7 | data2_i<2> | 13 | 8 | data2_i<0> | 11 | 9 | N_PZ_182 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | data3_i<2> | 17 | 11 | data1_i<2> | 132 | 12 | data1_i<1> | 133 | 14 | N_PZ_181 | NULL | 15 | data0_i<0> | 137
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 16 | data3_i<0> | 15 | 17 | data1_i<3> | 131 | 21 | data1_i<0> | 134 | 28 | data3_i<3> | 18 | 30 | data0_i<2> | 136
+
+FB_IMUX_INDEX | FOOBAR1_ | 36 | 38 | 20 | 209 | 34 | 210 | 23 | 35 | 33 | 215 | 39 | 30 | 26 | -1 | 199 | 8 | 37 | 32 | -1 | -1 | -1 | 24 | -1 | -1 | -1 | -1 | -1 | -1 | 41 | -1 | 22 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | s_en | NULL | 1 | data3_i<1> | 16 | 2 | data0_i<1> | 10 | 3 | data1_i<3> | 131 | 4 | CL_ENABLE/s_cnt<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 5 | s_cnt<1> | NULL | 6 | CL_ENABLE/s_cnt<11> | NULL | 7 | CL_ENABLE/s_cnt<4> | NULL | 8 | N_PZ_158 | NULL | 9 | data3_i<3> | 18
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 10 | CL_ENABLE/s_cnt<13> | NULL | 11 | CL_ENABLE/s_cnt<15> | NULL | 12 | CL_ENABLE/s_cnt<7> | NULL | 13 | CL_ENABLE/s_cnt<9> | NULL | 14 | CL_ENABLE/s_cnt<14> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 15 | CL_ENABLE/s_cnt<6> | NULL | 16 | CL_ENABLE/s_cnt<8> | NULL | 17 | dp_i<2> | 30 | 18 | data2_i<1> | 12 | 19 | data3_i<2> | 17
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 20 | CL_ENABLE/s_cnt<10> | NULL | 21 | s_cnt<0> | NULL | 22 | data3_i<0> | 15 | 23 | srst_n_i | 34 | 24 | dp_i<3> | 28
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 25 | data1_i<1> | 133 | 26 | data0_i<3> | 135 | 27 | data2_i<2> | 13 | 28 | CL_ENABLE/s_cnt<12> | NULL | 29 | data1_i<0> | 134
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 30 | data2_i<3> | 14 | 31 | dp_i<1> | 31 | 32 | data0_i<0> | 137 | 33 | CL_ENABLE/s_cnt<5> | NULL | 34 | dp_i<0> | 33
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 36 | data1_i<2> | 132 | 37 | data0_i<2> | 136 | 38 | data2_i<0> | 11
+
+FB_IMUX_INDEX | FOOBAR2_ | 205 | 38 | 20 | 32 | 208 | 210 | 194 | 206 | 226 | 41 | 192 | 190 | 185 | 197 | 191 | 188 | 184 | 49 | 34 | 39 | 198 | 209 | 37 | 55 | 52 | 26 | 23 | 35 | 193 | 24 | 36 | 48 | 8 | 207 | 45 | -1 | 30 | 22 | 33 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 3 | CL_ENABLE/s_cnt<1> | NULL | 8 | N_PZ_158 | NULL | 9 | CL_ENABLE/s_cnt<0> | NULL | 10 | CL_ENABLE/s_cnt<2> | NULL | 19 | N_PZ_214 | NULL
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | -1 | -1 | 228 | -1 | -1 | -1 | -1 | 226 | 230 | 227 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 201 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk_i | 1 | 1

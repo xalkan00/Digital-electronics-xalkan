@@ -1,0 +1,4 @@
+vhdl isim_temp "hex_to_7seg.vhd"
+vhdl isim_temp "clock_enable.vhd"
+vhdl isim_temp "display_driver.vhd"
+vhdl isim_temp "testbench.vhd"

@@ -1,0 +1,3 @@
+vhdl work "hex_to_7seg.vhd"
+vhdl work "clock_enable.vhd"
+vhdl work "display_driver.vhd"

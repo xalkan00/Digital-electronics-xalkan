@@ -1,0 +1,12 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/ise/Desktop/display_driver/testbench_isim_beh.exe -prj /home/ise/Desktop/display_driver/testbench_beh.prj work.testbench 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/Desktop/display_driver/hex_to_7seg.vhd" into library work
+Parsing VHDL file "/home/ise/Desktop/display_driver/clock_enable.vhd" into library work
+Parsing VHDL file "/home/ise/Desktop/display_driver/display_driver.vhd" into library work
+Parsing VHDL file "/home/ise/Desktop/display_driver/testbench.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1156 - "/home/ise/Desktop/display_driver/testbench.vhd" Line 25: Formal port <en_i> does not exist in entity <driver_7seg>.  Please compare the definition of block <driver_7seg> to its component declaration and its instantion to detect the mismatch.
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit testbench in library work failed

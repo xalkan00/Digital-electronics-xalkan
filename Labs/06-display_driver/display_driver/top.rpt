@@ -1,0 +1,1121 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: top                                 Date:  3-20-2020,  5:10PM
+Device Used: XC2C256-6-TQ144
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+36 /256 ( 14%) 107 /896  ( 12%) 61  /640  ( 10%) 19 /256 (  7%) 30 /118 ( 25%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1      16/16*    21/40    56/56*    6/ 6*   0/1      0/1      0/1      0/1
+FB2      16/16*    35/40    45/56     6/ 8    0/1      0/1      0/1      0/1
+FB3       4/16      5/40     6/56     0/ 6    0/1      0/1      0/1      0/1
+FB4       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB5       0/16      0/40     0/56     0/ 5    0/1      0/1      0/1      0/1
+FB6       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB7       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB8       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB9       0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB10      0/16      0/40     0/56     0/ 9    0/1      0/1      0/1      0/1
+FB11      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB12      0/16      0/40     0/56     0/ 6    0/1      0/1      0/1      0/1
+FB13      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB14      0/16      0/40     0/56     0/ 8    0/1      0/1      0/1      0/1
+FB15      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
+FB16      0/16      0/40     0/56     0/ 7    0/1      0/1      0/1      0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total    36/256    61/640  107/896   12/118   0/16     0/16     0/16     0/16
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+1/3         0/1         0/4         0/1
+
+Signal 'clk_i' mapped onto global clock net GCK1.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   17          17    |  I/O              :    24    108
+Output        :   12          12    |  GCK/IO           :     1      3
+Bidirectional :    0           0    |  GTS/IO           :     4      4
+GCK           :    1           1    |  GSR/IO           :     1      1
+GTS           :    0           0    |  CDR/IO           :     0      1
+GSR           :    0           0    |  DGE/IO           :     0      1
+                 ----        ----
+        Total     30          30
+
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'top.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 12 Outputs **
+
+Signal                           Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                             Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+disp_seg_o<6>                    12    21    2    FB1_3   143   GSR/I/O   O       LVCMOS18           FAST         
+disp_seg_o<2>                    10    20    2    FB1_4   142   I/O       O       LVCMOS18           FAST         
+disp_seg_o<3>                    14    20    2    FB1_6   140   I/O       O       LVCMOS18           FAST         
+disp_seg_o<5>                    12    20    2    FB1_12  139   I/O       O       LVCMOS18           FAST         
+disp_seg_o<1>                    14    19    2    FB1_13  138   I/O       O       LVCMOS18           FAST         
+disp_dig_o<0>                    1     2     2    FB1_14  137   I/O       O       LVCMOS18           FAST         
+disp_seg_o<4>                    9     19    2    FB2_1   2     GTS/I/O   O       LVCMOS18           FAST         
+disp_seg_o<0>                    12    18    2    FB2_3   3     GTS/I/O   O       LVCMOS18           FAST         
+disp_dig_o<1>                    1     2     2    FB2_4   4     I/O       O       LVCMOS18           FAST         
+disp_dig_o<2>                    1     2     2    FB2_5   5     GTS/I/O   O       LVCMOS18           FAST         
+disp_dp                          1     2     2    FB2_12  6     GTS/I/O   O       LVCMOS18           FAST         
+disp_dig_o<3>                    1     2     2    FB2_13  7     I/O       O       LVCMOS18           FAST         
+
+** 24 Buried Nodes **
+
+Signal                           Total Total Loc     Reg     Reg Init
+Name                             Pts   Inps          Use     State
+DRIVER_7SEG/CL_ENABLE/s_cnt<8>   0     0     FB1_1   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<7>   0     0     FB1_2   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<6>   0     0     FB1_5   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<15>  0     0     FB1_7   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<14>  0     0     FB1_8   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<13>  0     0     FB1_9   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<12>  0     0     FB1_10  DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<11>  0     0     FB1_11  DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<10>  0     0     FB1_15  DFF     RESET
+N_PZ_207                         3     14    FB1_16          
+DRIVER_7SEG/s_en                 3     15    FB2_2   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<4>   3     15    FB2_6   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<5>   2     15    FB2_7   DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<3>   2     14    FB2_8   DFF     RESET
+DRIVER_7SEG/s_cnt<0>             2     3     FB2_9   DFF     RESET
+DRIVER_7SEG/s_cnt<1>             2     4     FB2_10  TFF     RESET
+N_PZ_182                         2     10    FB2_11          
+DRIVER_7SEG/CL_ENABLE/s_cnt<9>   0     0     FB2_14  DFF     RESET
+N_PZ_214                         2     14    FB2_15          
+N_PZ_181                         2     10    FB2_16          
+N_PZ_158                         1     3     FB3_11          
+DRIVER_7SEG/CL_ENABLE/s_cnt<2>   2     5     FB3_12  DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<1>   2     3     FB3_13  DFF     RESET
+DRIVER_7SEG/CL_ENABLE/s_cnt<0>   1     2     FB3_15  DFF     RESET
+
+** 18 Inputs **
+
+Signal                           Bank Loc     Pin   Pin       Pin     I/O      I/O
+Name                                          No.   Type      Use     STD      Style
+BTN0                             2    FB2_14  9     I/O       I       LVCMOS18 KPR
+SW0_CPLD                         2    FB2_15  10    I/O       I       LVCMOS18 KPR
+SW10_CPLD                        2    FB3_1   136   I/O       I       LVCMOS18 KPR
+SW11_CPLD                        2    FB3_2   135   I/O       I       LVCMOS18 KPR
+SW12_CPLD                        2    FB3_3   134   I/O       I       LVCMOS18 KPR
+SW13_CPLD                        2    FB3_5   133   I/O       I       LVCMOS18 KPR
+SW14_CPLD                        2    FB3_14  132   I/O       I       LVCMOS18 KPR
+SW15_CPLD                        2    FB3_16  131   I/O       I       LVCMOS18 KPR
+SW1_CPLD                         2    FB4_1   11    I/O       I       LVCMOS18 KPR
+SW2_CPLD                         2    FB4_2   12    I/O       I       LVCMOS18 KPR
+SW3_CPLD                         2    FB4_3   13    I/O       I       LVCMOS18 KPR
+SW4_CPLD                         2    FB4_4   14    I/O       I       LVCMOS18 KPR
+SW5_CPLD                         2    FB4_5   15    I/O       I       LVCMOS18 KPR
+SW6_CPLD                         2    FB4_6   16    I/O       I       LVCMOS18 KPR
+SW7_CPLD                         2    FB4_12  17    I/O       I       LVCMOS18 KPR
+SW8_CPLD                         2    FB4_14  18    I/O       I       LVCMOS18 KPR
+SW9_CPLD                         1    FB5_2   33    I/O       I       LVCMOS18 KPR
+clk_i                            1    FB5_4   32    GCK/I/O   GCK     LVCMOS18 KPR
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+              VRF - Vref
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               21/19
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DRIVER_7SEG/CL_ENABLE/s_cnt<8>
+                              0     FB1_1        (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<7>
+                              0     FB1_2        (b)     (b)               
+disp_seg_o<6>                 12    FB1_3   143  GSR/I/O O                 
+disp_seg_o<2>                 10    FB1_4   142  I/O     O                 
+DRIVER_7SEG/CL_ENABLE/s_cnt<6>
+                              0     FB1_5        (b)     (b)               
+disp_seg_o<3>                 14    FB1_6   140  I/O     O                 
+DRIVER_7SEG/CL_ENABLE/s_cnt<15>
+                              0     FB1_7        (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<14>
+                              0     FB1_8        (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<13>
+                              0     FB1_9        (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<12>
+                              0     FB1_10       (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<11>
+                              0     FB1_11       (b)     (b)               
+disp_seg_o<5>                 12    FB1_12  139  I/O     O                 
+disp_seg_o<1>                 14    FB1_13  138  I/O     O                 
+disp_dig_o<0>                 1     FB1_14  137  I/O     O                 
+DRIVER_7SEG/CL_ENABLE/s_cnt<10>
+                              0     FB1_15       (b)     (b)               
+N_PZ_207                      3     FB1_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: DRIVER_7SEG/s_cnt<0>   8: SW11_CPLD         15: SW3_CPLD 
+  2: DRIVER_7SEG/s_cnt<1>   9: SW12_CPLD         16: SW4_CPLD 
+  3: N_PZ_181              10: SW13_CPLD         17: SW5_CPLD 
+  4: N_PZ_182              11: SW14_CPLD         18: SW6_CPLD 
+  5: N_PZ_207              12: SW15_CPLD         19: SW7_CPLD 
+  6: SW0_CPLD              13: SW1_CPLD          20: SW8_CPLD 
+  7: SW10_CPLD             14: SW2_CPLD          21: SW9_CPLD 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DRIVER_7SEG/CL_ENABLE/s_cnt<8> 
+                  ........................................ 0       
+DRIVER_7SEG/CL_ENABLE/s_cnt<7> 
+                  ........................................ 0       
+disp_seg_o<6>     XXXXXXXXXXXXXXXXXXXXX................... 21      
+disp_seg_o<2>     XXXX.XXXXXXXXXXXXXXXX................... 20      
+DRIVER_7SEG/CL_ENABLE/s_cnt<6> 
+                  ........................................ 0       
+disp_seg_o<3>     XXXX.XXXXXXXXXXXXXXXX................... 20      
+DRIVER_7SEG/CL_ENABLE/s_cnt<15> 
+                  ........................................ 0       
+DRIVER_7SEG/CL_ENABLE/s_cnt<14> 
+                  ........................................ 0       
+DRIVER_7SEG/CL_ENABLE/s_cnt<13> 
+                  ........................................ 0       
+DRIVER_7SEG/CL_ENABLE/s_cnt<12> 
+                  ........................................ 0       
+DRIVER_7SEG/CL_ENABLE/s_cnt<11> 
+                  ........................................ 0       
+disp_seg_o<5>     XXXX.XXXXXXXXXXXXXXXX................... 20      
+disp_seg_o<1>     XX..XXXXXXXXXXXXXXXXX................... 19      
+disp_dig_o<0>     XX...................................... 2       
+DRIVER_7SEG/CL_ENABLE/s_cnt<10> 
+                  ........................................ 0       
+N_PZ_207          XX...XXX....XXXXXXXXX................... 14      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB2  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               35/5
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   45/11
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+disp_seg_o<4>                 9     FB2_1   2    GTS/I/O O                 
+DRIVER_7SEG/s_en              3     FB2_2        (b)     (b)               
+disp_seg_o<0>                 12    FB2_3   3    GTS/I/O O                 
+disp_dig_o<1>                 1     FB2_4   4    I/O     O                 
+disp_dig_o<2>                 1     FB2_5   5    GTS/I/O O                 
+DRIVER_7SEG/CL_ENABLE/s_cnt<4>
+                              3     FB2_6        (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<5>
+                              2     FB2_7        (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<3>
+                              2     FB2_8        (b)     (b)               
+DRIVER_7SEG/s_cnt<0>          2     FB2_9        (b)     (b)               
+DRIVER_7SEG/s_cnt<1>          2     FB2_10       (b)     (b)               
+N_PZ_182                      2     FB2_11       (b)     (b)               
+disp_dp                       1     FB2_12  6    GTS/I/O O                 
+disp_dig_o<3>                 1     FB2_13  7    I/O     O                 
+DRIVER_7SEG/CL_ENABLE/s_cnt<9>
+                              0     FB2_14  9    I/O     I                 
+N_PZ_214                      2     FB2_15  10   I/O     I                 
+N_PZ_181                      2     FB2_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: BTN0                             13: DRIVER_7SEG/CL_ENABLE/s_cnt<8>  25: SW14_CPLD 
+  2: DRIVER_7SEG/CL_ENABLE/s_cnt<10>  14: DRIVER_7SEG/CL_ENABLE/s_cnt<9>  26: SW15_CPLD 
+  3: DRIVER_7SEG/CL_ENABLE/s_cnt<11>  15: DRIVER_7SEG/s_cnt<0>            27: SW1_CPLD 
+  4: DRIVER_7SEG/CL_ENABLE/s_cnt<12>  16: DRIVER_7SEG/s_cnt<1>            28: SW2_CPLD 
+  5: DRIVER_7SEG/CL_ENABLE/s_cnt<13>  17: DRIVER_7SEG/s_en                29: SW3_CPLD 
+  6: DRIVER_7SEG/CL_ENABLE/s_cnt<14>  18: N_PZ_158                        30: SW4_CPLD 
+  7: DRIVER_7SEG/CL_ENABLE/s_cnt<15>  19: N_PZ_207                        31: SW5_CPLD 
+  8: DRIVER_7SEG/CL_ENABLE/s_cnt<3>   20: SW0_CPLD                        32: SW6_CPLD 
+  9: DRIVER_7SEG/CL_ENABLE/s_cnt<4>   21: SW10_CPLD                       33: SW7_CPLD 
+ 10: DRIVER_7SEG/CL_ENABLE/s_cnt<5>   22: SW11_CPLD                       34: SW8_CPLD 
+ 11: DRIVER_7SEG/CL_ENABLE/s_cnt<6>   23: SW12_CPLD                       35: SW9_CPLD 
+ 12: DRIVER_7SEG/CL_ENABLE/s_cnt<7>   24: SW13_CPLD                      
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+disp_seg_o<4>     ..............XX..XXXXXXXXXXXXXXXXX..... 19      
+DRIVER_7SEG/s_en  XXXXXXXXXXXXXX...X...................... 15      
+disp_seg_o<0>     ..............XX...XXXXXXXXXXXXXXXX..... 18      
+disp_dig_o<1>     ..............XX........................ 2       
+disp_dig_o<2>     ..............XX........................ 2       
+DRIVER_7SEG/CL_ENABLE/s_cnt<4> 
+                  XXXXXXXXXXXXXX...X...................... 15      
+DRIVER_7SEG/CL_ENABLE/s_cnt<5> 
+                  XXXXXXXXXXXXXX...X...................... 15      
+DRIVER_7SEG/CL_ENABLE/s_cnt<3> 
+                  XXXXXXXX.XXXXX...X...................... 14      
+DRIVER_7SEG/s_cnt<0> 
+                  X.............X.X....................... 3       
+DRIVER_7SEG/s_cnt<1> 
+                  X.............XXX....................... 4       
+N_PZ_182          ..............XX....XX.......XXXXXX..... 10      
+disp_dp           ..............XX........................ 2       
+disp_dig_o<3>     ..............XX........................ 2       
+DRIVER_7SEG/CL_ENABLE/s_cnt<9> 
+                  ........................................ 0       
+N_PZ_214          XXXXXXXXXXXXXX.......................... 14      
+N_PZ_181          ..............XX...X..XXXXXXX........... 10      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB3  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               5/35
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   6/50
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB3_1   136  I/O     I     
+(unused)                      0     FB3_2   135  I/O     I     
+(unused)                      0     FB3_3   134  I/O     I     
+(unused)                      0     FB3_4        (b)           
+(unused)                      0     FB3_5   133  I/O     I     
+(unused)                      0     FB3_6        (b)           
+(unused)                      0     FB3_7        (b)           
+(unused)                      0     FB3_8        (b)           
+(unused)                      0     FB3_9        (b)           
+(unused)                      0     FB3_10       (b)           
+N_PZ_158                      1     FB3_11       (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<2>
+                              2     FB3_12       (b)     (b)               
+DRIVER_7SEG/CL_ENABLE/s_cnt<1>
+                              2     FB3_13       (b)     (b)               
+(unused)                      0     FB3_14  132  I/O     I     
+DRIVER_7SEG/CL_ENABLE/s_cnt<0>
+                              1     FB3_15       (b)     (b)               
+(unused)                      0     FB3_16  131  I/O     I     
+
+Signals Used by Logic in Function Block
+  1: DRIVER_7SEG/CL_ENABLE/s_cnt<0>   3: DRIVER_7SEG/CL_ENABLE/s_cnt<2>   5: N_PZ_214 
+  2: DRIVER_7SEG/CL_ENABLE/s_cnt<1>   4: N_PZ_158                       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+N_PZ_158          XXX..................................... 3       
+DRIVER_7SEG/CL_ENABLE/s_cnt<2> 
+                  XXXXX................................... 5       
+DRIVER_7SEG/CL_ENABLE/s_cnt<1> 
+                  XX..X................................... 3       
+DRIVER_7SEG/CL_ENABLE/s_cnt<0> 
+                  X...X................................... 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB4  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB4_1   11   I/O     I     
+(unused)                      0     FB4_2   12   I/O     I     
+(unused)                      0     FB4_3   13   I/O     I     
+(unused)                      0     FB4_4   14   I/O     I     
+(unused)                      0     FB4_5   15   I/O     I     
+(unused)                      0     FB4_6   16   I/O     I     
+(unused)                      0     FB4_7        (b)           
+(unused)                      0     FB4_8        (b)           
+(unused)                      0     FB4_9        (b)           
+(unused)                      0     FB4_10       (b)           
+(unused)                      0     FB4_11       (b)           
+(unused)                      0     FB4_12  17   I/O     I     
+(unused)                      0     FB4_13       (b)           
+(unused)                      0     FB4_14  18   I/O     I     
+(unused)                      0     FB4_15       (b)           
+(unused)                      0     FB4_16       (b)           
+*********************************** FB5  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB5_1        (b)           
+(unused)                      0     FB5_2   33   I/O     I     
+(unused)                      0     FB5_3        (b)           
+(unused)                      0     FB5_4   32   GCK/I/O GCK   
+(unused)                      0     FB5_5   31   I/O           
+(unused)                      0     FB5_6   30   GCK/I/O       
+(unused)                      0     FB5_7        (b)           
+(unused)                      0     FB5_8        (b)           
+(unused)                      0     FB5_9        (b)           
+(unused)                      0     FB5_10       (b)           
+(unused)                      0     FB5_11       (b)           
+(unused)                      0     FB5_12       (b)           
+(unused)                      0     FB5_13       (b)           
+(unused)                      0     FB5_14  28   I/O           
+(unused)                      0     FB5_15       (b)           
+(unused)                      0     FB5_16       (b)           
+*********************************** FB6  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB6_1   34   I/O           
+(unused)                      0     FB6_2   35   CDR/I/O       
+(unused)                      0     FB6_3        (b)           
+(unused)                      0     FB6_4   38   GCK/I/O       
+(unused)                      0     FB6_5        (b)           
+(unused)                      0     FB6_6        (b)           
+(unused)                      0     FB6_7        (b)           
+(unused)                      0     FB6_8        (b)           
+(unused)                      0     FB6_9        (b)           
+(unused)                      0     FB6_10       (b)           
+(unused)                      0     FB6_11       (b)           
+(unused)                      0     FB6_12  39   DGE/I/O       
+(unused)                      0     FB6_13  40   I/O           
+(unused)                      0     FB6_14  41   I/O           
+(unused)                      0     FB6_15  42   I/O           
+(unused)                      0     FB6_16  43   I/O           
+*********************************** FB7  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB7_1        (b)           
+(unused)                      0     FB7_2        (b)           
+(unused)                      0     FB7_3        (b)           
+(unused)                      0     FB7_4        (b)           
+(unused)                      0     FB7_5   26   I/O           
+(unused)                      0     FB7_6   25   I/O           
+(unused)                      0     FB7_7        (b)           
+(unused)                      0     FB7_8        (b)           
+(unused)                      0     FB7_9        (b)           
+(unused)                      0     FB7_10       (b)           
+(unused)                      0     FB7_11  24   I/O           
+(unused)                      0     FB7_12  23   I/O           
+(unused)                      0     FB7_13  22   I/O           
+(unused)                      0     FB7_14  21   I/O           
+(unused)                      0     FB7_15  20   I/O           
+(unused)                      0     FB7_16  19   I/O           
+*********************************** FB8  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB8_1   44   I/O           
+(unused)                      0     FB8_2   45   I/O           
+(unused)                      0     FB8_3   46   I/O           
+(unused)                      0     FB8_4        (b)           
+(unused)                      0     FB8_5   48   I/O           
+(unused)                      0     FB8_6   49   I/O           
+(unused)                      0     FB8_7        (b)           
+(unused)                      0     FB8_8        (b)           
+(unused)                      0     FB8_9        (b)           
+(unused)                      0     FB8_10       (b)           
+(unused)                      0     FB8_11  50   I/O           
+(unused)                      0     FB8_12  51   I/O           
+(unused)                      0     FB8_13  52   I/O           
+(unused)                      0     FB8_14       (b)           
+(unused)                      0     FB8_15       (b)           
+(unused)                      0     FB8_16       (b)           
+*********************************** FB9  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB9_1   112  I/O           
+(unused)                      0     FB9_2   113  I/O           
+(unused)                      0     FB9_3        (b)           
+(unused)                      0     FB9_4   114  I/O           
+(unused)                      0     FB9_5        (b)           
+(unused)                      0     FB9_6   115  I/O           
+(unused)                      0     FB9_7        (b)           
+(unused)                      0     FB9_8        (b)           
+(unused)                      0     FB9_9        (b)           
+(unused)                      0     FB9_10       (b)           
+(unused)                      0     FB9_11       (b)           
+(unused)                      0     FB9_12  116  I/O           
+(unused)                      0     FB9_13  117  I/O           
+(unused)                      0     FB9_14  118  I/O           
+(unused)                      0     FB9_15  119  I/O           
+(unused)                      0     FB9_16       (b)           
+*********************************** FB10 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB10_1  111  I/O           
+(unused)                      0     FB10_2  110  I/O           
+(unused)                      0     FB10_3  107  I/O           
+(unused)                      0     FB10_4  106  I/O           
+(unused)                      0     FB10_5  105  I/O           
+(unused)                      0     FB10_6  104  I/O           
+(unused)                      0     FB10_7       (b)           
+(unused)                      0     FB10_8       (b)           
+(unused)                      0     FB10_9       (b)           
+(unused)                      0     FB10_10      (b)           
+(unused)                      0     FB10_11      (b)           
+(unused)                      0     FB10_12 103  I/O           
+(unused)                      0     FB10_13      (b)           
+(unused)                      0     FB10_14 102  I/O           
+(unused)                      0     FB10_15      (b)           
+(unused)                      0     FB10_16 101  I/O           
+*********************************** FB11 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB11_1       (b)           
+(unused)                      0     FB11_2       (b)           
+(unused)                      0     FB11_3       (b)           
+(unused)                      0     FB11_4       (b)           
+(unused)                      0     FB11_5  120  I/O           
+(unused)                      0     FB11_6  121  I/O           
+(unused)                      0     FB11_7       (b)           
+(unused)                      0     FB11_8       (b)           
+(unused)                      0     FB11_9       (b)           
+(unused)                      0     FB11_10      (b)           
+(unused)                      0     FB11_11 124  I/O           
+(unused)                      0     FB11_12 125  I/O           
+(unused)                      0     FB11_13 126  I/O           
+(unused)                      0     FB11_14 128  I/O           
+(unused)                      0     FB11_15 129  I/O           
+(unused)                      0     FB11_16 130  I/O           
+*********************************** FB12 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB12_1       (b)           
+(unused)                      0     FB12_2  100  I/O           
+(unused)                      0     FB12_3       (b)           
+(unused)                      0     FB12_4       (b)           
+(unused)                      0     FB12_5       (b)           
+(unused)                      0     FB12_6       (b)           
+(unused)                      0     FB12_7       (b)           
+(unused)                      0     FB12_8       (b)           
+(unused)                      0     FB12_9       (b)           
+(unused)                      0     FB12_10      (b)           
+(unused)                      0     FB12_11 98   I/O           
+(unused)                      0     FB12_12 97   I/O           
+(unused)                      0     FB12_13 96   I/O           
+(unused)                      0     FB12_14 95   I/O           
+(unused)                      0     FB12_15 94   I/O           
+(unused)                      0     FB12_16      (b)           
+*********************************** FB13 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB13_1  75   I/O           
+(unused)                      0     FB13_2  76   I/O           
+(unused)                      0     FB13_3  77   I/O           
+(unused)                      0     FB13_4       (b)           
+(unused)                      0     FB13_5  78   I/O           
+(unused)                      0     FB13_6  79   I/O           
+(unused)                      0     FB13_7       (b)           
+(unused)                      0     FB13_8       (b)           
+(unused)                      0     FB13_9       (b)           
+(unused)                      0     FB13_10      (b)           
+(unused)                      0     FB13_11      (b)           
+(unused)                      0     FB13_12 80   I/O           
+(unused)                      0     FB13_13 81   I/O           
+(unused)                      0     FB13_14 82   I/O           
+(unused)                      0     FB13_15      (b)           
+(unused)                      0     FB13_16      (b)           
+*********************************** FB14 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB14_1  74   I/O           
+(unused)                      0     FB14_2  71   I/O           
+(unused)                      0     FB14_3  70   I/O           
+(unused)                      0     FB14_4  69   I/O           
+(unused)                      0     FB14_5       (b)           
+(unused)                      0     FB14_6  68   I/O           
+(unused)                      0     FB14_7       (b)           
+(unused)                      0     FB14_8       (b)           
+(unused)                      0     FB14_9       (b)           
+(unused)                      0     FB14_10      (b)           
+(unused)                      0     FB14_11      (b)           
+(unused)                      0     FB14_12      (b)           
+(unused)                      0     FB14_13 66   I/O           
+(unused)                      0     FB14_14 64   I/O           
+(unused)                      0     FB14_15      (b)           
+(unused)                      0     FB14_16 61   I/O           
+*********************************** FB15 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB15_1       (b)           
+(unused)                      0     FB15_2  83   I/O           
+(unused)                      0     FB15_3       (b)           
+(unused)                      0     FB15_4       (b)           
+(unused)                      0     FB15_5       (b)           
+(unused)                      0     FB15_6       (b)           
+(unused)                      0     FB15_7       (b)           
+(unused)                      0     FB15_8       (b)           
+(unused)                      0     FB15_9       (b)           
+(unused)                      0     FB15_10      (b)           
+(unused)                      0     FB15_11 85   I/O           
+(unused)                      0     FB15_12 86   I/O           
+(unused)                      0     FB15_13 87   I/O           
+(unused)                      0     FB15_14 88   I/O           
+(unused)                      0     FB15_15 91   I/O           
+(unused)                      0     FB15_16 92   I/O           
+*********************************** FB16 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               0/40
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   0/56
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB16_1       (b)           
+(unused)                      0     FB16_2       (b)           
+(unused)                      0     FB16_3       (b)           
+(unused)                      0     FB16_4       (b)           
+(unused)                      0     FB16_5  60   I/O           
+(unused)                      0     FB16_6  59   I/O           
+(unused)                      0     FB16_7       (b)           
+(unused)                      0     FB16_8       (b)           
+(unused)                      0     FB16_9       (b)           
+(unused)                      0     FB16_10      (b)           
+(unused)                      0     FB16_11 58   I/O           
+(unused)                      0     FB16_12 57   I/O           
+(unused)                      0     FB16_13 56   I/O           
+(unused)                      0     FB16_14      (b)           
+(unused)                      0     FB16_15 54   I/O           
+(unused)                      0     FB16_16 53   I/O           
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt0: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(0),DRIVER_7SEG/CL_ENABLE/s_cnt_D(0),clk_i,'0','0','1');
+DRIVER_7SEG/CL_ENABLE/s_cnt_D(0) <= (NOT DRIVER_7SEG/CL_ENABLE/s_cnt(0) AND N_PZ_214);
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt1: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(1),DRIVER_7SEG/CL_ENABLE/s_cnt_D(1),clk_i,'0','0','1');
+DRIVER_7SEG/CL_ENABLE/s_cnt_D(1) <= ((DRIVER_7SEG/CL_ENABLE/s_cnt(0) AND N_PZ_214 AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(1))
+	OR (NOT DRIVER_7SEG/CL_ENABLE/s_cnt(0) AND N_PZ_214 AND 
+	DRIVER_7SEG/CL_ENABLE/s_cnt(1)));
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt2: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(2),DRIVER_7SEG/CL_ENABLE/s_cnt_D(2),clk_i,'0','0','1');
+DRIVER_7SEG/CL_ENABLE/s_cnt_D(2) <= ((NOT N_PZ_158 AND N_PZ_214 AND 
+	DRIVER_7SEG/CL_ENABLE/s_cnt(2))
+	OR (NOT N_PZ_158 AND DRIVER_7SEG/CL_ENABLE/s_cnt(0) AND 
+	N_PZ_214 AND DRIVER_7SEG/CL_ENABLE/s_cnt(1)));
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt3: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(3),DRIVER_7SEG/CL_ENABLE/s_cnt_D(3),clk_i,'0','0','1');
+DRIVER_7SEG/CL_ENABLE/s_cnt_D(3) <= ((BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND NOT N_PZ_158)
+	OR (BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND N_PZ_158));
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt4: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(4),DRIVER_7SEG/CL_ENABLE/s_cnt_D(4),clk_i,'0','0','1');
+DRIVER_7SEG/CL_ENABLE/s_cnt_D(4) <= ((BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND DRIVER_7SEG/CL_ENABLE/s_cnt(4))
+	OR (BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND NOT N_PZ_158 AND 
+	DRIVER_7SEG/CL_ENABLE/s_cnt(4))
+	OR (BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND N_PZ_158 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(4)));
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt5: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(5),DRIVER_7SEG/CL_ENABLE/s_cnt_D(5),clk_i,'0','0','1');
+DRIVER_7SEG/CL_ENABLE/s_cnt_D(5) <= ((BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND NOT N_PZ_158 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(4))
+	OR (BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND N_PZ_158 AND DRIVER_7SEG/CL_ENABLE/s_cnt(4)));
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt6: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(6),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt7: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(7),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt8: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(8),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt9: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(9),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt10: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(10),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt11: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(11),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt12: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(12),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt13: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(13),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt14: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(14),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/CL_ENABLE/s_cnt15: FDCPE port map (DRIVER_7SEG/CL_ENABLE/s_cnt(15),'0',clk_i,'0','0','1');
+
+FDCPE_DRIVER_7SEG/s_cnt0: FDCPE port map (DRIVER_7SEG/s_cnt(0),DRIVER_7SEG/s_cnt_D(0),clk_i,'0','0','1');
+DRIVER_7SEG/s_cnt_D(0) <= ((BTN0 AND DRIVER_7SEG/s_cnt(0) AND NOT DRIVER_7SEG/s_en)
+	OR (BTN0 AND NOT DRIVER_7SEG/s_cnt(0) AND DRIVER_7SEG/s_en));
+
+FTCPE_DRIVER_7SEG/s_cnt1: FTCPE port map (DRIVER_7SEG/s_cnt(1),DRIVER_7SEG/s_cnt_T(1),clk_i,'0','0','1');
+DRIVER_7SEG/s_cnt_T(1) <= ((DRIVER_7SEG/s_cnt(1) AND NOT BTN0)
+	OR (BTN0 AND DRIVER_7SEG/s_cnt(0) AND DRIVER_7SEG/s_en));
+
+FDCPE_DRIVER_7SEG/s_en: FDCPE port map (DRIVER_7SEG/s_en,DRIVER_7SEG/s_en_D,clk_i,'0','0','1');
+DRIVER_7SEG/s_en_D <= NOT (((NOT BTN0)
+	OR (NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15))
+	OR (NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND NOT N_PZ_158 AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(4))));
+
+
+N_PZ_158 <= (DRIVER_7SEG/CL_ENABLE/s_cnt(0) AND 
+	DRIVER_7SEG/CL_ENABLE/s_cnt(1) AND DRIVER_7SEG/CL_ENABLE/s_cnt(2));
+
+
+N_PZ_181 <= ((DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW12_CPLD AND NOT SW13_CPLD AND SW14_CPLD AND NOT SW15_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW0_CPLD AND NOT SW1_CPLD AND SW2_CPLD AND NOT SW3_CPLD));
+
+
+N_PZ_182 <= ((DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW8_CPLD AND NOT SW9_CPLD AND SW10_CPLD AND NOT SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW4_CPLD AND NOT SW5_CPLD AND SW6_CPLD AND NOT SW7_CPLD));
+
+
+N_PZ_207 <= ((DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND NOT SW9_CPLD AND SW10_CPLD AND SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND NOT SW5_CPLD AND SW6_CPLD AND SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND NOT SW1_CPLD AND SW2_CPLD AND SW3_CPLD));
+
+
+N_PZ_214 <= ((BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(5) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15))
+	OR (BTN0 AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(10) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(11) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(12) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(13) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(14) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(3) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(6) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(7) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(8) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(9) AND NOT DRIVER_7SEG/CL_ENABLE/s_cnt(15) AND 
+	NOT DRIVER_7SEG/CL_ENABLE/s_cnt(4)));
+
+
+disp_dig_o(0) <= NOT ((NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0)));
+
+
+disp_dig_o(1) <= NOT ((NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0)));
+
+
+disp_dig_o(2) <= NOT ((DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0)));
+
+
+disp_dig_o(3) <= NOT ((DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0)));
+
+
+disp_dp <= NOT ((DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0)));
+
+
+disp_seg_o(0) <= ((DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW13_CPLD AND NOT SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW9_CPLD AND NOT SW10_CPLD AND NOT SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW5_CPLD AND NOT SW6_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW1_CPLD AND NOT SW2_CPLD AND NOT SW3_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND SW13_CPLD AND SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW12_CPLD AND NOT SW13_CPLD AND SW14_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND SW9_CPLD AND SW10_CPLD AND NOT SW11_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW8_CPLD AND NOT SW9_CPLD AND SW10_CPLD AND SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND SW5_CPLD AND SW6_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW4_CPLD AND NOT SW5_CPLD AND SW6_CPLD AND SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND SW1_CPLD AND SW2_CPLD AND NOT SW3_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW0_CPLD AND NOT SW1_CPLD AND SW2_CPLD AND SW3_CPLD));
+
+
+disp_seg_o(1) <= ((N_PZ_207)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND SW13_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW13_CPLD AND NOT SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND SW9_CPLD AND NOT SW11_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND NOT SW10_CPLD AND NOT SW11_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW9_CPLD AND NOT SW10_CPLD AND NOT SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND SW5_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND NOT SW6_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW5_CPLD AND NOT SW6_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND SW1_CPLD AND NOT SW3_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND NOT SW2_CPLD AND NOT SW3_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW1_CPLD AND NOT SW2_CPLD AND NOT SW3_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW13_CPLD AND SW14_CPLD AND SW15_CPLD));
+
+
+disp_seg_o(2) <= ((N_PZ_181)
+	OR (N_PZ_182)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND NOT SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND NOT SW3_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW13_CPLD AND NOT SW14_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND NOT SW9_CPLD AND NOT SW10_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND NOT SW5_CPLD AND NOT SW6_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND NOT SW1_CPLD AND NOT SW2_CPLD));
+
+
+disp_seg_o(3) <= ((N_PZ_181)
+	OR (N_PZ_182)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND SW13_CPLD AND SW14_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW13_CPLD AND NOT SW14_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND SW9_CPLD AND SW10_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND NOT SW9_CPLD AND NOT SW10_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND SW5_CPLD AND SW6_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND NOT SW5_CPLD AND NOT SW6_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND SW1_CPLD AND SW2_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND NOT SW1_CPLD AND NOT SW2_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW12_CPLD AND SW13_CPLD AND NOT SW14_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW8_CPLD AND SW9_CPLD AND NOT SW10_CPLD AND SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW4_CPLD AND SW5_CPLD AND NOT SW6_CPLD AND SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW0_CPLD AND SW1_CPLD AND NOT SW2_CPLD AND SW3_CPLD));
+
+
+disp_seg_o(4) <= ((DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW12_CPLD AND SW14_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW13_CPLD AND SW14_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW10_CPLD AND SW11_CPLD AND NOT N_PZ_207)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW6_CPLD AND SW7_CPLD AND NOT N_PZ_207)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW2_CPLD AND SW3_CPLD AND NOT N_PZ_207)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW12_CPLD AND SW13_CPLD AND NOT SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW8_CPLD AND SW9_CPLD AND NOT SW10_CPLD AND NOT SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW4_CPLD AND SW5_CPLD AND NOT SW6_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW0_CPLD AND SW1_CPLD AND NOT SW2_CPLD AND NOT SW3_CPLD));
+
+
+disp_seg_o(5) <= ((DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND SW13_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW12_CPLD AND SW14_CPLD AND NOT N_PZ_181)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND SW9_CPLD AND SW11_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW8_CPLD AND SW10_CPLD AND NOT N_PZ_182)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND SW5_CPLD AND SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW4_CPLD AND SW6_CPLD AND NOT N_PZ_182)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND SW1_CPLD AND SW3_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW0_CPLD AND SW2_CPLD AND NOT N_PZ_181)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW13_CPLD AND SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW9_CPLD AND SW10_CPLD AND NOT SW11_CPLD AND NOT N_PZ_182)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW5_CPLD AND SW6_CPLD AND NOT SW7_CPLD AND NOT N_PZ_182)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	NOT SW1_CPLD AND SW2_CPLD AND NOT SW3_CPLD AND NOT N_PZ_181));
+
+
+disp_seg_o(6) <= ((N_PZ_207)
+	OR (N_PZ_181)
+	OR (N_PZ_182)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND SW13_CPLD AND NOT SW14_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW13_CPLD AND SW14_CPLD AND SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW12_CPLD AND NOT SW13_CPLD AND NOT SW14_CPLD AND NOT SW15_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND SW9_CPLD AND NOT SW10_CPLD AND SW11_CPLD)
+	OR (DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW8_CPLD AND NOT SW9_CPLD AND NOT SW10_CPLD AND NOT SW11_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND SW5_CPLD AND NOT SW6_CPLD AND SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND DRIVER_7SEG/s_cnt(0) AND 
+	SW4_CPLD AND NOT SW5_CPLD AND NOT SW6_CPLD AND NOT SW7_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND SW1_CPLD AND NOT SW2_CPLD AND SW3_CPLD)
+	OR (NOT DRIVER_7SEG/s_cnt(1) AND NOT DRIVER_7SEG/s_cnt(0) AND 
+	SW0_CPLD AND NOT SW1_CPLD AND NOT SW2_CPLD AND NOT SW3_CPLD));
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC2C256-6-TQ144
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 VCC                              73 VCCIO-1.8                     
+  2 disp_seg_o<4>                    74 KPR                           
+  3 disp_seg_o<0>                    75 KPR                           
+  4 disp_dig_o<1>                    76 KPR                           
+  5 disp_dig_o<2>                    77 KPR                           
+  6 disp_dp                          78 KPR                           
+  7 disp_dig_o<3>                    79 KPR                           
+  8 VCCAUX                           80 KPR                           
+  9 BTN0                             81 KPR                           
+ 10 SW0_CPLD                         82 KPR                           
+ 11 SW1_CPLD                         83 KPR                           
+ 12 SW2_CPLD                         84 VCC                           
+ 13 SW3_CPLD                         85 KPR                           
+ 14 SW4_CPLD                         86 KPR                           
+ 15 SW5_CPLD                         87 KPR                           
+ 16 SW6_CPLD                         88 KPR                           
+ 17 SW7_CPLD                         89 GND                           
+ 18 SW8_CPLD                         90 GND                           
+ 19 KPR                              91 KPR                           
+ 20 KPR                              92 KPR                           
+ 21 KPR                              93 VCCIO-1.8                     
+ 22 KPR                              94 KPR                           
+ 23 KPR                              95 KPR                           
+ 24 KPR                              96 KPR                           
+ 25 KPR                              97 KPR                           
+ 26 KPR                              98 KPR                           
+ 27 VCCIO-1.8                        99 GND                           
+ 28 KPR                             100 KPR                           
+ 29 GND                             101 KPR                           
+ 30 KPR                             102 KPR                           
+ 31 KPR                             103 KPR                           
+ 32 clk_i                           104 KPR                           
+ 33 SW9_CPLD                        105 KPR                           
+ 34 KPR                             106 KPR                           
+ 35 KPR                             107 KPR                           
+ 36 GND                             108 GND                           
+ 37 VCC                             109 VCCIO-1.8                     
+ 38 KPR                             110 KPR                           
+ 39 KPR                             111 KPR                           
+ 40 KPR                             112 KPR                           
+ 41 KPR                             113 KPR                           
+ 42 KPR                             114 KPR                           
+ 43 KPR                             115 KPR                           
+ 44 KPR                             116 KPR                           
+ 45 KPR                             117 KPR                           
+ 46 KPR                             118 KPR                           
+ 47 GND                             119 KPR                           
+ 48 KPR                             120 KPR                           
+ 49 KPR                             121 KPR                           
+ 50 KPR                             122 TDO                           
+ 51 KPR                             123 GND                           
+ 52 KPR                             124 KPR                           
+ 53 KPR                             125 KPR                           
+ 54 KPR                             126 KPR                           
+ 55 VCCIO-1.8                       127 VCCIO-1.8                     
+ 56 KPR                             128 KPR                           
+ 57 KPR                             129 KPR                           
+ 58 KPR                             130 KPR                           
+ 59 KPR                             131 SW15_CPLD                     
+ 60 KPR                             132 SW14_CPLD                     
+ 61 KPR                             133 SW13_CPLD                     
+ 62 GND                             134 SW12_CPLD                     
+ 63 TDI                             135 SW11_CPLD                     
+ 64 KPR                             136 SW10_CPLD                     
+ 65 TMS                             137 disp_dig_o<0>                 
+ 66 KPR                             138 disp_seg_o<1>                 
+ 67 TCK                             139 disp_seg_o<5>                 
+ 68 KPR                             140 disp_seg_o<3>                 
+ 69 KPR                             141 VCCIO-1.8                     
+ 70 KPR                             142 disp_seg_o<2>                 
+ 71 KPR                             143 disp_seg_o<6>                 
+ 72 GND                             144 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+        PGND  = Unused I/O configured as additional Ground pin
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         WPU  = Unused I/O with weak pull up (leave unconnected)
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+      VCCAUX  = Power supply for JTAG pins
+   VCCIO-3.3  = I/O supply voltage for LVTTL, LVCMOS33, SSTL3_I
+   VCCIO-2.5  = I/O supply voltage for LVCMOS25, SSTL2_I
+   VCCIO-1.8  = I/O supply voltage for LVCMOS18
+   VCCIO-1.5  = I/O supply voltage for LVCMOS15, HSTL_I
+        VREF  = Reference voltage for indicated input standard
+       *VREF  = Reference voltage pin selected by software
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c256-6-TQ144
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : KEEPER
+Default Voltage Standard for All Outputs    : LVCMOS18
+Input Limit                                 : 32
+Pterm Limit                                 : 28
