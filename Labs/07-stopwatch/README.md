@@ -1,7 +1,7 @@
 # Lab 7: Stopwatch
 
 ## top.vhd
-![basys_stopwatch](../../Images/top.jpg)
+![top](../../Images/top.jpg)
 
 #### Objectives
 
