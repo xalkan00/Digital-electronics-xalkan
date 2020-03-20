@@ -2,6 +2,8 @@
 
 ## top.vhd
 ![top](../../Images/top.JPG)
+## simulace
+![simulation](../../Images/simulation.png)
 
 #### Objectives
 
