@@ -1,7 +1,7 @@
 # Lab 7: Stopwatch
 
 ## top.vhd
-![top](../../Images/top.jpg)
+![top](../../Images/top.JPG)
 
 #### Objectives
 
