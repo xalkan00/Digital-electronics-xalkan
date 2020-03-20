@@ -64,7 +64,7 @@ BEGIN
 
 	Clk_gen: process	-- NEW
   	begin
-    	while Now < 1000 NS loop		-- NEW: DEFINE SIMULATION TIME
+    	while Now < 1000000 NS loop		-- NEW: DEFINE SIMULATION TIME
       		clk_in <= '0';
       		wait for 0.5 NS;
       		clk_in <= '1';
