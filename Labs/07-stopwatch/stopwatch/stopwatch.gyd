@@ -1,0 +1,56 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+ce_100Hz_i S:PIN143
+clk_i S:PIN32
+cnt_en_i S:PIN140
+srst_n_i S:PIN142
+hth_h_o<0> S:PIN2
+hth_h_o<1> S:PIN3
+hth_h_o<2> S:PIN4
+hth_h_o<3> S:PIN5
+hth_l_o<0> S:PIN6
+hth_l_o<1> S:PIN7
+hth_l_o<2> S:PIN9
+hth_l_o<3> S:PIN10
+sec_h_o<0> S:PIN136
+sec_h_o<1> S:PIN135
+sec_h_o<2> S:PIN134
+sec_h_o<3> S:PIN133
+sec_l_o<0> S:PIN132
+sec_l_o<1> S:PIN131
+sec_l_o<2> S:PIN11
+sec_l_o<3> S:PIN12
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 cnt_hth_l_o<0> cnt_hth_h_o<0> cnt_sec_h_o<3> cnt_sec_l_o<3>
+		 cnt_hth_l_o<3> cnt_hth_h_o<3> cnt_sec_l_o<1> cnt_sec_l_o<2>
+		 cnt_hth_h_o<1> cnt_hth_h_o<2> cnt_hth_l_o<1> cnt_sec_l_o<0>
+		 cnt_sec_h_o<2> cnt_sec_h_o<0> cnt_hth_l_o<2> cnt_en
+		
+PARTITION FB2_1 hth_h_o<0>
+PARTITION FB2_3 hth_h_o<1> hth_h_o<2> hth_h_o<3>
+PARTITION FB2_12 hth_l_o<0> hth_l_o<1> hth_l_o<2> hth_l_o<3>
+		 cnt_sec_h_o<1>
+PARTITION FB3_1 sec_h_o<0> sec_h_o<1> sec_h_o<2>
+PARTITION FB3_5 sec_h_o<3>
+PARTITION FB3_14 sec_l_o<0>
+PARTITION FB3_16 sec_l_o<1>
+PARTITION FB4_1 sec_l_o<2> sec_l_o<3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

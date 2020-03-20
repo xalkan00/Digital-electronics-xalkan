@@ -1,0 +1,1112 @@
+MDF Database:  version 1.0
+MDF_INFO | driver_7seg | XC2C256-6-TQ144
+MACROCELL | 2 | 1 | dig_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | s_cnt<1>  | s_cnt<0>
+INPUTMC | 2 | 0 | 12 | 0 | 13
+EQ | 1 | 
+   !dig_o<0> = s_cnt<1> & s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 12 | s_cnt<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 0 | 12 | 2 | 1 | 2 | 2 | 2 | 4 | 2 | 13 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 4 | s_cnt<1>  | srst_n_i  | s_cnt<0>  | s_en
+INPUTMC | 3 | 0 | 12 | 0 | 13 | 0 | 10
+INPUTP | 1 | 197
+EQ | 3 | 
+   s_cnt<1>.T := s_cnt<1> & !srst_n_i
+	# srst_n_i & s_cnt<0> & s_en;	// (2 pt, 4 inp)
+   s_cnt<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 13 | s_cnt<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 15 | 0 | 13 | 0 | 12 | 2 | 1 | 2 | 2 | 2 | 4 | 2 | 13 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 3 | srst_n_i  | s_cnt<0>  | s_en
+INPUTMC | 2 | 0 | 13 | 0 | 10
+INPUTP | 1 | 197
+EQ | 3 | 
+   s_cnt<0> := srst_n_i & s_cnt<0> & !s_en
+	# srst_n_i & !s_cnt<0> & s_en;	// (2 pt, 3 inp)
+   s_cnt<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 10 | s_en_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 18 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5
+INPUTS | 15 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | N_PZ_327  | CLOCK/s_cnt<2>  | N_PZ_328  | CLOCK/s_cnt<3>  | CLOCK/s_cnt<4>
+INPUTMC | 14 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 1 | 0 | 4 | 0 | 0 | 0 | 8 | 0 | 9
+INPUTP | 1 | 197
+EQ | 11 | 
+   !s_en := !srst_n_i
+	# !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327
+	# !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<2> & !N_PZ_328 & !CLOCK/s_cnt<3> & 
+	!CLOCK/s_cnt<4>;	// (3 pt, 15 inp)
+   s_en.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 9 | CLOCK/s_cnt<10>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<10> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<10>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 8 | CLOCK/s_cnt<11>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<11> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<11>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 7 | CLOCK/s_cnt<12>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<12> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<12>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 6 | CLOCK/s_cnt<13>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<13> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<13>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 5 | CLOCK/s_cnt<14>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<14> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<14>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 14 | CLOCK/s_cnt<7>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<7> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<7>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 13 | CLOCK/s_cnt<8>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<8> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<8>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 14 | CLOCK/s_cnt<9>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<9> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<9>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 1 | CLOCK/s_cnt<15>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 0
+EQ | 2 | 
+   CLOCK/s_cnt<15> := Gnd;	// (0 pt, 0 inp)
+   CLOCK/s_cnt<15>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 1 | N_PZ_327_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 10
+INPUTS | 2 | CLOCK/s_cnt<5>  | CLOCK/s_cnt<6>
+INPUTMC | 2 | 0 | 6 | 0 | 7
+EQ | 1 | 
+   N_PZ_327 = CLOCK/s_cnt<5> & CLOCK/s_cnt<6>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 6 | CLOCK/s_cnt<5>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 0 | 7 | 0 | 6 | 0 | 1
+INPUTS | 16 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | CLOCK/s_cnt<5>  | CLOCK/s_cnt<2>  | CLOCK/s_cnt<6>  | N_PZ_328  | CLOCK/s_cnt<3>  | CLOCK/s_cnt<4>
+INPUTMC | 15 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 6 | 0 | 4 | 0 | 7 | 0 | 0 | 0 | 8 | 0 | 9
+INPUTP | 1 | 197
+EQ | 27 | 
+   CLOCK/s_cnt<5> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & CLOCK/s_cnt<5> & !CLOCK/s_cnt<2> & !CLOCK/s_cnt<6>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & CLOCK/s_cnt<5> & !N_PZ_328 & !CLOCK/s_cnt<6>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & CLOCK/s_cnt<5> & !CLOCK/s_cnt<3> & !CLOCK/s_cnt<6>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & CLOCK/s_cnt<5> & !CLOCK/s_cnt<4> & !CLOCK/s_cnt<6>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & CLOCK/s_cnt<5> & !CLOCK/s_cnt<2> & !N_PZ_328 & 
+	!CLOCK/s_cnt<3> & !CLOCK/s_cnt<4>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<5> & CLOCK/s_cnt<2> & N_PZ_328 & 
+	CLOCK/s_cnt<3> & CLOCK/s_cnt<4>;	// (6 pt, 16 inp)
+   CLOCK/s_cnt<5>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 4 | CLOCK/s_cnt<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 13 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | N_PZ_327  | CLOCK/s_cnt<2>  | N_PZ_328
+INPUTMC | 12 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 1 | 0 | 4 | 0 | 0
+INPUTP | 1 | 197
+EQ | 9 | 
+   CLOCK/s_cnt<2> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & CLOCK/s_cnt<2> & !N_PZ_328
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !CLOCK/s_cnt<2> & N_PZ_328;	// (2 pt, 13 inp)
+   CLOCK/s_cnt<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 0 | N_PZ_328_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 0 | 8 | 0 | 9 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 2 | CLOCK/s_cnt<0>  | CLOCK/s_cnt<1>
+INPUTMC | 2 | 0 | 15 | 0 | 14
+EQ | 1 | 
+   N_PZ_328 = CLOCK/s_cnt<0> & CLOCK/s_cnt<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 15 | CLOCK/s_cnt<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 0 | 15 | 0 | 14 | 0 | 0
+INPUTS | 15 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | N_PZ_327  | CLOCK/s_cnt<0>  | CLOCK/s_cnt<2>  | CLOCK/s_cnt<3>  | CLOCK/s_cnt<4>
+INPUTMC | 14 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 1 | 0 | 15 | 0 | 4 | 0 | 8 | 0 | 9
+INPUTP | 1 | 197
+EQ | 10 | 
+   CLOCK/s_cnt<0> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !CLOCK/s_cnt<0>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<2> & !CLOCK/s_cnt<0> & !CLOCK/s_cnt<3> & 
+	!CLOCK/s_cnt<4>;	// (2 pt, 15 inp)
+   CLOCK/s_cnt<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 8 | CLOCK/s_cnt<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 14 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | N_PZ_327  | CLOCK/s_cnt<2>  | CLOCK/s_cnt<3>  | N_PZ_328
+INPUTMC | 13 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 1 | 0 | 4 | 0 | 8 | 0 | 0
+INPUTP | 1 | 197
+EQ | 14 | 
+   CLOCK/s_cnt<3> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !CLOCK/s_cnt<2> & CLOCK/s_cnt<3>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !N_PZ_328 & CLOCK/s_cnt<3>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & CLOCK/s_cnt<2> & N_PZ_328 & 
+	!CLOCK/s_cnt<3>;	// (3 pt, 14 inp)
+   CLOCK/s_cnt<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 9 | CLOCK/s_cnt<4>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 6 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 6 | 0 | 10
+INPUTS | 15 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | N_PZ_327  | CLOCK/s_cnt<2>  | CLOCK/s_cnt<4>  | N_PZ_328  | CLOCK/s_cnt<3>
+INPUTMC | 14 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 1 | 0 | 4 | 0 | 9 | 0 | 0 | 0 | 8
+INPUTP | 1 | 197
+EQ | 18 | 
+   CLOCK/s_cnt<4> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !CLOCK/s_cnt<2> & CLOCK/s_cnt<4>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !N_PZ_328 & CLOCK/s_cnt<4>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !CLOCK/s_cnt<3> & CLOCK/s_cnt<4>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & CLOCK/s_cnt<2> & N_PZ_328 & 
+	CLOCK/s_cnt<3> & !CLOCK/s_cnt<4>;	// (4 pt, 15 inp)
+   CLOCK/s_cnt<4>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 14 | CLOCK/s_cnt<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 0 | 14 | 0 | 0
+INPUTS | 16 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | N_PZ_327  | CLOCK/s_cnt<0>  | CLOCK/s_cnt<1>  | CLOCK/s_cnt<2>  | CLOCK/s_cnt<3>  | CLOCK/s_cnt<4>
+INPUTMC | 15 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 8 | 0 | 9
+INPUTP | 1 | 197
+EQ | 19 | 
+   CLOCK/s_cnt<1> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & CLOCK/s_cnt<0> & !CLOCK/s_cnt<1>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !N_PZ_327 & !CLOCK/s_cnt<0> & CLOCK/s_cnt<1>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<2> & CLOCK/s_cnt<0> & !CLOCK/s_cnt<3> & 
+	!CLOCK/s_cnt<4> & !CLOCK/s_cnt<1>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<2> & !CLOCK/s_cnt<0> & !CLOCK/s_cnt<3> & 
+	!CLOCK/s_cnt<4> & CLOCK/s_cnt<1>;	// (4 pt, 16 inp)
+   CLOCK/s_cnt<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 7 | CLOCK/s_cnt<6>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 0 | 7 | 0 | 6 | 0 | 1
+INPUTS | 16 | srst_n_i  | CLOCK/s_cnt<10>  | CLOCK/s_cnt<11>  | CLOCK/s_cnt<12>  | CLOCK/s_cnt<13>  | CLOCK/s_cnt<14>  | CLOCK/s_cnt<7>  | CLOCK/s_cnt<8>  | CLOCK/s_cnt<9>  | CLOCK/s_cnt<15>  | CLOCK/s_cnt<5>  | CLOCK/s_cnt<6>  | CLOCK/s_cnt<2>  | N_PZ_328  | CLOCK/s_cnt<3>  | CLOCK/s_cnt<4>
+INPUTMC | 15 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 6 | 0 | 7 | 0 | 4 | 0 | 0 | 0 | 8 | 0 | 9
+INPUTP | 1 | 197
+EQ | 15 | 
+   CLOCK/s_cnt<6> := srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<5> & CLOCK/s_cnt<6>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & !CLOCK/s_cnt<2> & !N_PZ_328 & !CLOCK/s_cnt<3> & 
+	!CLOCK/s_cnt<4> & CLOCK/s_cnt<6>
+	# srst_n_i & !CLOCK/s_cnt<10> & !CLOCK/s_cnt<11> & 
+	!CLOCK/s_cnt<12> & !CLOCK/s_cnt<13> & !CLOCK/s_cnt<14> & 
+	!CLOCK/s_cnt<7> & !CLOCK/s_cnt<8> & !CLOCK/s_cnt<9> & 
+	!CLOCK/s_cnt<15> & CLOCK/s_cnt<5> & CLOCK/s_cnt<2> & N_PZ_328 & 
+	CLOCK/s_cnt<3> & CLOCK/s_cnt<4> & !CLOCK/s_cnt<6>;	// (3 pt, 16 inp)
+   CLOCK/s_cnt<6>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 2 | dig_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | s_cnt<1>  | s_cnt<0>
+INPUTMC | 2 | 0 | 12 | 0 | 13
+EQ | 1 | 
+   !dig_o<1> = s_cnt<1> & !s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 2 | 4 | dig_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | s_cnt<1>  | s_cnt<0>
+INPUTMC | 2 | 0 | 12 | 0 | 13
+EQ | 1 | 
+   !dig_o<2> = !s_cnt<1> & s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 2 | 13 | dig_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | s_cnt<1>  | s_cnt<0>
+INPUTMC | 2 | 0 | 12 | 0 | 13
+EQ | 1 | 
+   !dig_o<3> = !s_cnt<1> & !s_cnt<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 11 | seg_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 16 | N_PZ_299  | N_PZ_395  | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<2>  | data0_i<3>  | data1_i<1>  | data1_i<2>  | data1_i<3>  | data2_i<1>  | data2_i<2>  | data2_i<3>  | data3_i<1>  | data3_i<2>  | data3_i<3>
+INPUTMC | 16 | 1 | 15 | 1 | 10 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 8 | 3 | 7 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 3 | 3 | 2 | 3 | 1 | 4 | 15 | 4 | 14 | 4 | 12
+EQ | 18 | 
+   !seg_o<0> = N_PZ_299
+	# N_PZ_395
+	# s_cnt<1> & s_cnt<0> & data0_i<1> & !data0_i<2> & 
+	!data0_i<3>
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & data0_i<2> & 
+	!data0_i<3>
+	# s_cnt<1> & !s_cnt<0> & data1_i<1> & !data1_i<2> & 
+	!data1_i<3>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & data1_i<2> & 
+	!data1_i<3>
+	# !s_cnt<1> & s_cnt<0> & data2_i<1> & !data2_i<2> & 
+	!data2_i<3>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & data2_i<2> & 
+	!data2_i<3>
+	# !s_cnt<1> & !s_cnt<0> & data3_i<1> & !data3_i<2> & 
+	!data3_i<3>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & data3_i<2> & 
+	!data3_i<3>;	// (10 pt, 16 inp)
+
+MACROCELL | 3 | 15 | data0_i<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_l_o<1>
+INPUTMC | 1 | 0 | 5
+EQ | 2 | 
+   data0_i<1> := STOPWATCH/cnt_hth_l_o<1>;	// (1 pt, 1 inp)
+   data0_i<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 5 | STOPWATCH/cnt_hth_l_o<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5 | 3 | 15
+INPUTS | 7 | srst_n_i  | STOPWATCH/cnt_hth_l_o<1>  | s_en  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_hth_l_o<3>
+INPUTMC | 6 | 0 | 5 | 0 | 10 | 2 | 6 | 2 | 12 | 0 | 11 | 2 | 8
+INPUTP | 1 | 197
+EQ | 8 | 
+   STOPWATCH/cnt_hth_l_o<1>.T := !srst_n_i & STOPWATCH/cnt_hth_l_o<1>
+	# s_en & STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_en
+	# srst_n_i & s_en & STOPWATCH/cnt_hth_l_o<0> & 
+	STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en
+	# srst_n_i & s_en & STOPWATCH/cnt_hth_l_o<0> & 
+	STOPWATCH/cnt_en & !STOPWATCH/cnt_hth_l_o<3>;	// (4 pt, 7 inp)
+   STOPWATCH/cnt_hth_l_o<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 6 | STOPWATCH/cnt_hth_l_o<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5 | 2 | 11
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_hth_l_o<0>  | s_en  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<3>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 18 | 2 | 6 | 0 | 10 | 2 | 12 | 0 | 5 | 2 | 7 | 2 | 5 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 8 | 0 | 3 | 3 | 9 | 2 | 9 | 3 | 12 | 2 | 3 | 2 | 10 | 3 | 14 | 3 | 10
+INPUTP | 1 | 197
+EQ | 12 | 
+   STOPWATCH/cnt_hth_l_o<0>.T := !srst_n_i & STOPWATCH/cnt_hth_l_o<0>
+	# srst_n_i & s_en & STOPWATCH/cnt_en
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (3 pt, 19 inp)
+   STOPWATCH/cnt_hth_l_o<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 7 | STOPWATCH/cnt_hth_h_o<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 6
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_hth_h_o<0>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<3>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 18 | 2 | 7 | 0 | 10 | 0 | 5 | 2 | 6 | 0 | 11 | 2 | 12 | 2 | 8 | 2 | 5 | 2 | 15 | 0 | 2 | 0 | 3 | 3 | 9 | 2 | 9 | 3 | 12 | 2 | 3 | 2 | 10 | 3 | 14 | 3 | 10
+INPUTP | 1 | 197
+EQ | 14 | 
+   STOPWATCH/cnt_hth_h_o<0>.T := !srst_n_i & STOPWATCH/cnt_hth_h_o<0>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (3 pt, 19 inp)
+   STOPWATCH/cnt_hth_h_o<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 5 | STOPWATCH/cnt_sec_h_o<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 0
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_sec_h_o<0>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_l_o<3>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_h_o<3>
+INPUTMC | 18 | 2 | 5 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 2 | 9 | 3 | 12 | 2 | 10 | 3 | 10 | 3 | 9 | 2 | 3 | 3 | 14
+INPUTP | 1 | 197
+EQ | 18 | 
+   STOPWATCH/cnt_sec_h_o<0>.T := !srst_n_i & STOPWATCH/cnt_sec_h_o<0>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & !STOPWATCH/cnt_sec_l_o<2> & 
+	STOPWATCH/cnt_sec_l_o<3>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (3 pt, 19 inp)
+   STOPWATCH/cnt_sec_h_o<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 15 | STOPWATCH/cnt_sec_l_o<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 4
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_sec_l_o<0>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<3>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 18 | 2 | 15 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 3 | 12 | 2 | 5 | 3 | 9 | 2 | 9 | 2 | 3 | 2 | 10 | 3 | 14 | 3 | 10
+INPUTP | 1 | 197
+EQ | 16 | 
+   STOPWATCH/cnt_sec_l_o<0>.T := !srst_n_i & STOPWATCH/cnt_sec_l_o<0>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	STOPWATCH/cnt_hth_h_o<3>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (3 pt, 19 inp)
+   STOPWATCH/cnt_sec_l_o<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 2 | STOPWATCH/cnt_hth_h_o<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 13
+INPUTS | 11 | srst_n_i  | STOPWATCH/cnt_hth_h_o<1>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_hth_h_o<3>
+INPUTMC | 10 | 0 | 2 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 3 | 12
+INPUTP | 1 | 197
+EQ | 14 | 
+   STOPWATCH/cnt_hth_h_o<1>.T := !srst_n_i & STOPWATCH/cnt_hth_h_o<1>
+	# s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	STOPWATCH/cnt_hth_h_o<2>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<3>;	// (4 pt, 11 inp)
+   STOPWATCH/cnt_hth_h_o<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 11 | STOPWATCH/cnt_hth_l_o<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5 | 3 | 8
+INPUTS | 6 | srst_n_i  | STOPWATCH/cnt_hth_l_o<2>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_en
+INPUTMC | 5 | 0 | 11 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 12
+INPUTP | 1 | 197
+EQ | 4 | 
+   STOPWATCH/cnt_hth_l_o<2>.T := !srst_n_i & STOPWATCH/cnt_hth_l_o<2>
+	# srst_n_i & s_en & STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_en;	// (2 pt, 6 inp)
+   STOPWATCH/cnt_hth_l_o<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 12 | STOPWATCH/cnt_en_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 16 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5
+INPUTS | 1 | cnt_en_i
+INPUTP | 1 | 15
+EQ | 2 | 
+   STOPWATCH/cnt_en := !cnt_en_i;	// (1 pt, 1 inp)
+   STOPWATCH/cnt_en.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 8 | STOPWATCH/cnt_hth_l_o<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 16 | 2 | 8 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5 | 3 | 7
+INPUTS | 19 | STOPWATCH/cnt_hth_l_o<3>  | srst_n_i  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<3>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 18 | 2 | 8 | 0 | 10 | 0 | 5 | 2 | 6 | 0 | 11 | 2 | 12 | 2 | 7 | 2 | 5 | 2 | 15 | 0 | 2 | 0 | 3 | 3 | 9 | 2 | 9 | 3 | 12 | 2 | 3 | 2 | 10 | 3 | 14 | 3 | 10
+INPUTP | 1 | 197
+EQ | 17 | 
+   !STOPWATCH/cnt_hth_l_o<3> := !STOPWATCH/cnt_hth_l_o<3>
+	$ !srst_n_i & STOPWATCH/cnt_hth_l_o<3>
+	# srst_n_i & s_en & STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en
+	# s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (5 pt, 19 inp)
+   STOPWATCH/cnt_hth_l_o<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 3 | STOPWATCH/cnt_hth_h_o<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 11
+INPUTS | 10 | srst_n_i  | STOPWATCH/cnt_hth_h_o<2>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>
+INPUTMC | 9 | 0 | 3 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8
+INPUTP | 1 | 197
+EQ | 6 | 
+   STOPWATCH/cnt_hth_h_o<2>.T := !srst_n_i & STOPWATCH/cnt_hth_h_o<2>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3>;	// (2 pt, 10 inp)
+   STOPWATCH/cnt_hth_h_o<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 9 | STOPWATCH/cnt_sec_h_o<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 4 | 15
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_sec_h_o<1>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_l_o<3>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_h_o<3>
+INPUTMC | 18 | 3 | 9 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 5 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 2 | 9 | 3 | 12 | 2 | 10 | 3 | 10 | 2 | 3 | 3 | 14
+INPUTP | 1 | 197
+EQ | 26 | 
+   STOPWATCH/cnt_sec_h_o<1>.T := !srst_n_i & STOPWATCH/cnt_sec_h_o<1>
+	# s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & !STOPWATCH/cnt_sec_l_o<2> & 
+	STOPWATCH/cnt_sec_l_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<1> & STOPWATCH/cnt_hth_h_o<3> & 
+	!STOPWATCH/cnt_sec_h_o<2> & !STOPWATCH/cnt_sec_l_o<2> & 
+	STOPWATCH/cnt_sec_l_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<1> & STOPWATCH/cnt_hth_h_o<3> & 
+	!STOPWATCH/cnt_sec_l_o<2> & STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (4 pt, 19 inp)
+   STOPWATCH/cnt_sec_h_o<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 9 | STOPWATCH/cnt_sec_l_o<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 3
+INPUTS | 15 | srst_n_i  | STOPWATCH/cnt_sec_l_o<1>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 14 | 2 | 9 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 3 | 12 | 2 | 10 | 3 | 10
+INPUTP | 1 | 197
+EQ | 20 | 
+   STOPWATCH/cnt_sec_l_o<1>.T := !srst_n_i & STOPWATCH/cnt_sec_l_o<1>
+	# s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & STOPWATCH/cnt_hth_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<2>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & STOPWATCH/cnt_hth_h_o<3> & 
+	!STOPWATCH/cnt_sec_l_o<3>;	// (4 pt, 15 inp)
+   STOPWATCH/cnt_sec_l_o<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 12 | STOPWATCH/cnt_hth_h_o<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 5
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_hth_h_o<3>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<3>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 18 | 3 | 12 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 2 | 5 | 2 | 15 | 3 | 9 | 2 | 9 | 2 | 3 | 2 | 10 | 3 | 14 | 3 | 10
+INPUTP | 1 | 197
+EQ | 20 | 
+   STOPWATCH/cnt_hth_h_o<3>.T := !srst_n_i & STOPWATCH/cnt_hth_h_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & STOPWATCH/cnt_hth_h_o<2>
+	# s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	STOPWATCH/cnt_hth_h_o<3>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (4 pt, 19 inp)
+   STOPWATCH/cnt_hth_h_o<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 3 | STOPWATCH/cnt_sec_h_o<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 4 | 14
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<3>  | STOPWATCH/cnt_sec_l_o<3>  | s_en  | STOPWATCH/cnt_en
+INPUTMC | 18 | 2 | 3 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 5 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 8 | 0 | 3 | 3 | 9 | 2 | 9 | 3 | 12 | 2 | 10 | 3 | 14 | 3 | 10 | 0 | 10 | 2 | 12
+INPUTP | 1 | 197
+EQ | 19 | 
+   STOPWATCH/cnt_sec_h_o<2>.T := !srst_n_i & STOPWATCH/cnt_sec_h_o<2>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & !STOPWATCH/cnt_sec_l_o<2> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (3 pt, 19 inp)
+   STOPWATCH/cnt_sec_h_o<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 10 | STOPWATCH/cnt_sec_l_o<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 2
+INPUTS | 14 | srst_n_i  | STOPWATCH/cnt_sec_l_o<2>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>
+INPUTMC | 13 | 2 | 10 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 2 | 9 | 3 | 12
+INPUTP | 1 | 197
+EQ | 8 | 
+   STOPWATCH/cnt_sec_l_o<2>.T := !srst_n_i & STOPWATCH/cnt_sec_l_o<2>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3>;	// (2 pt, 14 inp)
+   STOPWATCH/cnt_sec_l_o<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 14 | STOPWATCH/cnt_sec_h_o<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 4 | 12
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_sec_h_o<3>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 18 | 3 | 14 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 5 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 3 | 9 | 2 | 9 | 3 | 12 | 2 | 3 | 2 | 10 | 3 | 10
+INPUTP | 1 | 197
+EQ | 10 | 
+   STOPWATCH/cnt_sec_h_o<3>.T := !srst_n_i & STOPWATCH/cnt_sec_h_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & STOPWATCH/cnt_sec_l_o<3>;	// (2 pt, 19 inp)
+   STOPWATCH/cnt_sec_h_o<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 10 | STOPWATCH/cnt_sec_l_o<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 12 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 3 | 1
+INPUTS | 19 | srst_n_i  | STOPWATCH/cnt_sec_l_o<3>  | s_en  | STOPWATCH/cnt_hth_l_o<1>  | STOPWATCH/cnt_hth_l_o<0>  | STOPWATCH/cnt_hth_h_o<0>  | STOPWATCH/cnt_sec_l_o<0>  | STOPWATCH/cnt_hth_h_o<1>  | STOPWATCH/cnt_hth_l_o<2>  | STOPWATCH/cnt_en  | STOPWATCH/cnt_hth_l_o<3>  | STOPWATCH/cnt_hth_h_o<2>  | STOPWATCH/cnt_sec_l_o<1>  | STOPWATCH/cnt_hth_h_o<3>  | STOPWATCH/cnt_sec_l_o<2>  | STOPWATCH/cnt_sec_h_o<0>  | STOPWATCH/cnt_sec_h_o<1>  | STOPWATCH/cnt_sec_h_o<2>  | STOPWATCH/cnt_sec_h_o<3>
+INPUTMC | 18 | 3 | 10 | 0 | 10 | 0 | 5 | 2 | 6 | 2 | 7 | 2 | 15 | 0 | 2 | 0 | 11 | 2 | 12 | 2 | 8 | 0 | 3 | 2 | 9 | 3 | 12 | 2 | 10 | 2 | 5 | 3 | 9 | 2 | 3 | 3 | 14
+INPUTP | 1 | 197
+EQ | 24 | 
+   STOPWATCH/cnt_sec_l_o<3>.T := !srst_n_i & STOPWATCH/cnt_sec_l_o<3>
+	# srst_n_i & s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_l_o<2>
+	# s_en & !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_l_o<0> & !STOPWATCH/cnt_hth_h_o<1> & 
+	!STOPWATCH/cnt_hth_l_o<2> & STOPWATCH/cnt_en & STOPWATCH/cnt_hth_l_o<3> & 
+	!STOPWATCH/cnt_hth_h_o<2> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & !STOPWATCH/cnt_sec_l_o<2> & 
+	STOPWATCH/cnt_sec_l_o<3>
+	# !STOPWATCH/cnt_hth_l_o<1> & 
+	STOPWATCH/cnt_hth_l_o<0> & STOPWATCH/cnt_hth_h_o<0> & 
+	STOPWATCH/cnt_sec_h_o<0> & STOPWATCH/cnt_sec_l_o<0> & 
+	!STOPWATCH/cnt_hth_h_o<1> & !STOPWATCH/cnt_hth_l_o<2> & 
+	STOPWATCH/cnt_hth_l_o<3> & !STOPWATCH/cnt_hth_h_o<2> & 
+	!STOPWATCH/cnt_sec_h_o<1> & !STOPWATCH/cnt_sec_l_o<1> & 
+	STOPWATCH/cnt_hth_h_o<3> & STOPWATCH/cnt_sec_h_o<2> & 
+	!STOPWATCH/cnt_sec_l_o<2> & !STOPWATCH/cnt_sec_h_o<3> & 
+	STOPWATCH/cnt_sec_l_o<3>;	// (4 pt, 19 inp)
+   STOPWATCH/cnt_sec_l_o<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 8 | data0_i<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_l_o<2>
+INPUTMC | 1 | 0 | 11
+EQ | 2 | 
+   data0_i<2> := STOPWATCH/cnt_hth_l_o<2>;	// (1 pt, 1 inp)
+   data0_i<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 7 | data0_i<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_l_o<3>
+INPUTMC | 1 | 2 | 8
+EQ | 2 | 
+   data0_i<3> := STOPWATCH/cnt_hth_l_o<3>;	// (1 pt, 1 inp)
+   data0_i<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 13 | data1_i<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_h_o<1>
+INPUTMC | 1 | 0 | 2
+EQ | 2 | 
+   data1_i<1> := STOPWATCH/cnt_hth_h_o<1>;	// (1 pt, 1 inp)
+   data1_i<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 11 | data1_i<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_h_o<2>
+INPUTMC | 1 | 0 | 3
+EQ | 2 | 
+   data1_i<2> := STOPWATCH/cnt_hth_h_o<2>;	// (1 pt, 1 inp)
+   data1_i<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 5 | data1_i<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_h_o<3>
+INPUTMC | 1 | 3 | 12
+EQ | 2 | 
+   data1_i<3> := STOPWATCH/cnt_hth_h_o<3>;	// (1 pt, 1 inp)
+   data1_i<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 3 | data2_i<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_l_o<1>
+INPUTMC | 1 | 2 | 9
+EQ | 2 | 
+   data2_i<1> := STOPWATCH/cnt_sec_l_o<1>;	// (1 pt, 1 inp)
+   data2_i<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 2 | data2_i<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_l_o<2>
+INPUTMC | 1 | 2 | 10
+EQ | 2 | 
+   data2_i<2> := STOPWATCH/cnt_sec_l_o<2>;	// (1 pt, 1 inp)
+   data2_i<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 1 | data2_i<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_l_o<3>
+INPUTMC | 1 | 3 | 10
+EQ | 2 | 
+   data2_i<3> := STOPWATCH/cnt_sec_l_o<3>;	// (1 pt, 1 inp)
+   data2_i<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 15 | data3_i<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_h_o<1>
+INPUTMC | 1 | 3 | 9
+EQ | 2 | 
+   data3_i<1> := STOPWATCH/cnt_sec_h_o<1>;	// (1 pt, 1 inp)
+   data3_i<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 14 | data3_i<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 11 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_h_o<2>
+INPUTMC | 1 | 2 | 3
+EQ | 2 | 
+   data3_i<2> := STOPWATCH/cnt_sec_h_o<2>;	// (1 pt, 1 inp)
+   data3_i<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 12 | data3_i<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 8 | 1 | 15 | 1 | 10 | 1 | 11 | 1 | 2 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_h_o<3>
+INPUTMC | 1 | 3 | 14
+EQ | 2 | 
+   data3_i<3> := STOPWATCH/cnt_sec_h_o<3>;	// (1 pt, 1 inp)
+   data3_i<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 15 | N_PZ_299_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 1 | 11 | 1 | 2 | 1 | 0 | 1 | 3 | 1 | 4
+INPUTS | 14 | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<2>  | data0_i<3>  | data1_i<1>  | data1_i<2>  | data1_i<3>  | data2_i<1>  | data2_i<2>  | data2_i<3>  | data3_i<1>  | data3_i<2>  | data3_i<3>
+INPUTMC | 14 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 8 | 3 | 7 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 3 | 3 | 2 | 3 | 1 | 4 | 15 | 4 | 14 | 4 | 12
+EQ | 8 | 
+   N_PZ_299 = s_cnt<1> & s_cnt<0> & !data0_i<1> & !data0_i<2> & 
+	data0_i<3>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & !data1_i<2> & 
+	data1_i<3>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & !data2_i<2> & 
+	data2_i<3>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & !data3_i<2> & 
+	data3_i<3>;	// (4 pt, 14 inp)
+
+MACROCELL | 1 | 10 | N_PZ_395_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 1 | 11 | 1 | 12 | 1 | 0
+INPUTS | 14 | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<3>  | data0_i<0>  | data1_i<1>  | data1_i<3>  | data1_i<0>  | data2_i<1>  | data2_i<3>  | data2_i<0>  | data3_i<1>  | data3_i<3>  | data3_i<0>
+INPUTMC | 14 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 7 | 2 | 11 | 3 | 13 | 3 | 5 | 3 | 6 | 3 | 3 | 3 | 1 | 3 | 4 | 4 | 15 | 4 | 12 | 3 | 0
+EQ | 8 | 
+   N_PZ_395 = s_cnt<1> & s_cnt<0> & data0_i<1> & !data0_i<3> & 
+	!data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & data1_i<1> & !data1_i<3> & 
+	!data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & data2_i<1> & !data2_i<3> & 
+	!data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & data3_i<1> & !data3_i<3> & 
+	!data3_i<0>;	// (4 pt, 14 inp)
+
+MACROCELL | 2 | 11 | data0_i<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 1 | 10 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_l_o<0>
+INPUTMC | 1 | 2 | 6
+EQ | 2 | 
+   data0_i<0> := STOPWATCH/cnt_hth_l_o<0>;	// (1 pt, 1 inp)
+   data0_i<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 6 | data1_i<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 1 | 10 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_hth_h_o<0>
+INPUTMC | 1 | 2 | 7
+EQ | 2 | 
+   data1_i<0> := STOPWATCH/cnt_hth_h_o<0>;	// (1 pt, 1 inp)
+   data1_i<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 4 | data2_i<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 1 | 10 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_l_o<0>
+INPUTMC | 1 | 2 | 15
+EQ | 2 | 
+   data2_i<0> := STOPWATCH/cnt_sec_l_o<0>;	// (1 pt, 1 inp)
+   data2_i<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 0 | data3_i<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 7 | 1 | 10 | 1 | 2 | 1 | 12 | 1 | 0 | 2 | 0 | 1 | 3 | 1 | 4
+INPUTS | 1 | STOPWATCH/cnt_sec_h_o<0>
+INPUTMC | 1 | 2 | 5
+EQ | 2 | 
+   data3_i<0> := STOPWATCH/cnt_sec_h_o<0>;	// (1 pt, 1 inp)
+   data3_i<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 2 | seg_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 19 | N_PZ_299  | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<2>  | data0_i<3>  | data0_i<0>  | data1_i<1>  | data1_i<2>  | data1_i<3>  | data1_i<0>  | data2_i<1>  | data2_i<2>  | data2_i<3>  | data2_i<0>  | data3_i<1>  | data3_i<2>  | data3_i<3>  | data3_i<0>
+INPUTMC | 19 | 1 | 15 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 8 | 3 | 7 | 2 | 11 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 6 | 3 | 3 | 3 | 2 | 3 | 1 | 3 | 4 | 4 | 15 | 4 | 14 | 4 | 12 | 3 | 0
+EQ | 25 | 
+   !seg_o<1> = N_PZ_299
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & data0_i<2> & 
+	!data0_i<3>
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & !data0_i<2> & 
+	!data0_i<0>
+	# s_cnt<1> & s_cnt<0> & data0_i<2> & !data0_i<3> & 
+	!data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & data1_i<2> & 
+	!data1_i<3>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & !data1_i<2> & 
+	!data1_i<0>
+	# s_cnt<1> & !s_cnt<0> & data1_i<2> & !data1_i<3> & 
+	!data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & data2_i<2> & 
+	!data2_i<3>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & !data2_i<2> & 
+	!data2_i<0>
+	# !s_cnt<1> & s_cnt<0> & data2_i<2> & !data2_i<3> & 
+	!data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & data3_i<2> & 
+	!data3_i<3>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & !data3_i<2> & 
+	!data3_i<0>
+	# !s_cnt<1> & !s_cnt<0> & data3_i<2> & !data3_i<3> & 
+	!data3_i<0>;	// (13 pt, 19 inp)
+
+MACROCELL | 1 | 12 | seg_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 15 | N_PZ_395  | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<2>  | data0_i<0>  | data1_i<1>  | data1_i<2>  | data1_i<0>  | data2_i<1>  | data2_i<2>  | data2_i<0>  | data3_i<1>  | data3_i<2>  | data3_i<0>
+INPUTMC | 15 | 1 | 10 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 8 | 2 | 11 | 3 | 13 | 3 | 11 | 3 | 6 | 3 | 3 | 3 | 2 | 3 | 4 | 4 | 15 | 4 | 14 | 3 | 0
+EQ | 9 | 
+   !seg_o<2> = N_PZ_395
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & !data0_i<2> & 
+	!data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & !data1_i<2> & 
+	!data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & !data2_i<2> & 
+	!data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & !data3_i<2> & 
+	!data3_i<0>;	// (5 pt, 15 inp)
+
+MACROCELL | 1 | 0 | seg_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 20 | N_PZ_299  | N_PZ_395  | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<2>  | data0_i<3>  | data0_i<0>  | data1_i<1>  | data1_i<2>  | data1_i<3>  | data1_i<0>  | data2_i<1>  | data2_i<2>  | data2_i<3>  | data2_i<0>  | data3_i<1>  | data3_i<2>  | data3_i<3>  | data3_i<0>
+INPUTMC | 20 | 1 | 15 | 1 | 10 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 8 | 3 | 7 | 2 | 11 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 6 | 3 | 3 | 3 | 2 | 3 | 1 | 3 | 4 | 4 | 15 | 4 | 14 | 4 | 12 | 3 | 0
+EQ | 26 | 
+   !seg_o<3> = N_PZ_299
+	# N_PZ_395
+	# s_cnt<1> & s_cnt<0> & data0_i<1> & !data0_i<2> & 
+	!data0_i<3>
+	# s_cnt<1> & s_cnt<0> & !data0_i<2> & !data0_i<3> & 
+	!data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & data1_i<1> & !data1_i<2> & 
+	!data1_i<3>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<2> & !data1_i<3> & 
+	!data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & data2_i<1> & !data2_i<2> & 
+	!data2_i<3>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<2> & !data2_i<3> & 
+	!data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & data3_i<1> & !data3_i<2> & 
+	!data3_i<3>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<2> & !data3_i<3> & 
+	!data3_i<0>
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & data0_i<2> & 
+	!data0_i<3> & data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & data1_i<2> & 
+	!data1_i<3> & data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & data2_i<2> & 
+	!data2_i<3> & data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & data3_i<2> & 
+	!data3_i<3> & data3_i<0>;	// (14 pt, 20 inp)
+
+MACROCELL | 2 | 0 | seg_o<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 18 | s_cnt<1>  | s_cnt<0>  | data0_i<1>  | data0_i<2>  | data0_i<3>  | data0_i<0>  | data1_i<1>  | data1_i<2>  | data1_i<3>  | data1_i<0>  | data2_i<1>  | data2_i<2>  | data2_i<3>  | data2_i<0>  | data3_i<1>  | data3_i<2>  | data3_i<3>  | data3_i<0>
+INPUTMC | 18 | 0 | 12 | 0 | 13 | 3 | 15 | 3 | 8 | 3 | 7 | 2 | 11 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 6 | 3 | 3 | 3 | 2 | 3 | 1 | 3 | 4 | 4 | 15 | 4 | 14 | 4 | 12 | 3 | 0
+EQ | 12 | 
+   !seg_o<4> = s_cnt<1> & s_cnt<0> & !data0_i<1> & !data0_i<2>
+	# s_cnt<1> & s_cnt<0> & data0_i<2> & !data0_i<3>
+	# s_cnt<1> & s_cnt<0> & !data0_i<3> & data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & !data1_i<2>
+	# s_cnt<1> & !s_cnt<0> & data1_i<2> & !data1_i<3>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<3> & data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & !data2_i<2>
+	# !s_cnt<1> & s_cnt<0> & data2_i<2> & !data2_i<3>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<3> & data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & !data3_i<2>
+	# !s_cnt<1> & !s_cnt<0> & data3_i<2> & !data3_i<3>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<3> & data3_i<0>;	// (12 pt, 18 inp)
+
+MACROCELL | 1 | 3 | seg_o<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 19 | s_cnt<1>  | s_cnt<0>  | data0_i<3>  | N_PZ_299  | data1_i<3>  | data2_i<3>  | data3_i<3>  | data0_i<1>  | data0_i<2>  | data0_i<0>  | data1_i<1>  | data1_i<2>  | data1_i<0>  | data2_i<1>  | data2_i<2>  | data2_i<0>  | data3_i<1>  | data3_i<2>  | data3_i<0>
+INPUTMC | 19 | 0 | 12 | 0 | 13 | 3 | 7 | 1 | 15 | 3 | 5 | 3 | 1 | 4 | 12 | 3 | 15 | 3 | 8 | 2 | 11 | 3 | 13 | 3 | 11 | 3 | 6 | 3 | 3 | 3 | 2 | 3 | 4 | 4 | 15 | 4 | 14 | 3 | 0
+EQ | 20 | 
+   seg_o<5> = s_cnt<1> & s_cnt<0> & data0_i<3> & !N_PZ_299
+	# s_cnt<1> & !s_cnt<0> & data1_i<3> & !N_PZ_299
+	# !s_cnt<1> & s_cnt<0> & data2_i<3> & !N_PZ_299
+	# !s_cnt<1> & !s_cnt<0> & data3_i<3> & !N_PZ_299
+	# s_cnt<1> & s_cnt<0> & data0_i<1> & data0_i<2> & 
+	!N_PZ_299 & !data0_i<0>
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & data0_i<2> & 
+	!N_PZ_299 & data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & data1_i<1> & data1_i<2> & 
+	!N_PZ_299 & !data1_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & data1_i<2> & 
+	!N_PZ_299 & data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & data2_i<1> & data2_i<2> & 
+	!N_PZ_299 & !data2_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & data2_i<2> & 
+	!N_PZ_299 & data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & data3_i<1> & data3_i<2> & 
+	!N_PZ_299 & !data3_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & data3_i<2> & 
+	!N_PZ_299 & data3_i<0>;	// (12 pt, 19 inp)
+
+MACROCELL | 1 | 4 | seg_o<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 19 | s_cnt<1>  | s_cnt<0>  | data0_i<3>  | N_PZ_299  | data1_i<3>  | data2_i<3>  | data3_i<3>  | data0_i<1>  | data0_i<2>  | data0_i<0>  | data1_i<1>  | data1_i<2>  | data1_i<0>  | data2_i<1>  | data2_i<2>  | data2_i<0>  | data3_i<1>  | data3_i<2>  | data3_i<0>
+INPUTMC | 19 | 0 | 12 | 0 | 13 | 3 | 7 | 1 | 15 | 3 | 5 | 3 | 1 | 4 | 12 | 3 | 15 | 3 | 8 | 2 | 11 | 3 | 13 | 3 | 11 | 3 | 6 | 3 | 3 | 3 | 2 | 3 | 4 | 4 | 15 | 4 | 14 | 3 | 0
+EQ | 20 | 
+   seg_o<6> = s_cnt<1> & s_cnt<0> & data0_i<3> & !N_PZ_299
+	# s_cnt<1> & !s_cnt<0> & data1_i<3> & !N_PZ_299
+	# !s_cnt<1> & s_cnt<0> & data2_i<3> & !N_PZ_299
+	# !s_cnt<1> & !s_cnt<0> & data3_i<3> & !N_PZ_299
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & data0_i<2> & 
+	!N_PZ_299 & !data0_i<0>
+	# s_cnt<1> & s_cnt<0> & !data0_i<1> & !data0_i<2> & 
+	!N_PZ_299 & data0_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & data1_i<2> & 
+	!N_PZ_299 & !data1_i<0>
+	# s_cnt<1> & !s_cnt<0> & !data1_i<1> & !data1_i<2> & 
+	!N_PZ_299 & data1_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & data2_i<2> & 
+	!N_PZ_299 & !data2_i<0>
+	# !s_cnt<1> & s_cnt<0> & !data2_i<1> & !data2_i<2> & 
+	!N_PZ_299 & data2_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & data3_i<2> & 
+	!N_PZ_299 & !data3_i<0>
+	# !s_cnt<1> & !s_cnt<0> & !data3_i<1> & !data3_i<2> & 
+	!N_PZ_299 & data3_i<0>;	// (12 pt, 19 inp)
+
+PIN | clk_i | 8192 | 16 | LVCMOS18 | 50 | 52 | 1 | 9 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 14 | 1 | 13 | 2 | 14 | 1 | 1 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10 | 0 | 13 | 0 | 12 | 2 | 12 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5 | 3 | 15 | 3 | 8 | 3 | 7 | 3 | 13 | 3 | 11 | 3 | 5 | 3 | 3 | 3 | 2 | 3 | 1 | 4 | 15 | 4 | 14 | 4 | 12 | 2 | 11 | 3 | 6 | 3 | 4 | 3 | 0
+PIN | cnt_en_i | 64 | 16 | LVCMOS18 | 15 | 1 | 2 | 12
+PIN | srst_n_i | 64 | 16 | LVCMOS18 | 197 | 26 | 0 | 8 | 0 | 9 | 0 | 15 | 0 | 14 | 0 | 4 | 0 | 7 | 0 | 6 | 0 | 10 | 0 | 13 | 0 | 12 | 0 | 11 | 0 | 3 | 2 | 10 | 3 | 10 | 3 | 14 | 2 | 3 | 3 | 12 | 2 | 9 | 3 | 9 | 2 | 8 | 0 | 2 | 2 | 15 | 2 | 5 | 2 | 7 | 2 | 6 | 0 | 5
+PIN | dig_o<0> | 536871040 | 0 | LVCMOS18 | 207
+PIN | dig_o<1> | 536871040 | 0 | LVCMOS18 | 206
+PIN | dig_o<2> | 536871040 | 0 | LVCMOS18 | 204
+PIN | dig_o<3> | 536871040 | 0 | LVCMOS18 | 199
+PIN | seg_o<0> | 536871040 | 0 | LVCMOS18 | 7
+PIN | seg_o<1> | 536871040 | 0 | LVCMOS18 | 3
+PIN | seg_o<2> | 536871040 | 0 | LVCMOS18 | 8
+PIN | seg_o<3> | 536871040 | 0 | LVCMOS18 | 1
+PIN | seg_o<4> | 536871040 | 0 | LVCMOS18 | 208
+PIN | seg_o<5> | 536871040 | 0 | LVCMOS18 | 4
+PIN | seg_o<6> | 536871040 | 0 | LVCMOS18 | 5

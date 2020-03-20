@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/Desktop/stopwatch/testbench_isim_beh.exe" -prj "/home/ise/Desktop/stopwatch/testbench_beh.prj" "work.testbench" 

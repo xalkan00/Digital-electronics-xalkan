@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/stopwatch/stopwatch.xst" -ofn "/home/ise/Desktop/stopwatch/stopwatch.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 stopwatch.ngc stopwatch.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 stopwatch.ngd 
+XSLTProcess stopwatch_build.xml 
+tsim -intstyle ise stopwatch stopwatch.nga 
+taengine -intstyle ise -f stopwatch -w --format html1 -l stopwatch_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i stopwatch 
+xst -intstyle ise -ifn "/home/ise/Desktop/Digital-electronics-1/Labs/07-stopwatch/stopwatch/stopwatch.xst" -ofn "/home/ise/Desktop/Digital-electronics-1/Labs/07-stopwatch/stopwatch/stopwatch.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 stopwatch.ngc stopwatch.ngd  
+xst -intstyle ise -ifn "/home/ise/Desktop/Digital-electronics-1/Labs/07-stopwatch/stopwatch/stopwatch.xst" -ofn "/home/ise/Desktop/Digital-electronics-1/Labs/07-stopwatch/stopwatch/stopwatch.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 stopwatch.ngc stopwatch.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 stopwatch.ngd 
+tsim -intstyle ise stopwatch stopwatch.nga 
+hprep6 -s IEEE1149 -i stopwatch 

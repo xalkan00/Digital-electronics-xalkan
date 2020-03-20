@@ -1,0 +1,2 @@
+vhdl isim_temp "stopwatch.vhd"
+vhdl isim_temp "testbench.vhd"

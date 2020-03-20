@@ -3,67 +3,91 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity stopwatch is
+
 port(
-     hth_l_o : out std_logic_vector(4-1 downto 0); --setiny sekundy
-     hth_h_o : out std_logic_vector(4-1 downto 0); --desetiny sekundy
-     sec_l_o : out std_logic_vector(4-1 downto 0); --sekundy
-     sec_h_o : out std_logic_vector(4-1 downto 0); --desítky sekund
-        
-     clk_i    : in  std_logic;   -- clock
-     srst_n_i : in  std_logic;   -- Synchronous reset (active low)
-   ce_100Hz_i : in  std_logic;   -- clock enable
-     cnt_en_i : in  std_logic    -- stopwatch enable
-    );
+    clk_i       : in std_logic;
+    ce_100Hz_i  : in std_logic;
+    srst_n_i    : in std_logic;
+    cnt_en_i    : in std_logic; 
+  
+    sec_h_o     : out unsigned (4-1 downto 0); --desitky sekund
+    sec_l_o     : out unsigned (4-1 downto 0); --sekundy
+    hth_h_o     : out unsigned (4-1 downto 0); --desetiny sekundy
+    hth_l_o     : out unsigned (4-1 downto 0)  --setiny sekundy
+	);
 end entity stopwatch;
 
 architecture Behavioral of stopwatch is
-    signal s_cnt0 : unsigned(4-1 downto 0) := (others => '0');
- --   ...
-begin
-    stopwatch_0 : process (clk_i)
-begin
-    if rising_edge(clk_i) then
-        
-        if srst_n_i = '0' then
-                s_cnt0 <= 0;
-                hth_l_o <= 0;
-                hth_h_o <= 0;
-                sec_l_o <= 0;
-                sec_h_o <= 0;
-else
-    if s_cnt0 = ce_100Hz_i - 1 then
-    Ticks <= 0;
-        else
-            s_cnt0 <= s_cnt0 + 1;
-        end if;
-
-    if hth_l_o = 9 then
-    hth_l_o <= 0;
-        else
-            hth_l_o <= hth_l_o + 1;
-        end if;
-
-    if hth_h_o = 9 then
-    hth_h_o <= 0;
-        else
-            hth_h_o <= hth_h_o + 1;
-        end if;
-            
-    if sec_l_o = 9 then
-    sec_l_o <= 0;
-        else
-            sec_l_o <= sec_l_o + 1;
-        end if;
     
-    if sec_h_o = 5 then
-    sec_h_o <= 0;
-        else
-            sec_h_o <= sec_h_o + 1;
-        end if;
+	signal cnt_sec_h_o  : unsigned (3 downto 0) := (others => '0');
+	signal cnt_sec_l_o  : unsigned (3 downto 0) := (others => '0');
+	signal cnt_hth_h_o  : unsigned (3 downto 0) := (others => '0');
+	signal cnt_hth_l_o  : unsigned (3 downto 0) := (others => '0');
+   	signal cnt_en       : std_logic;
 
-    end if;
-    end if;
-    end process stopwatch_0;
+begin
+     
+p_assign: process(clk_i)
+begin
+	if rising_edge(clk_i) 
+		then 
             
-    hth_l_o <= std_logic_vector(s_cnt0);
+    hth_l_o <= unsigned(cnt_hth_l_o);
+    hth_h_o <= unsigned(cnt_hth_h_o);
+    sec_l_o <= unsigned(cnt_sec_l_o);
+    sec_h_o <= unsigned(cnt_sec_h_o);
+            
+		if cnt_en_i = '1' 
+   		then
+        	cnt_en <=	'0';
+		else
+			cnt_en <=	'1';
+    end if;
+end if;
+end process; 
+            
+    p_cnt: process(clk_i, srst_n_i, cnt_en, cnt_sec_h_o, cnt_sec_l_o, cnt_hth_h_o, cnt_hth_l_o)
+   begin    
+	if rising_edge(clk_i) then    	    
+		if srst_n_i = '0'
+				or (cnt_hth_l_o = 9 
+				and cnt_hth_h_o = 9 
+				and cnt_sec_l_o = 9 
+				and cnt_sec_h_o = 5
+            	)
+			then
+				cnt_sec_h_o <= (others => '0');  
+         	cnt_sec_l_o <= (others => '0');
+        		cnt_hth_h_o <= (others => '0');
+				cnt_hth_l_o <= (others => '0'
+                );
+                
+		elsif cnt_en = '1' 
+			and ce_100Hz_i = '1' 
+			then
+			cnt_hth_l_o <= cnt_hth_l_o + 1;
+                    
+		if cnt_hth_l_o = 9 
+	then
+	cnt_hth_l_o <= (others => '0');
+	cnt_hth_h_o <= cnt_hth_h_o + 1;
+                    
+		if cnt_hth_h_o = 9 
+	then
+	cnt_hth_h_o <= (others => '0');
+	cnt_sec_l_o <= cnt_sec_l_o + 1;
+                            
+		if cnt_sec_l_o = 9 
+	then
+	cnt_sec_l_o <= (others => '0');
+	cnt_sec_h_o <= cnt_sec_h_o + 1;
+                                    
+	end if;
+	end if;
+	end if;
+	end if;
+	end if;
+
+end process; 
+
 end architecture Behavioral;
