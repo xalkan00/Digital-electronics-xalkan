@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/Traffic_lights/traffic_top.xst" -ofn "/home/ise/Desktop/Traffic_lights/traffic_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 traffic_top.ngc traffic_top.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 traffic_top.ngd 
+XSLTProcess traffic_top_build.xml 
+tsim -intstyle ise traffic_top traffic_top.nga 
+taengine -intstyle ise -f traffic_top -w --format html1 -l traffic_top_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i traffic_top 

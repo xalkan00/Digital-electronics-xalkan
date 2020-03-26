@@ -1,0 +1,3 @@
+vhdl work "traffic.vhd"
+vhdl work "../Digital-electronics-1/Labs/06-display_driver/display_driver/clock_enable.vhd"
+vhdl work "traffic_top.vhd"

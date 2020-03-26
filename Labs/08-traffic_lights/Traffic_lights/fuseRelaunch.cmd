@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/Desktop/Traffic_lights/testbench_isim_beh.exe" -prj "/home/ise/Desktop/Traffic_lights/testbench_beh.prj" "work.testbench" 

@@ -1,0 +1,302 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+Reading design: traffic_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "traffic_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "traffic_top"
+Output Format                      : NGC
+Target Device                      : CoolRunner2 CPLDs
+
+---- Source Options
+Top Module Name                    : traffic_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/Desktop/Digital-electronics-1/Labs/06-display_driver/display_driver/clock_enable.vhd" in Library work.
+Entity <clock_enable> compiled.
+Entity <clock_enable> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/Desktop/Traffic_lights/traffic.vhd" in Library work.
+Entity <traffic> compiled.
+Entity <traffic> (Architecture <traffic>) compiled.
+Compiling vhdl file "/home/ise/Desktop/Traffic_lights/traffic_top.vhd" in Library work.
+Entity <traffic_top> compiled.
+Entity <traffic_top> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <traffic_top> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clock_enable> in library <work> (architecture <Behavioral>) with generics.
+	g_NPERIOD = "0000000000000100"
+
+Analyzing hierarchy for entity <traffic> in library <work> (architecture <traffic>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <traffic_top> in library <work> (Architecture <Behavioral>).
+Entity <traffic_top> analyzed. Unit <traffic_top> generated.
+
+Analyzing generic Entity <clock_enable> in library <work> (Architecture <Behavioral>).
+	g_NPERIOD = "0000000000000100"
+Entity <clock_enable> analyzed. Unit <clock_enable> generated.
+
+Analyzing Entity <traffic> in library <work> (Architecture <traffic>).
+Entity <traffic> analyzed. Unit <traffic> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clock_enable>.
+    Related source file is "/home/ise/Desktop/Digital-electronics-1/Labs/06-display_driver/display_driver/clock_enable.vhd".
+    Found 1-bit register for signal <clock_enable_o>.
+    Found 16-bit comparator less for signal <clock_enable_o$cmp_lt0000> created at line 50.
+    Found 16-bit up counter for signal <s_cnt>.
+    Found 16-bit comparator greatequal for signal <s_cnt$cmp_ge0000> created at line 50.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 Comparator(s).
+Unit <clock_enable> synthesized.
+
+
+Synthesizing Unit <traffic>.
+    Related source file is "/home/ise/Desktop/Traffic_lights/traffic.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk_i                     (rising_edge)        |
+    | Reset              | srst_n_i                  (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | stav0                                          |
+    | Power Up State     | stav0                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | automatic                                      |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count$share0000> created at line 36.
+    Found 4-bit comparator less for signal <state$cmp_lt0000> created at line 38.
+    Found 4-bit comparator less for signal <state$cmp_lt0001> created at line 46.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <traffic> synthesized.
+
+
+Synthesizing Unit <traffic_top>.
+    Related source file is "/home/ise/Desktop/Traffic_lights/traffic_top.vhd".
+Unit <traffic_top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 4
+ 16-bit comparator greatequal                          : 1
+ 16-bit comparator less                                : 1
+ 4-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <U2/state/FSM> on signal <state[1:3]> with johnson encoding.
+-------------------
+ State | Encoding
+-------------------
+ stav0 | 000
+ stav1 | 001
+ stav2 | 011
+ stav3 | 111
+ stav4 | 110
+ stav5 | 100
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <traffic_top> ...
+
+Optimizing unit <traffic> ...
+  implementation constraint: INIT=r	 : state_FSM_FFd1
+  implementation constraint: INIT=r	 : state_FSM_FFd2
+  implementation constraint: INIT=r	 : state_FSM_FFd3
+
+Optimizing unit <clock_enable> ...
+  implementation constraint: INIT=r	 : s_cnt_15
+  implementation constraint: INIT=r	 : s_cnt_14
+  implementation constraint: INIT=r	 : s_cnt_0
+  implementation constraint: INIT=r	 : s_cnt_1
+  implementation constraint: INIT=r	 : s_cnt_2
+  implementation constraint: INIT=r	 : s_cnt_3
+  implementation constraint: INIT=r	 : s_cnt_4
+  implementation constraint: INIT=r	 : s_cnt_5
+  implementation constraint: INIT=r	 : s_cnt_6
+  implementation constraint: INIT=r	 : s_cnt_7
+  implementation constraint: INIT=r	 : s_cnt_8
+  implementation constraint: INIT=r	 : s_cnt_9
+  implementation constraint: INIT=r	 : s_cnt_10
+  implementation constraint: INIT=r	 : s_cnt_11
+  implementation constraint: INIT=r	 : s_cnt_12
+  implementation constraint: INIT=r	 : s_cnt_13
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : traffic_top.ngr
+Top Level Output File Name         : traffic_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : CoolRunner2 CPLDs
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 191
+#      AND2                        : 58
+#      AND3                        : 7
+#      AND4                        : 3
+#      AND7                        : 1
+#      AND8                        : 3
+#      INV                         : 80
+#      OR2                         : 21
+#      XOR2                        : 18
+# FlipFlops/Latches                : 24
+#      FD                          : 17
+#      FDC                         : 7
+# IO Buffers                       : 8
+#      IBUF                        : 2
+#      OBUF                        : 6
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 16.83 secs
+ 
+--> 
+
+
+Total memory usage is 613992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

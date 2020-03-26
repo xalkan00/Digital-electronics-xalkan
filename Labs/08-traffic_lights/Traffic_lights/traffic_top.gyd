@@ -1,0 +1,41 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+BTN0<3> S:PIN143
+clk_i S:PIN32
+LD0<2> S:PIN3
+LD0<3> S:PIN4
+LD0<4> S:PIN2
+LD0<5> S:PIN5
+LD0<6> S:PIN6
+LD0<7> S:PIN7
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 U1/s_cnt<5> U1/s_cnt<4> U2/count<3> U2/count<0>
+		 U1/s_cnt<3> U1/s_cnt<9> U1/s_cnt<2> U1/s_cnt<15>
+		 U1/s_cnt<14> U1/s_cnt<13> U1/s_cnt<12> U1/s_cnt<8>
+		 U1/s_cnt<7> U1/s_cnt<6> U1/s_cnt<11> U1/s_cnt<10>
+		
+PARTITION FB2_1 LD0<4> clock_enable_o LD0<2> LD0<3>
+		 LD0<5> U1/s_cnt<1> U1/s_cnt<0> U2/count<2>
+		 U2/count<1> U2/state_FSM_FFd2 U2/state_FSM_FFd3 LD0<6>
+		 LD0<7>
+PARTITION FB2_16 U2/state_FSM_FFd1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

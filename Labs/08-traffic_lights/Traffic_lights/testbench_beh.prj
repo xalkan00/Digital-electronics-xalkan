@@ -1,0 +1,2 @@
+vhdl work "traffic.vhd"
+vhdl work "testbench.vhd"
