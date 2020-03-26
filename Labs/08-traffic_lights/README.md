@@ -1,6 +1,5 @@
 # Lab 8: Traffic light controller
 
-## State diagram
 ![stavy](../../Images/stavy.JPG)
 ## simulace
 ![simulation](../../Images/uloha8_screen.png)
