@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/binary_cnt/top.xst" -ofn "/home/ise/Desktop/binary_cnt/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc2c256-TQ144-6 top.ngc top.ngd  
+cpldfit -intstyle ise -p xc2c256-6-TQ144 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 top.ngd 
+XSLTProcess top_build.xml 
+tsim -intstyle ise top top.nga 
+taengine -intstyle ise -f top -w --format html1 -l top_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i top 
