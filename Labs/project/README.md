@@ -1,5 +1,5 @@
-# Lab 10-13: Project title
-
+# Lab 9-13: Project title
+# Čt 8h: Ultrazvukový měřič vzdálenosti HC-SR04. Výstup na 7segmentovém displeji.
 #### Contents
 
 1. [Introduction](#Introduction)
