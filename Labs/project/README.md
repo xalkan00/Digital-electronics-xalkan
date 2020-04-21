@@ -4,9 +4,8 @@
 
 1. [Introduction](#Introduction)
 2. [Hardware description](#Hardware-description)
-3. [Code description](#Code-description)
-4. [Video](#Video)
-5. [References](#References)
+
+5. [Sources](#Sources)
 
 
 ## Introduction
@@ -19,16 +18,6 @@ TBD
 TBD
 
 
-## Code description
-
-TBD
-
-
-## Video
-
-TBD
-
-
-## References
+## Sources
 
 TBD
