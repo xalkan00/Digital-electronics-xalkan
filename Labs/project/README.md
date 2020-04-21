@@ -27,7 +27,9 @@ Pomocí Arduina aktivujeme signál "TRIG" na měřiči vzdálenosti a to na dobu
 ## Video
 
 https://www.youtube.com/watch?v=ZejQOX69K5M
-<link="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/">
+<link href ="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/">
+
+<meta property="og:url" content="https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/">
 
 ## Sources
 
