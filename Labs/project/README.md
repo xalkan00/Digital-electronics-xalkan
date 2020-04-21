@@ -24,6 +24,9 @@ Pomocí Arduina aktivujeme signál "TRIG" na měřiči vzdálenosti a to na dobu
 
 <img src="https://github.com/xalkan00/Digital-electronics-1/blob/master/Images/funkce_sensor.png" />
 
+## Video
+
+https://www.youtube.com/watch?v=ZejQOX69K5M
 
 ## Sources
 
