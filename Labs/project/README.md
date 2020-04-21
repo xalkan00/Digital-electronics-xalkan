@@ -4,7 +4,8 @@
 
 1. [Introduction](#Introduction)
 2. [Hardware description](#Hardware-description)
-3. [Sources](#Sources)
+3. [Video](#Video)
+4. [Sources](#Sources)
 
 
 
