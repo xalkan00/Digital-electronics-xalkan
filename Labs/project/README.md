@@ -25,6 +25,7 @@ Ultrazvukový měřič vzdálenosti HC-SR04 je založen na vysílaných vlnách,
 Pomocí Arduina aktivujeme signál "TRIG" na měřiči vzdálenosti a to na dobu minimálně 10 μs. Po této aktivaci vyšle modul ultrazvukový signál a čeká na jeho odražení od překážky a zpětné zachycení měřičem. Mezi tím se aktivuje signál "ECHO", jehož délka je pak úměrná vzdálenosti překážky. Signál "ECHO" se deaktivuje po zachycení odraženého signálu měřičem vzdálenosti.
 
 <img src="https://github.com/xalkan00/Digital-electronics-1/blob/master/Images/funkce_sensor.png" />
+
 ## Diagram
 
 <img src="https://github.com/xalkan00/Digital-electronics-1/blob/master/Images/schtop.png" />
