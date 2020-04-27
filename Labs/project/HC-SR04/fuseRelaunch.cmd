@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/Desktop/Digital-electronics-1/Labs/project/Project/driver_7seg_isim_beh.exe" -prj "/home/ise/Desktop/Digital-electronics-1/Labs/project/Project/driver_7seg_beh.prj" "work.driver_7seg" 

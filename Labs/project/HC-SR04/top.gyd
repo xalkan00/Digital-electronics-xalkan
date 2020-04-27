@@ -1,0 +1,71 @@
+Pin Freeze File:  version P.20131013
+
+2C256144 XC2C256-6-TQ144
+clk_i S:PIN32
+pulse_pin S:PIN30
+srst_n_i S:PIN16
+disp_dig_o<0> S:PIN11
+disp_dig_o<1> S:PIN12
+disp_dig_o<2> S:PIN13
+disp_dig_o<3> S:PIN15
+disp_dp S:PIN14
+disp_seg_o<0> S:PIN51
+disp_seg_o<1> S:PIN44
+disp_seg_o<2> S:PIN45
+disp_seg_o<3> S:PIN50
+disp_seg_o<4> S:PIN49
+disp_seg_o<5> S:PIN46
+disp_seg_o<6> S:PIN48
+trigger_pin S:PIN2
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 Driver/s_cnt<0> N_PZ_696 Driver/CL_ENABLE/s_cnt<10> Driver/s_hex<1>
+		 Driver/s_en Driver/s_hex<2> Driver/CL_ENABLE/s_cnt<4> Driver/CL_ENABLE/s_cnt<5>
+		 Driver/CL_ENABLE/s_cnt<3> N_PZ_393 Driver/CL_ENABLE/s_cnt<2> Driver/s_hex<0>
+		 Driver/s_hex<1>1 Driver/s_cnt<1> Driver/CL_ENABLE/s_cnt<1> Driver/CL_ENABLE/s_cnt<0>
+		
+PARTITION FB2_1 trigger_pin Sensor/trigger_gen/cnt_o_s<17> Sensor/trigger_gen/cnt_o_s<10> Sensor/trigger_gen/cnt_o_s<11>
+		 Sensor/trigger_gen/cnt_o_s<12> Sensor/trigger_gen/cnt_o_s<18> Sensor/trigger_gen/cnt_o_s<19> Sensor/trigger_gen/cnt_o_s<20>
+		 Sensor/trigger_gen/cnt_o_s<21> Sensor/trigger_gen/cnt_o_s<22> Sensor/trigger_gen/cnt_o_s<23> Sensor/trigger_gen/cnt_o_s<13>
+		 Sensor/trigger_gen/cnt_o_s<14> Sensor/trigger_gen/cnt_o_s<15> Sensor/trigger_gen/cnt_o_s<16> Sensor/trigger_gen/cnt_o_s<0>
+		
+PARTITION FB3_1 Sensor/distance_calc/pulse_s<7> Sensor/distance_calc/pulse_s<8> Sensor/distance_calc/Mmult_multiplier_mult0000__or0010 Sensor/distance_calc/pulse_s<12>
+		 Sensor/distance_calc/pulse_s<9> Sensor/distance_calc/pulse_s<13> Sensor/distance_calc/pulse_s<14> Sensor/distance_calc/pulse_s<15>
+		 Sensor/distance_calc/pulse_s<16> Sensor/distance_calc/pulse_s<17> Sensor/distance_calc/pulse_s<18> Sensor/distance_calc/pulse_s<19>
+		 Sensor/distance_calc/pulse_s<20> Sensor/distance_calc/pulse_s<10> Sensor/distance_calc/pulse_s<21> Sensor/distance_calc/pulse_s<11>
+		
+PARTITION FB4_1 disp_dig_o<0> disp_dig_o<1> disp_dig_o<2> disp_dp
+		 disp_dig_o<3> Driver/CL_ENABLE/s_cnt<13> N_PZ_544 Sensor/BCD_conv/bcd_11_mux0003
+		 Sensor/BCD_conv/bcd_13_mux0001 Sensor/BCD_conv/bcd_9_mux0003 Sensor/BCD_conv/bcd_14_mux0001 Driver/CL_ENABLE/s_cnt<12>
+		 Sensor/BCD_conv/bcd_12_mux0003 Driver/CL_ENABLE/s_cnt<11> N_PZ_410 Driver/s_hex<3>
+		
+PARTITION FB5_1 Sensor/trigger_gen/cnt_o_s<5> Sensor/distance_calc/pulse_s<0> Sensor/trigger_gen/cnt_o_s<4> Sensor/trigger_gen/cnt_o_s<9>
+		 Sensor/trigger_gen/cnt_o_s<8> Sensor/trigger_gen/cnt_o_s<7> Sensor/trigger_gen/cnt_o_s<3> Sensor/trigger_gen/cnt_o_s<2>
+		 Sensor/trigger_gen/cnt_o_s<1> Driver/CL_ENABLE/s_cnt<9> Driver/CL_ENABLE/s_cnt<8> Driver/CL_ENABLE/s_cnt<7>
+		 Driver/CL_ENABLE/s_cnt<6> Sensor/trigger_gen/cnt_o_s<6> Driver/CL_ENABLE/s_cnt<15> Driver/CL_ENABLE/s_cnt<14>
+		
+PARTITION FB6_3 N_PZ_468
+PARTITION FB6_5 Sensor/distance_o_s<7> Sensor/distance_o_s<6> Sensor/distance_o_s<5> Sensor/distance_o_s<2>
+		 centimeters_s<0> Sensor/distance_o_s<1> Sensor/distance_o_s<3>
+PARTITION FB6_14 N_PZ_650 Sensor/distance_o_s<4> Sensor/distance_o_s<8>
+PARTITION FB7_1 Sensor/BCD_conv/bcd_9_mux0002 N_PZ_395 Sensor/distance_calc/pulse_s<1> Sensor/distance_calc/pulse_s<2>
+		
+PARTITION FB7_7 Sensor/distance_calc/pulse_s<3> Sensor/distance_calc/pulse_s<4> Sensor/distance_calc/pulse_s<5> Sensor/distance_calc/pulse_s<6>
+		 N_PZ_428 N_PZ_563 N_PZ_559 N_PZ_566
+		 Sensor/BCD_conv/bcd_15_mux0001 N_PZ_505
+PARTITION FB8_1 disp_seg_o<1> disp_seg_o<2> disp_seg_o<5>
+PARTITION FB8_5 disp_seg_o<6> disp_seg_o<4>
+PARTITION FB8_11 disp_seg_o<3> disp_seg_o<0>
+
+
+
+
+
+
+
+
+
+

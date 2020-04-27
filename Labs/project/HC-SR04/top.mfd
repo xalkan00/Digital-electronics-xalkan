@@ -1,0 +1,1970 @@
+MDF Database:  version 1.0
+MDF_INFO | top | XC2C256-6-TQ144
+MACROCELL | 3 | 0 | disp_dig_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | Driver/s_cnt<0>  | Driver/s_cnt<1>
+INPUTMC | 2 | 0 | 0 | 0 | 13
+EQ | 1 | 
+   !disp_dig_o<0> = !Driver/s_cnt<0> & !Driver/s_cnt<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 0 | Driver/s_cnt<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 12 | 0 | 0 | 0 | 13 | 3 | 0 | 3 | 1 | 3 | 2 | 3 | 4 | 3 | 3 | 0 | 12 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 3 | Driver/s_cnt<0>  | srst_n_i  | Driver/s_en
+INPUTMC | 2 | 0 | 0 | 0 | 4
+INPUTP | 1 | 20
+EQ | 3 | 
+   Driver/s_cnt<0> := Driver/s_cnt<0> & srst_n_i & !Driver/s_en
+	# !Driver/s_cnt<0> & srst_n_i & Driver/s_en;	// (2 pt, 3 inp)
+   Driver/s_cnt<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 4 | Driver/s_en_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 0 | 0 | 0 | 13
+INPUTS | 15 | srst_n_i  | Driver/CL_ENABLE/s_cnt<10>  | Driver/CL_ENABLE/s_cnt<11>  | Driver/CL_ENABLE/s_cnt<12>  | Driver/CL_ENABLE/s_cnt<13>  | Driver/CL_ENABLE/s_cnt<14>  | Driver/CL_ENABLE/s_cnt<5>  | Driver/CL_ENABLE/s_cnt<6>  | Driver/CL_ENABLE/s_cnt<7>  | Driver/CL_ENABLE/s_cnt<8>  | Driver/CL_ENABLE/s_cnt<9>  | Driver/CL_ENABLE/s_cnt<15>  | Driver/CL_ENABLE/s_cnt<3>  | N_PZ_393  | Driver/CL_ENABLE/s_cnt<4>
+INPUTMC | 14 | 0 | 2 | 3 | 13 | 3 | 11 | 3 | 5 | 4 | 15 | 0 | 7 | 4 | 12 | 4 | 11 | 4 | 10 | 4 | 9 | 4 | 14 | 0 | 8 | 0 | 9 | 0 | 6
+INPUTP | 1 | 20
+EQ | 15 | 
+   !Driver/s_en := !srst_n_i
+	# !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & !Driver/CL_ENABLE/s_cnt<6> & 
+	!Driver/CL_ENABLE/s_cnt<7> & !Driver/CL_ENABLE/s_cnt<8> & 
+	!Driver/CL_ENABLE/s_cnt<9> & !Driver/CL_ENABLE/s_cnt<15>
+	# !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<3> & !Driver/CL_ENABLE/s_cnt<6> & 
+	!Driver/CL_ENABLE/s_cnt<7> & !Driver/CL_ENABLE/s_cnt<8> & 
+	!Driver/CL_ENABLE/s_cnt<9> & !Driver/CL_ENABLE/s_cnt<15> & !N_PZ_393 & 
+	!Driver/CL_ENABLE/s_cnt<4>;	// (3 pt, 15 inp)
+   Driver/s_en.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 2 | Driver/CL_ENABLE/s_cnt<10>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<10> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<10>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 13 | Driver/CL_ENABLE/s_cnt<11>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<11> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<11>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 11 | Driver/CL_ENABLE/s_cnt<12>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<12> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<12>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 5 | Driver/CL_ENABLE/s_cnt<13>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<13> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<13>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 15 | Driver/CL_ENABLE/s_cnt<14>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<14> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<14>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 7 | Driver/CL_ENABLE/s_cnt<5>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 15 | srst_n_i  | Driver/CL_ENABLE/s_cnt<10>  | Driver/CL_ENABLE/s_cnt<11>  | Driver/CL_ENABLE/s_cnt<12>  | Driver/CL_ENABLE/s_cnt<13>  | Driver/CL_ENABLE/s_cnt<14>  | Driver/CL_ENABLE/s_cnt<5>  | Driver/CL_ENABLE/s_cnt<3>  | Driver/CL_ENABLE/s_cnt<6>  | Driver/CL_ENABLE/s_cnt<7>  | Driver/CL_ENABLE/s_cnt<8>  | Driver/CL_ENABLE/s_cnt<9>  | Driver/CL_ENABLE/s_cnt<15>  | N_PZ_393  | Driver/CL_ENABLE/s_cnt<4>
+INPUTMC | 14 | 0 | 2 | 3 | 13 | 3 | 11 | 3 | 5 | 4 | 15 | 0 | 7 | 0 | 8 | 4 | 12 | 4 | 11 | 4 | 10 | 4 | 9 | 4 | 14 | 0 | 9 | 0 | 6
+INPUTP | 1 | 20
+EQ | 15 | 
+   Driver/CL_ENABLE/s_cnt<5> := srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	Driver/CL_ENABLE/s_cnt<5> & !Driver/CL_ENABLE/s_cnt<3> & 
+	!Driver/CL_ENABLE/s_cnt<6> & !Driver/CL_ENABLE/s_cnt<7> & 
+	!Driver/CL_ENABLE/s_cnt<8> & !Driver/CL_ENABLE/s_cnt<9> & 
+	!Driver/CL_ENABLE/s_cnt<15> & !N_PZ_393 & !Driver/CL_ENABLE/s_cnt<4>
+	# srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & Driver/CL_ENABLE/s_cnt<3> & 
+	!Driver/CL_ENABLE/s_cnt<6> & !Driver/CL_ENABLE/s_cnt<7> & 
+	!Driver/CL_ENABLE/s_cnt<8> & !Driver/CL_ENABLE/s_cnt<9> & 
+	!Driver/CL_ENABLE/s_cnt<15> & N_PZ_393 & Driver/CL_ENABLE/s_cnt<4>;	// (2 pt, 15 inp)
+   Driver/CL_ENABLE/s_cnt<5>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 8 | Driver/CL_ENABLE/s_cnt<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 14 | srst_n_i  | Driver/CL_ENABLE/s_cnt<10>  | Driver/CL_ENABLE/s_cnt<11>  | Driver/CL_ENABLE/s_cnt<12>  | Driver/CL_ENABLE/s_cnt<13>  | Driver/CL_ENABLE/s_cnt<14>  | Driver/CL_ENABLE/s_cnt<5>  | Driver/CL_ENABLE/s_cnt<3>  | Driver/CL_ENABLE/s_cnt<6>  | Driver/CL_ENABLE/s_cnt<7>  | Driver/CL_ENABLE/s_cnt<8>  | Driver/CL_ENABLE/s_cnt<9>  | Driver/CL_ENABLE/s_cnt<15>  | N_PZ_393
+INPUTMC | 13 | 0 | 2 | 3 | 13 | 3 | 11 | 3 | 5 | 4 | 15 | 0 | 7 | 0 | 8 | 4 | 12 | 4 | 11 | 4 | 10 | 4 | 9 | 4 | 14 | 0 | 9
+INPUTP | 1 | 20
+EQ | 15 | 
+   Driver/CL_ENABLE/s_cnt<3> := srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & Driver/CL_ENABLE/s_cnt<3> & 
+	!Driver/CL_ENABLE/s_cnt<6> & !Driver/CL_ENABLE/s_cnt<7> & 
+	!Driver/CL_ENABLE/s_cnt<8> & !Driver/CL_ENABLE/s_cnt<9> & 
+	!Driver/CL_ENABLE/s_cnt<15> & !N_PZ_393
+	# srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & !Driver/CL_ENABLE/s_cnt<3> & 
+	!Driver/CL_ENABLE/s_cnt<6> & !Driver/CL_ENABLE/s_cnt<7> & 
+	!Driver/CL_ENABLE/s_cnt<8> & !Driver/CL_ENABLE/s_cnt<9> & 
+	!Driver/CL_ENABLE/s_cnt<15> & N_PZ_393;	// (2 pt, 14 inp)
+   Driver/CL_ENABLE/s_cnt<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 12 | Driver/CL_ENABLE/s_cnt<6>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<6> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<6>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 11 | Driver/CL_ENABLE/s_cnt<7>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<7> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<7>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 10 | Driver/CL_ENABLE/s_cnt<8>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<8> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<8>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 9 | Driver/CL_ENABLE/s_cnt<9>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<9> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<9>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 14 | Driver/CL_ENABLE/s_cnt<15>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 0
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<15> := Gnd;	// (0 pt, 0 inp)
+   Driver/CL_ENABLE/s_cnt<15>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 9 | N_PZ_393_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 0 | 6 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 4
+INPUTS | 3 | Driver/CL_ENABLE/s_cnt<0>  | Driver/CL_ENABLE/s_cnt<1>  | Driver/CL_ENABLE/s_cnt<2>
+INPUTMC | 3 | 0 | 15 | 0 | 14 | 0 | 10
+EQ | 2 | 
+   N_PZ_393 = Driver/CL_ENABLE/s_cnt<0> & 
+	Driver/CL_ENABLE/s_cnt<1> & Driver/CL_ENABLE/s_cnt<2>;	// (1 pt, 3 inp)
+
+MACROCELL | 0 | 15 | Driver/CL_ENABLE/s_cnt<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 9
+INPUTS | 2 | Driver/CL_ENABLE/s_cnt<0>  | N_PZ_696
+INPUTMC | 2 | 0 | 15 | 0 | 1
+EQ | 2 | 
+   Driver/CL_ENABLE/s_cnt<0> := !Driver/CL_ENABLE/s_cnt<0> & N_PZ_696;	// (1 pt, 2 inp)
+   Driver/CL_ENABLE/s_cnt<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 1 | N_PZ_696_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 15 | 0 | 14 | 0 | 10
+INPUTS | 14 | srst_n_i  | Driver/CL_ENABLE/s_cnt<10>  | Driver/CL_ENABLE/s_cnt<11>  | Driver/CL_ENABLE/s_cnt<12>  | Driver/CL_ENABLE/s_cnt<13>  | Driver/CL_ENABLE/s_cnt<14>  | Driver/CL_ENABLE/s_cnt<5>  | Driver/CL_ENABLE/s_cnt<6>  | Driver/CL_ENABLE/s_cnt<7>  | Driver/CL_ENABLE/s_cnt<8>  | Driver/CL_ENABLE/s_cnt<9>  | Driver/CL_ENABLE/s_cnt<15>  | Driver/CL_ENABLE/s_cnt<3>  | Driver/CL_ENABLE/s_cnt<4>
+INPUTMC | 13 | 0 | 2 | 3 | 13 | 3 | 11 | 3 | 5 | 4 | 15 | 0 | 7 | 4 | 12 | 4 | 11 | 4 | 10 | 4 | 9 | 4 | 14 | 0 | 8 | 0 | 6
+INPUTP | 1 | 20
+EQ | 13 | 
+   N_PZ_696 = srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & !Driver/CL_ENABLE/s_cnt<6> & 
+	!Driver/CL_ENABLE/s_cnt<7> & !Driver/CL_ENABLE/s_cnt<8> & 
+	!Driver/CL_ENABLE/s_cnt<9> & !Driver/CL_ENABLE/s_cnt<15>
+	# srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<3> & !Driver/CL_ENABLE/s_cnt<6> & 
+	!Driver/CL_ENABLE/s_cnt<7> & !Driver/CL_ENABLE/s_cnt<8> & 
+	!Driver/CL_ENABLE/s_cnt<9> & !Driver/CL_ENABLE/s_cnt<15> & 
+	!Driver/CL_ENABLE/s_cnt<4>;	// (2 pt, 14 inp)
+
+MACROCELL | 0 | 6 | Driver/CL_ENABLE/s_cnt<4>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 4 | 0 | 6 | 0 | 1 | 0 | 7 | 0 | 4
+INPUTS | 15 | srst_n_i  | Driver/CL_ENABLE/s_cnt<10>  | Driver/CL_ENABLE/s_cnt<11>  | Driver/CL_ENABLE/s_cnt<12>  | Driver/CL_ENABLE/s_cnt<13>  | Driver/CL_ENABLE/s_cnt<14>  | Driver/CL_ENABLE/s_cnt<5>  | Driver/CL_ENABLE/s_cnt<3>  | Driver/CL_ENABLE/s_cnt<6>  | Driver/CL_ENABLE/s_cnt<7>  | Driver/CL_ENABLE/s_cnt<8>  | Driver/CL_ENABLE/s_cnt<9>  | Driver/CL_ENABLE/s_cnt<15>  | Driver/CL_ENABLE/s_cnt<4>  | N_PZ_393
+INPUTMC | 14 | 0 | 2 | 3 | 13 | 3 | 11 | 3 | 5 | 4 | 15 | 0 | 7 | 0 | 8 | 4 | 12 | 4 | 11 | 4 | 10 | 4 | 9 | 4 | 14 | 0 | 6 | 0 | 9
+INPUTP | 1 | 20
+EQ | 22 | 
+   Driver/CL_ENABLE/s_cnt<4> := srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & !Driver/CL_ENABLE/s_cnt<3> & 
+	!Driver/CL_ENABLE/s_cnt<6> & !Driver/CL_ENABLE/s_cnt<7> & 
+	!Driver/CL_ENABLE/s_cnt<8> & !Driver/CL_ENABLE/s_cnt<9> & 
+	!Driver/CL_ENABLE/s_cnt<15> & Driver/CL_ENABLE/s_cnt<4>
+	# srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & !Driver/CL_ENABLE/s_cnt<6> & 
+	!Driver/CL_ENABLE/s_cnt<7> & !Driver/CL_ENABLE/s_cnt<8> & 
+	!Driver/CL_ENABLE/s_cnt<9> & !Driver/CL_ENABLE/s_cnt<15> & !N_PZ_393 & 
+	Driver/CL_ENABLE/s_cnt<4>
+	# srst_n_i & !Driver/CL_ENABLE/s_cnt<10> & 
+	!Driver/CL_ENABLE/s_cnt<11> & !Driver/CL_ENABLE/s_cnt<12> & 
+	!Driver/CL_ENABLE/s_cnt<13> & !Driver/CL_ENABLE/s_cnt<14> & 
+	!Driver/CL_ENABLE/s_cnt<5> & Driver/CL_ENABLE/s_cnt<3> & 
+	!Driver/CL_ENABLE/s_cnt<6> & !Driver/CL_ENABLE/s_cnt<7> & 
+	!Driver/CL_ENABLE/s_cnt<8> & !Driver/CL_ENABLE/s_cnt<9> & 
+	!Driver/CL_ENABLE/s_cnt<15> & N_PZ_393 & !Driver/CL_ENABLE/s_cnt<4>;	// (3 pt, 15 inp)
+   Driver/CL_ENABLE/s_cnt<4>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 14 | Driver/CL_ENABLE/s_cnt<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 0 | 14 | 0 | 10 | 0 | 9
+INPUTS | 3 | Driver/CL_ENABLE/s_cnt<0>  | N_PZ_696  | Driver/CL_ENABLE/s_cnt<1>
+INPUTMC | 3 | 0 | 15 | 0 | 1 | 0 | 14
+EQ | 5 | 
+   Driver/CL_ENABLE/s_cnt<1> := Driver/CL_ENABLE/s_cnt<0> & N_PZ_696 & 
+	!Driver/CL_ENABLE/s_cnt<1>
+	# !Driver/CL_ENABLE/s_cnt<0> & N_PZ_696 & 
+	Driver/CL_ENABLE/s_cnt<1>;	// (2 pt, 3 inp)
+   Driver/CL_ENABLE/s_cnt<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 10 | Driver/CL_ENABLE/s_cnt<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 0 | 10 | 0 | 9
+INPUTS | 5 | N_PZ_393  | N_PZ_696  | Driver/CL_ENABLE/s_cnt<2>  | Driver/CL_ENABLE/s_cnt<0>  | Driver/CL_ENABLE/s_cnt<1>
+INPUTMC | 5 | 0 | 9 | 0 | 1 | 0 | 10 | 0 | 15 | 0 | 14
+EQ | 4 | 
+   Driver/CL_ENABLE/s_cnt<2> := !N_PZ_393 & N_PZ_696 & Driver/CL_ENABLE/s_cnt<2>
+	# !N_PZ_393 & Driver/CL_ENABLE/s_cnt<0> & N_PZ_696 & 
+	Driver/CL_ENABLE/s_cnt<1>;	// (2 pt, 5 inp)
+   Driver/CL_ENABLE/s_cnt<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 0 | 13 | Driver/s_cnt<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 0 | 13 | 3 | 0 | 3 | 1 | 3 | 2 | 3 | 4 | 3 | 3 | 0 | 12 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 4 | srst_n_i  | Driver/s_cnt<1>  | Driver/s_cnt<0>  | Driver/s_en
+INPUTMC | 3 | 0 | 13 | 0 | 0 | 0 | 4
+INPUTP | 1 | 20
+EQ | 3 | 
+   Driver/s_cnt<1>.T := !srst_n_i & Driver/s_cnt<1>
+	# Driver/s_cnt<0> & srst_n_i & Driver/s_en;	// (2 pt, 4 inp)
+   Driver/s_cnt<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 1 | disp_dig_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | Driver/s_cnt<0>  | Driver/s_cnt<1>
+INPUTMC | 2 | 0 | 0 | 0 | 13
+EQ | 1 | 
+   !disp_dig_o<1> = Driver/s_cnt<0> & !Driver/s_cnt<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 3 | 2 | disp_dig_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | Driver/s_cnt<0>  | Driver/s_cnt<1>
+INPUTMC | 2 | 0 | 0 | 0 | 13
+EQ | 1 | 
+   !disp_dig_o<2> = !Driver/s_cnt<0> & Driver/s_cnt<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 3 | 4 | disp_dig_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | Driver/s_cnt<0>  | Driver/s_cnt<1>
+INPUTMC | 2 | 0 | 0 | 0 | 13
+EQ | 1 | 
+   !disp_dig_o<3> = Driver/s_cnt<0> & Driver/s_cnt<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 3 | 3 | disp_dp_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 3 | 0 | 3 | 0 | 5 | 0 | 11
+INPUTS | 2 | Driver/s_cnt<0>  | Driver/s_cnt<1>
+INPUTMC | 2 | 0 | 0 | 0 | 13
+EQ | 1 | 
+   !disp_dp = !Driver/s_cnt<0> & Driver/s_cnt<1>;	// (1 pt, 2 inp)
+
+MACROCELL | 7 | 11 | disp_seg_o<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<1>  | Driver/s_hex<2>  | Driver/s_hex<3>  | Driver/s_hex<0>
+INPUTMC | 4 | 0 | 3 | 0 | 5 | 3 | 15 | 0 | 11
+EQ | 4 | 
+   disp_seg_o<0> = Driver/s_hex<1> & !Driver/s_hex<2> & 
+	!Driver/s_hex<3>
+	# Driver/s_hex<1> & Driver/s_hex<2> & 
+	!Driver/s_hex<0> & Driver/s_hex<3>;	// (2 pt, 4 inp)
+
+MACROCELL | 0 | 3 | Driver/s_hex<1>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 7 | 11 | 7 | 0 | 7 | 1 | 7 | 10 | 7 | 5 | 7 | 2 | 7 | 4
+INPUTS | 10 | Driver/s_hex<1>1  | N_PZ_505  | Sensor/BCD_conv/bcd_12_mux0003  | disp_dp  | Sensor/BCD_conv/bcd_13_mux0001  | Driver/s_cnt<0>  | Driver/s_cnt<1>  | N_PZ_410  | Sensor/BCD_conv/bcd_15_mux0001  | Sensor/BCD_conv/bcd_14_mux0001
+INPUTMC | 10 | 0 | 12 | 6 | 15 | 3 | 12 | 3 | 3 | 3 | 8 | 0 | 0 | 0 | 13 | 3 | 14 | 6 | 14 | 3 | 10
+EQ | 13 | 
+   Driver/s_hex<1> = !Driver/s_hex<1>1
+	$ !Driver/s_hex<1>1 & !N_PZ_505 & 
+	!Sensor/BCD_conv/bcd_12_mux0003 & !disp_dp
+	# !Driver/s_hex<1>1 & !N_PZ_505 & 
+	Sensor/BCD_conv/bcd_13_mux0001 & !disp_dp
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Driver/s_hex<1>1 & !N_PZ_410 & Sensor/BCD_conv/bcd_15_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Driver/s_hex<1>1 & N_PZ_410 & !Sensor/BCD_conv/bcd_15_mux0001 & 
+	Sensor/BCD_conv/bcd_14_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Driver/s_hex<1>1 & !N_PZ_410 & Sensor/BCD_conv/bcd_13_mux0001 & 
+	!Sensor/BCD_conv/bcd_14_mux0001;	// (6 pt, 10 inp)
+
+MACROCELL | 0 | 12 | Driver/s_hex<1>1_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 9 | Driver/s_cnt<0>  | Driver/s_cnt<1>  | Sensor/distance_o_s<1>  | Sensor/BCD_conv/bcd_11_mux0003  | N_PZ_410  | Sensor/BCD_conv/bcd_9_mux0003  | N_PZ_563  | Sensor/distance_o_s<2>  | N_PZ_559
+INPUTMC | 9 | 0 | 0 | 0 | 13 | 5 | 9 | 3 | 7 | 3 | 14 | 3 | 9 | 6 | 11 | 5 | 7 | 6 | 12
+EQ | 17 | 
+   Driver/s_hex<1>1 = !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_11_mux0003 & N_PZ_410
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & !N_PZ_410 & !Sensor/BCD_conv/bcd_9_mux0003 & 
+	!N_PZ_563
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_9_mux0003 & 
+	!Sensor/distance_o_s<2> & N_PZ_559
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_9_mux0003 & 
+	Sensor/distance_o_s<2> & N_PZ_563
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_9_mux0003 & 
+	!Sensor/distance_o_s<2> & N_PZ_563
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_410 & 
+	Sensor/BCD_conv/bcd_9_mux0003 & Sensor/distance_o_s<2>;	// (6 pt, 9 inp)
+
+MACROCELL | 5 | 9 | Sensor/distance_o_s<1>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 4 | 0 | 12 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 9 | N_PZ_468  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<20>
+INPUTMC | 9 | 5 | 2 | 2 | 5 | 2 | 3 | 2 | 6 | 2 | 2 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 12
+EQ | 19 | 
+   Sensor/distance_o_s<1>.D = !N_PZ_468
+	# Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & Sensor/distance_calc/pulse_s<14>
+	# !Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<14> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# !Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<14> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# Sensor/distance_calc/pulse_s<15> & 
+	Sensor/distance_calc/pulse_s<16> & Sensor/distance_calc/pulse_s<17> & 
+	Sensor/distance_calc/pulse_s<20>
+	# Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<12> & !Sensor/distance_calc/pulse_s<14> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# !Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & !Sensor/distance_calc/pulse_s<14> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010;	// (7 pt, 9 inp)
+   Sensor/distance_o_s<1>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 2 | 7 | Sensor/distance_calc/pulse_s<15>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 9 | 6 | 10 | 5 | 13 | 5 | 10 | 5 | 6 | 5 | 7 | 5 | 8
+INPUTS | 18 | Sensor/distance_calc/pulse_s<15>  | pulse_pin  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>
+INPUTMC | 17 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6
+INPUTP | 1 | 48
+EQ | 10 | 
+   Sensor/distance_calc/pulse_s<15>.T := Sensor/distance_calc/pulse_s<15> & !pulse_pin
+	# pulse_pin & Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & Sensor/distance_calc/pulse_s<0> & !trigger_pin & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<8> & Sensor/distance_calc/pulse_s<9> & 
+	Sensor/distance_calc/pulse_s<11> & Sensor/distance_calc/pulse_s<14>;	// (2 pt, 18 inp)
+   Sensor/distance_calc/pulse_s<15>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 5 | Sensor/distance_calc/pulse_s<13>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 16 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 9 | 6 | 10 | 5 | 13 | 5 | 10 | 5 | 7 | 5 | 8
+INPUTS | 16 | pulse_pin  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>
+INPUTMC | 15 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15
+INPUTP | 1 | 48
+EQ | 9 | 
+   Sensor/distance_calc/pulse_s<13>.T := !pulse_pin & Sensor/distance_calc/pulse_s<13>
+	# pulse_pin & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11>;	// (2 pt, 16 inp)
+   Sensor/distance_calc/pulse_s<13>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 3 | Sensor/distance_calc/pulse_s<12>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14 | 5 | 9 | 6 | 10 | 5 | 13 | 5 | 10 | 5 | 7 | 5 | 8
+INPUTS | 15 | pulse_pin  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>
+INPUTMC | 14 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15
+INPUTP | 1 | 48
+EQ | 9 | 
+   Sensor/distance_calc/pulse_s<12>.T := !pulse_pin & Sensor/distance_calc/pulse_s<12>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11>;	// (2 pt, 15 inp)
+   Sensor/distance_calc/pulse_s<12>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 1 | Sensor/distance_calc/pulse_s<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 23 | 4 | 1 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 3 | pulse_pin  | Sensor/distance_calc/pulse_s<0>  | trigger_pin
+INPUTMC | 2 | 4 | 1 | 1 | 0
+INPUTP | 1 | 48
+EQ | 5 | 
+   Sensor/distance_calc/pulse_s<0> := pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	trigger_pin
+	# pulse_pin & !Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin;	// (2 pt, 3 inp)
+   Sensor/distance_calc/pulse_s<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 0 | trigger_pin_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 22 | 4 | 1 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14
+INPUTS | 24 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>  | Sensor/trigger_gen/cnt_o_s<19>  | Sensor/trigger_gen/cnt_o_s<20>  | Sensor/trigger_gen/cnt_o_s<21>  | Sensor/trigger_gen/cnt_o_s<22>  | Sensor/trigger_gen/cnt_o_s<23>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>
+INPUTMC | 24 | 1 | 2 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 3 | 4 | 5 | 4 | 4 | 4 | 3 | 4 | 0 | 4 | 13 | 4 | 6 | 4 | 2 | 1 | 15 | 4 | 8 | 4 | 7
+EQ | 128 | 
+   trigger_pin = !Sensor/trigger_gen/cnt_o_s<10> & 
+	!Sensor/trigger_gen/cnt_o_s<12> & !Sensor/trigger_gen/cnt_o_s<13> & 
+	Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# !Sensor/trigger_gen/cnt_o_s<11> & 
+	!Sensor/trigger_gen/cnt_o_s<12> & !Sensor/trigger_gen/cnt_o_s<13> & 
+	Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# !Sensor/trigger_gen/cnt_o_s<7> & 
+	!Sensor/trigger_gen/cnt_o_s<12> & !Sensor/trigger_gen/cnt_o_s<13> & 
+	Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# !Sensor/trigger_gen/cnt_o_s<8> & 
+	!Sensor/trigger_gen/cnt_o_s<12> & !Sensor/trigger_gen/cnt_o_s<13> & 
+	Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# !Sensor/trigger_gen/cnt_o_s<9> & 
+	!Sensor/trigger_gen/cnt_o_s<12> & !Sensor/trigger_gen/cnt_o_s<13> & 
+	Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# !Sensor/trigger_gen/cnt_o_s<5> & 
+	!Sensor/trigger_gen/cnt_o_s<6> & !Sensor/trigger_gen/cnt_o_s<12> & 
+	!Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<12> & Sensor/trigger_gen/cnt_o_s<13> & 
+	!Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<7> & 
+	Sensor/trigger_gen/cnt_o_s<12> & Sensor/trigger_gen/cnt_o_s<13> & 
+	!Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<12> & Sensor/trigger_gen/cnt_o_s<13> & 
+	!Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<9> & 
+	Sensor/trigger_gen/cnt_o_s<12> & Sensor/trigger_gen/cnt_o_s<13> & 
+	!Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# !Sensor/trigger_gen/cnt_o_s<3> & 
+	!Sensor/trigger_gen/cnt_o_s<4> & !Sensor/trigger_gen/cnt_o_s<6> & 
+	!Sensor/trigger_gen/cnt_o_s<12> & !Sensor/trigger_gen/cnt_o_s<13> & 
+	Sensor/trigger_gen/cnt_o_s<14> & Sensor/trigger_gen/cnt_o_s<15> & 
+	!Sensor/trigger_gen/cnt_o_s<16> & Sensor/trigger_gen/cnt_o_s<17> & 
+	Sensor/trigger_gen/cnt_o_s<18> & Sensor/trigger_gen/cnt_o_s<19> & 
+	Sensor/trigger_gen/cnt_o_s<20> & Sensor/trigger_gen/cnt_o_s<21> & 
+	!Sensor/trigger_gen/cnt_o_s<22> & Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & !Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<3> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & !Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & !Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<2> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & !Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>
+	# Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<11> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & !Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>;	// (16 pt, 24 inp)
+
+MACROCELL | 1 | 2 | Sensor/trigger_gen/cnt_o_s<10>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 10 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>
+INPUTMC | 10 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3
+EQ | 7 | 
+   Sensor/trigger_gen/cnt_o_s<10>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9>;	// (1 pt, 10 inp)
+   Sensor/trigger_gen/cnt_o_s<10>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 15 | Sensor/trigger_gen/cnt_o_s<0>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 25 | 4 | 8 | 4 | 7 | 4 | 6 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 24 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>  | Sensor/trigger_gen/cnt_o_s<19>  | Sensor/trigger_gen/cnt_o_s<20>  | Sensor/trigger_gen/cnt_o_s<21>  | Sensor/trigger_gen/cnt_o_s<22>  | Sensor/trigger_gen/cnt_o_s<23>
+INPUTMC | 24 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10
+EQ | 14 | 
+   !Sensor/trigger_gen/cnt_o_s<0>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	!Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & !Sensor/trigger_gen/cnt_o_s<1> & 
+	!Sensor/trigger_gen/cnt_o_s<2> & !Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & !Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & !Sensor/trigger_gen/cnt_o_s<12> & 
+	!Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & !Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & !Sensor/trigger_gen/cnt_o_s<22> & 
+	Sensor/trigger_gen/cnt_o_s<23>;	// (1 pt, 24 inp)
+   Sensor/trigger_gen/cnt_o_s<0>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 3 | Sensor/trigger_gen/cnt_o_s<11>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 11 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>
+INPUTMC | 11 | 1 | 2 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3
+EQ | 7 | 
+   Sensor/trigger_gen/cnt_o_s<11>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<3> & 
+	Sensor/trigger_gen/cnt_o_s<1> & Sensor/trigger_gen/cnt_o_s<2> & 
+	Sensor/trigger_gen/cnt_o_s<4> & Sensor/trigger_gen/cnt_o_s<5> & 
+	Sensor/trigger_gen/cnt_o_s<6> & Sensor/trigger_gen/cnt_o_s<7> & 
+	Sensor/trigger_gen/cnt_o_s<8> & Sensor/trigger_gen/cnt_o_s<9>;	// (1 pt, 11 inp)
+   Sensor/trigger_gen/cnt_o_s<11>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 6 | Sensor/trigger_gen/cnt_o_s<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 22 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 3 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>
+INPUTMC | 3 | 1 | 15 | 4 | 8 | 4 | 7
+EQ | 3 | 
+   Sensor/trigger_gen/cnt_o_s<3>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<1> & Sensor/trigger_gen/cnt_o_s<2>;	// (1 pt, 3 inp)
+   Sensor/trigger_gen/cnt_o_s<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 8 | Sensor/trigger_gen/cnt_o_s<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 24 | 4 | 7 | 4 | 6 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 1 | Sensor/trigger_gen/cnt_o_s<0>
+INPUTMC | 1 | 1 | 15
+EQ | 2 | 
+   Sensor/trigger_gen/cnt_o_s<1>.T := Sensor/trigger_gen/cnt_o_s<0>;	// (1 pt, 1 inp)
+   Sensor/trigger_gen/cnt_o_s<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 7 | Sensor/trigger_gen/cnt_o_s<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 23 | 4 | 6 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 2 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<1>
+INPUTMC | 2 | 1 | 15 | 4 | 8
+EQ | 3 | 
+   Sensor/trigger_gen/cnt_o_s<2>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<1>;	// (1 pt, 2 inp)
+   Sensor/trigger_gen/cnt_o_s<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 2 | Sensor/trigger_gen/cnt_o_s<4>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 21 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 4 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>
+INPUTMC | 4 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7
+EQ | 4 | 
+   Sensor/trigger_gen/cnt_o_s<4>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2>;	// (1 pt, 4 inp)
+   Sensor/trigger_gen/cnt_o_s<4>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 0 | Sensor/trigger_gen/cnt_o_s<5>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 20 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 5 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>
+INPUTMC | 5 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2
+EQ | 4 | 
+   Sensor/trigger_gen/cnt_o_s<5>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4>;	// (1 pt, 5 inp)
+   Sensor/trigger_gen/cnt_o_s<5>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 13 | Sensor/trigger_gen/cnt_o_s<6>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 19 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 6 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>
+INPUTMC | 6 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0
+EQ | 5 | 
+   Sensor/trigger_gen/cnt_o_s<6>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5>;	// (1 pt, 6 inp)
+   Sensor/trigger_gen/cnt_o_s<6>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 5 | Sensor/trigger_gen/cnt_o_s<7>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 18 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 7 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>
+INPUTMC | 7 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13
+EQ | 5 | 
+   Sensor/trigger_gen/cnt_o_s<7>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6>;	// (1 pt, 7 inp)
+   Sensor/trigger_gen/cnt_o_s<7>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 4 | Sensor/trigger_gen/cnt_o_s<8>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 8 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>
+INPUTMC | 8 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5
+EQ | 6 | 
+   Sensor/trigger_gen/cnt_o_s<8>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7>;	// (1 pt, 8 inp)
+   Sensor/trigger_gen/cnt_o_s<8>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 4 | 3 | Sensor/trigger_gen/cnt_o_s<9>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 16 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 1 | 0
+INPUTS | 9 | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>
+INPUTMC | 9 | 1 | 15 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4
+EQ | 6 | 
+   Sensor/trigger_gen/cnt_o_s<9>.T := Sensor/trigger_gen/cnt_o_s<0> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8>;	// (1 pt, 9 inp)
+   Sensor/trigger_gen/cnt_o_s<9>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 4 | Sensor/trigger_gen/cnt_o_s<12>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 12 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>
+INPUTMC | 12 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3
+EQ | 8 | 
+   Sensor/trigger_gen/cnt_o_s<12>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9>;	// (1 pt, 12 inp)
+   Sensor/trigger_gen/cnt_o_s<12>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 11 | Sensor/trigger_gen/cnt_o_s<13>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 12 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 13 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>
+INPUTMC | 13 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4
+EQ | 8 | 
+   Sensor/trigger_gen/cnt_o_s<13>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12>;	// (1 pt, 13 inp)
+   Sensor/trigger_gen/cnt_o_s<13>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 12 | Sensor/trigger_gen/cnt_o_s<14>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 11 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 14 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>
+INPUTMC | 14 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11
+EQ | 9 | 
+   Sensor/trigger_gen/cnt_o_s<14>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13>;	// (1 pt, 14 inp)
+   Sensor/trigger_gen/cnt_o_s<14>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 13 | Sensor/trigger_gen/cnt_o_s<15>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 10 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 15 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>
+INPUTMC | 15 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12
+EQ | 9 | 
+   Sensor/trigger_gen/cnt_o_s<15>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14>;	// (1 pt, 15 inp)
+   Sensor/trigger_gen/cnt_o_s<15>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 14 | Sensor/trigger_gen/cnt_o_s<16>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 9 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 16 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>
+INPUTMC | 16 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13
+EQ | 10 | 
+   Sensor/trigger_gen/cnt_o_s<16>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15>;	// (1 pt, 16 inp)
+   Sensor/trigger_gen/cnt_o_s<16>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 1 | Sensor/trigger_gen/cnt_o_s<17>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 8 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 17 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>
+INPUTMC | 17 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14
+EQ | 10 | 
+   Sensor/trigger_gen/cnt_o_s<17>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16>;	// (1 pt, 17 inp)
+   Sensor/trigger_gen/cnt_o_s<17>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 5 | Sensor/trigger_gen/cnt_o_s<18>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 18 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>
+INPUTMC | 18 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1
+EQ | 11 | 
+   Sensor/trigger_gen/cnt_o_s<18>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17>;	// (1 pt, 18 inp)
+   Sensor/trigger_gen/cnt_o_s<18>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 6 | Sensor/trigger_gen/cnt_o_s<19>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 19 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>
+INPUTMC | 19 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5
+EQ | 11 | 
+   Sensor/trigger_gen/cnt_o_s<19>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18>;	// (1 pt, 19 inp)
+   Sensor/trigger_gen/cnt_o_s<19>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 7 | Sensor/trigger_gen/cnt_o_s<20>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 5 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 20 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>  | Sensor/trigger_gen/cnt_o_s<19>
+INPUTMC | 20 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6
+EQ | 12 | 
+   Sensor/trigger_gen/cnt_o_s<20>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19>;	// (1 pt, 20 inp)
+   Sensor/trigger_gen/cnt_o_s<20>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 8 | Sensor/trigger_gen/cnt_o_s<21>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 4 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 21 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>  | Sensor/trigger_gen/cnt_o_s<19>  | Sensor/trigger_gen/cnt_o_s<20>
+INPUTMC | 21 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7
+EQ | 12 | 
+   Sensor/trigger_gen/cnt_o_s<21>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20>;	// (1 pt, 21 inp)
+   Sensor/trigger_gen/cnt_o_s<21>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 9 | Sensor/trigger_gen/cnt_o_s<22>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 3 | 1 | 10 | 1 | 15 | 1 | 0
+INPUTS | 22 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>  | Sensor/trigger_gen/cnt_o_s<19>  | Sensor/trigger_gen/cnt_o_s<20>  | Sensor/trigger_gen/cnt_o_s<21>
+INPUTMC | 22 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8
+EQ | 13 | 
+   Sensor/trigger_gen/cnt_o_s<22>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21>;	// (1 pt, 22 inp)
+   Sensor/trigger_gen/cnt_o_s<22>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 1 | 10 | Sensor/trigger_gen/cnt_o_s<23>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 2 | 1 | 15 | 1 | 0
+INPUTS | 23 | Sensor/trigger_gen/cnt_o_s<10>  | Sensor/trigger_gen/cnt_o_s<0>  | Sensor/trigger_gen/cnt_o_s<11>  | Sensor/trigger_gen/cnt_o_s<3>  | Sensor/trigger_gen/cnt_o_s<1>  | Sensor/trigger_gen/cnt_o_s<2>  | Sensor/trigger_gen/cnt_o_s<4>  | Sensor/trigger_gen/cnt_o_s<5>  | Sensor/trigger_gen/cnt_o_s<6>  | Sensor/trigger_gen/cnt_o_s<7>  | Sensor/trigger_gen/cnt_o_s<8>  | Sensor/trigger_gen/cnt_o_s<9>  | Sensor/trigger_gen/cnt_o_s<12>  | Sensor/trigger_gen/cnt_o_s<13>  | Sensor/trigger_gen/cnt_o_s<14>  | Sensor/trigger_gen/cnt_o_s<15>  | Sensor/trigger_gen/cnt_o_s<16>  | Sensor/trigger_gen/cnt_o_s<17>  | Sensor/trigger_gen/cnt_o_s<18>  | Sensor/trigger_gen/cnt_o_s<19>  | Sensor/trigger_gen/cnt_o_s<20>  | Sensor/trigger_gen/cnt_o_s<21>  | Sensor/trigger_gen/cnt_o_s<22>
+INPUTMC | 23 | 1 | 2 | 1 | 15 | 1 | 3 | 4 | 6 | 4 | 8 | 4 | 7 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9
+EQ | 13 | 
+   Sensor/trigger_gen/cnt_o_s<23>.T := Sensor/trigger_gen/cnt_o_s<10> & 
+	Sensor/trigger_gen/cnt_o_s<0> & Sensor/trigger_gen/cnt_o_s<11> & 
+	Sensor/trigger_gen/cnt_o_s<3> & Sensor/trigger_gen/cnt_o_s<1> & 
+	Sensor/trigger_gen/cnt_o_s<2> & Sensor/trigger_gen/cnt_o_s<4> & 
+	Sensor/trigger_gen/cnt_o_s<5> & Sensor/trigger_gen/cnt_o_s<6> & 
+	Sensor/trigger_gen/cnt_o_s<7> & Sensor/trigger_gen/cnt_o_s<8> & 
+	Sensor/trigger_gen/cnt_o_s<9> & Sensor/trigger_gen/cnt_o_s<12> & 
+	Sensor/trigger_gen/cnt_o_s<13> & Sensor/trigger_gen/cnt_o_s<14> & 
+	Sensor/trigger_gen/cnt_o_s<15> & Sensor/trigger_gen/cnt_o_s<16> & 
+	Sensor/trigger_gen/cnt_o_s<17> & Sensor/trigger_gen/cnt_o_s<18> & 
+	Sensor/trigger_gen/cnt_o_s<19> & Sensor/trigger_gen/cnt_o_s<20> & 
+	Sensor/trigger_gen/cnt_o_s<21> & Sensor/trigger_gen/cnt_o_s<22>;	// (1 pt, 23 inp)
+   Sensor/trigger_gen/cnt_o_s<23>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 13 | Sensor/distance_calc/pulse_s<10>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 13 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 13 | pulse_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>
+INPUTMC | 12 | 2 | 13 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4
+INPUTP | 1 | 48
+EQ | 8 | 
+   Sensor/distance_calc/pulse_s<10>.T := !pulse_pin & Sensor/distance_calc/pulse_s<10>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<8> & Sensor/distance_calc/pulse_s<9>;	// (2 pt, 13 inp)
+   Sensor/distance_calc/pulse_s<10>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 6 | 2 | Sensor/distance_calc/pulse_s<1>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 22 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 4 | pulse_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin
+INPUTMC | 3 | 6 | 2 | 4 | 1 | 1 | 0
+INPUTP | 1 | 48
+EQ | 4 | 
+   Sensor/distance_calc/pulse_s<1>.T := !pulse_pin & Sensor/distance_calc/pulse_s<1>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin;	// (2 pt, 4 inp)
+   Sensor/distance_calc/pulse_s<1>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 6 | 3 | Sensor/distance_calc/pulse_s<2>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 21 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 5 | pulse_pin  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>
+INPUTMC | 4 | 6 | 3 | 4 | 1 | 1 | 0 | 6 | 2
+INPUTP | 1 | 48
+EQ | 4 | 
+   Sensor/distance_calc/pulse_s<2>.T := !pulse_pin & Sensor/distance_calc/pulse_s<2>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1>;	// (2 pt, 5 inp)
+   Sensor/distance_calc/pulse_s<2>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 6 | 6 | Sensor/distance_calc/pulse_s<3>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 20 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 6 | pulse_pin  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>
+INPUTMC | 5 | 6 | 6 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3
+INPUTP | 1 | 48
+EQ | 5 | 
+   Sensor/distance_calc/pulse_s<3>.T := !pulse_pin & Sensor/distance_calc/pulse_s<3>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2>;	// (2 pt, 6 inp)
+   Sensor/distance_calc/pulse_s<3>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 6 | 7 | Sensor/distance_calc/pulse_s<4>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 19 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 7 | pulse_pin  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>
+INPUTMC | 6 | 6 | 7 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6
+INPUTP | 1 | 48
+EQ | 5 | 
+   Sensor/distance_calc/pulse_s<4>.T := !pulse_pin & Sensor/distance_calc/pulse_s<4>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3>;	// (2 pt, 7 inp)
+   Sensor/distance_calc/pulse_s<4>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 6 | 8 | Sensor/distance_calc/pulse_s<5>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 18 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 8 | pulse_pin  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>
+INPUTMC | 7 | 6 | 8 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7
+INPUTP | 1 | 48
+EQ | 6 | 
+   Sensor/distance_calc/pulse_s<5>.T := !pulse_pin & Sensor/distance_calc/pulse_s<5>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4>;	// (2 pt, 8 inp)
+   Sensor/distance_calc/pulse_s<5>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 6 | 9 | Sensor/distance_calc/pulse_s<6>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 17 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 9 | pulse_pin  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>
+INPUTMC | 8 | 6 | 9 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8
+INPUTP | 1 | 48
+EQ | 6 | 
+   Sensor/distance_calc/pulse_s<6>.T := !pulse_pin & Sensor/distance_calc/pulse_s<6>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5>;	// (2 pt, 9 inp)
+   Sensor/distance_calc/pulse_s<6>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 0 | Sensor/distance_calc/pulse_s<7>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 16 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 10 | pulse_pin  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>
+INPUTMC | 9 | 2 | 0 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9
+INPUTP | 1 | 48
+EQ | 7 | 
+   Sensor/distance_calc/pulse_s<7>.T := !pulse_pin & Sensor/distance_calc/pulse_s<7>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6>;	// (2 pt, 10 inp)
+   Sensor/distance_calc/pulse_s<7>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 1 | Sensor/distance_calc/pulse_s<8>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 11 | pulse_pin  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>
+INPUTMC | 10 | 2 | 1 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0
+INPUTP | 1 | 48
+EQ | 7 | 
+   Sensor/distance_calc/pulse_s<8>.T := !pulse_pin & Sensor/distance_calc/pulse_s<8>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<7>;	// (2 pt, 11 inp)
+   Sensor/distance_calc/pulse_s<8>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 4 | Sensor/distance_calc/pulse_s<9>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 12 | pulse_pin  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>
+INPUTMC | 11 | 2 | 4 | 4 | 1 | 1 | 0 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1
+INPUTP | 1 | 48
+EQ | 8 | 
+   Sensor/distance_calc/pulse_s<9>.T := !pulse_pin & Sensor/distance_calc/pulse_s<9>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<8>;	// (2 pt, 12 inp)
+   Sensor/distance_calc/pulse_s<9>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 15 | Sensor/distance_calc/pulse_s<11>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 12 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 2 | 2 | 14
+INPUTS | 14 | pulse_pin  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>
+INPUTMC | 13 | 2 | 15 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4
+INPUTP | 1 | 48
+EQ | 9 | 
+   Sensor/distance_calc/pulse_s<11>.T := !pulse_pin & Sensor/distance_calc/pulse_s<11>
+	# pulse_pin & Sensor/distance_calc/pulse_s<0> & 
+	!trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9>;	// (2 pt, 14 inp)
+   Sensor/distance_calc/pulse_s<11>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 6 | Sensor/distance_calc/pulse_s<14>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 9 | 6 | 10 | 5 | 13 | 5 | 10 | 5 | 7
+INPUTS | 17 | pulse_pin  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>
+INPUTMC | 16 | 2 | 6 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15
+INPUTP | 1 | 48
+EQ | 10 | 
+   Sensor/distance_calc/pulse_s<14>.T := !pulse_pin & Sensor/distance_calc/pulse_s<14>
+	# pulse_pin & Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & Sensor/distance_calc/pulse_s<0> & !trigger_pin & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<8> & Sensor/distance_calc/pulse_s<9> & 
+	Sensor/distance_calc/pulse_s<11>;	// (2 pt, 17 inp)
+   Sensor/distance_calc/pulse_s<14>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 8 | Sensor/distance_calc/pulse_s<16>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 15 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 9 | 5 | 13 | 5 | 10 | 5 | 14 | 5 | 5 | 5 | 4 | 5 | 6 | 5 | 8
+INPUTS | 19 | pulse_pin  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>
+INPUTMC | 18 | 2 | 8 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6
+INPUTP | 1 | 48
+EQ | 11 | 
+   Sensor/distance_calc/pulse_s<16>.T := !pulse_pin & Sensor/distance_calc/pulse_s<16>
+	# Sensor/distance_calc/pulse_s<15> & pulse_pin & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11> & 
+	Sensor/distance_calc/pulse_s<14>;	// (2 pt, 19 inp)
+   Sensor/distance_calc/pulse_s<16>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 9 | Sensor/distance_calc/pulse_s<17>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 14 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 9 | 5 | 10 | 5 | 14 | 5 | 5 | 5 | 15 | 5 | 4 | 5 | 6 | 5 | 8
+INPUTS | 20 | pulse_pin  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<16>
+INPUTMC | 19 | 2 | 9 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6 | 2 | 8
+INPUTP | 1 | 48
+EQ | 11 | 
+   Sensor/distance_calc/pulse_s<17>.T := !pulse_pin & Sensor/distance_calc/pulse_s<17>
+	# Sensor/distance_calc/pulse_s<15> & pulse_pin & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11> & 
+	Sensor/distance_calc/pulse_s<14> & Sensor/distance_calc/pulse_s<16>;	// (2 pt, 20 inp)
+   Sensor/distance_calc/pulse_s<17>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 12 | Sensor/distance_calc/pulse_s<20>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 10 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 9 | 5 | 10 | 5 | 5 | 5 | 15 | 5 | 4 | 5 | 6 | 5 | 8
+INPUTS | 23 | pulse_pin  | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<18>  | Sensor/distance_calc/pulse_s<19>
+INPUTMC | 22 | 2 | 12 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11
+INPUTP | 1 | 48
+EQ | 13 | 
+   Sensor/distance_calc/pulse_s<20>.T := !pulse_pin & Sensor/distance_calc/pulse_s<20>
+	# Sensor/distance_calc/pulse_s<15> & pulse_pin & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11> & 
+	Sensor/distance_calc/pulse_s<14> & Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/pulse_s<17> & Sensor/distance_calc/pulse_s<18> & 
+	Sensor/distance_calc/pulse_s<19>;	// (2 pt, 23 inp)
+   Sensor/distance_calc/pulse_s<20>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 10 | Sensor/distance_calc/pulse_s<18>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 5 | 5 | 15 | 5 | 4 | 5 | 6
+INPUTS | 21 | pulse_pin  | Sensor/distance_calc/pulse_s<18>  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>
+INPUTMC | 20 | 2 | 10 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6 | 2 | 8 | 2 | 9
+INPUTP | 1 | 48
+EQ | 12 | 
+   Sensor/distance_calc/pulse_s<18>.T := !pulse_pin & Sensor/distance_calc/pulse_s<18>
+	# Sensor/distance_calc/pulse_s<15> & pulse_pin & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11> & 
+	Sensor/distance_calc/pulse_s<14> & Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/pulse_s<17>;	// (2 pt, 21 inp)
+   Sensor/distance_calc/pulse_s<18>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 11 | Sensor/distance_calc/pulse_s<19>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 7 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 2 | 5 | 5 | 5 | 15 | 5 | 4
+INPUTS | 22 | pulse_pin  | Sensor/distance_calc/pulse_s<19>  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<18>
+INPUTMC | 21 | 2 | 11 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 10
+INPUTP | 1 | 48
+EQ | 12 | 
+   Sensor/distance_calc/pulse_s<19>.T := !pulse_pin & Sensor/distance_calc/pulse_s<19>
+	# Sensor/distance_calc/pulse_s<15> & pulse_pin & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11> & 
+	Sensor/distance_calc/pulse_s<14> & Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/pulse_s<17> & Sensor/distance_calc/pulse_s<18>;	// (2 pt, 22 inp)
+   Sensor/distance_calc/pulse_s<19>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 2 | 2 | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 5 | 9 | 6 | 10 | 5 | 13 | 5 | 10 | 5 | 7 | 5 | 8
+INPUTS | 13 | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<0>
+INPUTMC | 13 | 2 | 3 | 2 | 15 | 2 | 13 | 2 | 4 | 2 | 1 | 2 | 0 | 6 | 9 | 6 | 8 | 6 | 7 | 6 | 6 | 6 | 3 | 6 | 2 | 4 | 1
+EQ | 36 | 
+   Sensor/distance_calc/Mmult_multiplier_mult0000__or0010 = Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<11>
+	# Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<11>
+	# Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<9>
+	# Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11>
+	# Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<8>
+	# Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<9> & 
+	Sensor/distance_calc/pulse_s<11>
+	# Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<8>
+	# Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11>
+	# Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<4> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<8>
+	# Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<5> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<9> & 
+	Sensor/distance_calc/pulse_s<11>
+	# Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<10> & Sensor/distance_calc/pulse_s<1> & 
+	Sensor/distance_calc/pulse_s<2> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<6> & Sensor/distance_calc/pulse_s<8>
+	# Sensor/distance_calc/pulse_s<0> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<3> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<7> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11>;	// (12 pt, 13 inp)
+
+MACROCELL | 5 | 2 | N_PZ_468_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 5 | 9 | 5 | 10 | 5 | 14 | 5 | 6 | 5 | 7 | 5 | 8
+INPUTS | 8 | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<21>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<18>  | Sensor/distance_calc/pulse_s<19>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<14>
+INPUTMC | 8 | 2 | 12 | 2 | 14 | 2 | 8 | 2 | 10 | 2 | 11 | 2 | 9 | 2 | 5 | 2 | 6
+EQ | 11 | 
+   N_PZ_468 = !Sensor/distance_calc/pulse_s<20> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<16> & 
+	!Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<14> & !Sensor/distance_calc/pulse_s<18> & 
+	!Sensor/distance_calc/pulse_s<19> & !Sensor/distance_calc/pulse_s<21>;	// (4 pt, 8 inp)
+
+MACROCELL | 2 | 14 | Sensor/distance_calc/pulse_s<21>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 5 | 2 | 14 | 5 | 2 | 5 | 5 | 5 | 15 | 5 | 4
+INPUTS | 24 | pulse_pin  | Sensor/distance_calc/pulse_s<21>  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/pulse_s<0>  | trigger_pin  | Sensor/distance_calc/pulse_s<10>  | Sensor/distance_calc/pulse_s<1>  | Sensor/distance_calc/pulse_s<2>  | Sensor/distance_calc/pulse_s<3>  | Sensor/distance_calc/pulse_s<4>  | Sensor/distance_calc/pulse_s<5>  | Sensor/distance_calc/pulse_s<6>  | Sensor/distance_calc/pulse_s<7>  | Sensor/distance_calc/pulse_s<8>  | Sensor/distance_calc/pulse_s<9>  | Sensor/distance_calc/pulse_s<11>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<18>  | Sensor/distance_calc/pulse_s<19>
+INPUTMC | 23 | 2 | 14 | 2 | 7 | 2 | 5 | 2 | 3 | 4 | 1 | 1 | 0 | 2 | 13 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 15 | 2 | 6 | 2 | 8 | 2 | 9 | 2 | 12 | 2 | 10 | 2 | 11
+INPUTP | 1 | 48
+EQ | 13 | 
+   Sensor/distance_calc/pulse_s<21>.T := !pulse_pin & Sensor/distance_calc/pulse_s<21>
+	# Sensor/distance_calc/pulse_s<15> & pulse_pin & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<0> & !trigger_pin & Sensor/distance_calc/pulse_s<10> & 
+	Sensor/distance_calc/pulse_s<1> & Sensor/distance_calc/pulse_s<2> & 
+	Sensor/distance_calc/pulse_s<3> & Sensor/distance_calc/pulse_s<4> & 
+	Sensor/distance_calc/pulse_s<5> & Sensor/distance_calc/pulse_s<6> & 
+	Sensor/distance_calc/pulse_s<7> & Sensor/distance_calc/pulse_s<8> & 
+	Sensor/distance_calc/pulse_s<9> & Sensor/distance_calc/pulse_s<11> & 
+	Sensor/distance_calc/pulse_s<14> & Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/pulse_s<17> & Sensor/distance_calc/pulse_s<20> & 
+	Sensor/distance_calc/pulse_s<18> & Sensor/distance_calc/pulse_s<19>;	// (2 pt, 24 inp)
+   Sensor/distance_calc/pulse_s<21>.CLK  =  clk_i;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk_i
+
+MACROCELL | 3 | 7 | Sensor/BCD_conv/bcd_11_mux0003_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 3 | 12 | 3 | 14 | 0 | 12 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 9 | Sensor/distance_o_s<3>  | Sensor/distance_o_s<4>  | Sensor/distance_o_s<6>  | Sensor/distance_o_s<8>  | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/distance_o_s<7>  | N_PZ_505  | N_PZ_395  | Sensor/distance_o_s<5>
+INPUTMC | 9 | 5 | 10 | 5 | 14 | 5 | 5 | 5 | 15 | 6 | 0 | 5 | 4 | 6 | 15 | 6 | 1 | 5 | 6
+EQ | 15 | 
+   Sensor/BCD_conv/bcd_11_mux0003 = Sensor/distance_o_s<3> & Sensor/distance_o_s<4> & 
+	Sensor/distance_o_s<6> & Sensor/distance_o_s<8> & 
+	!Sensor/BCD_conv/bcd_9_mux0002
+	# Sensor/distance_o_s<3> & Sensor/distance_o_s<4> & 
+	!Sensor/distance_o_s<8> & Sensor/distance_o_s<7> & N_PZ_505
+	# Sensor/distance_o_s<3> & !Sensor/distance_o_s<4> & 
+	Sensor/distance_o_s<6> & !Sensor/distance_o_s<8> & N_PZ_395
+	# Sensor/distance_o_s<3> & !Sensor/distance_o_s<6> & 
+	!Sensor/BCD_conv/bcd_9_mux0002 & !N_PZ_395 & !N_PZ_505
+	# !Sensor/distance_o_s<3> & Sensor/distance_o_s<6> & 
+	!Sensor/BCD_conv/bcd_9_mux0002 & !N_PZ_395 & !N_PZ_505
+	# !Sensor/distance_o_s<3> & !Sensor/distance_o_s<6> & 
+	Sensor/distance_o_s<8> & !Sensor/BCD_conv/bcd_9_mux0002 & N_PZ_395
+	# !Sensor/distance_o_s<3> & !Sensor/distance_o_s<8> & 
+	!Sensor/BCD_conv/bcd_9_mux0002 & Sensor/distance_o_s<5> & N_PZ_505;	// (7 pt, 9 inp)
+
+MACROCELL | 5 | 10 | Sensor/distance_o_s<3>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 7 | 3 | 7 | 3 | 9 | 3 | 12 | 6 | 12 | 6 | 11 | 3 | 14 | 3 | 15
+INPUTS | 11 | N_PZ_468  | Sensor/distance_calc/pulse_s<16>  | N_PZ_428  | N_PZ_650  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+INPUTMC | 11 | 5 | 2 | 2 | 8 | 6 | 10 | 5 | 13 | 2 | 7 | 2 | 6 | 2 | 9 | 2 | 12 | 2 | 5 | 2 | 3 | 2 | 2
+EQ | 14 | 
+   Sensor/distance_o_s<3>.D = !N_PZ_468
+	# Sensor/distance_calc/pulse_s<16> & !N_PZ_428
+	# N_PZ_428 & N_PZ_650
+	# Sensor/distance_calc/pulse_s<15> & 
+	Sensor/distance_calc/pulse_s<14> & Sensor/distance_calc/pulse_s<16>
+	# Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/pulse_s<17> & Sensor/distance_calc/pulse_s<20>
+	# Sensor/distance_calc/pulse_s<15> & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<16>
+	# Sensor/distance_calc/pulse_s<15> & 
+	Sensor/distance_calc/pulse_s<13> & Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010;	// (7 pt, 11 inp)
+   Sensor/distance_o_s<3>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 6 | 10 | N_PZ_428_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 5 | 10 | 5 | 14 | 5 | 5 | 5 | 4 | 5 | 6 | 5 | 7
+INPUTS | 5 | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+INPUTMC | 5 | 2 | 7 | 2 | 5 | 2 | 6 | 2 | 3 | 2 | 2
+EQ | 6 | 
+   N_PZ_428 = Sensor/distance_calc/pulse_s<15>
+	# Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<14>
+	# Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/pulse_s<14> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010;	// (3 pt, 5 inp)
+
+MACROCELL | 5 | 13 | N_PZ_650_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 5 | 10 | 5 | 14 | 5 | 5 | 5 | 15 | 5 | 4 | 5 | 6
+INPUTS | 6 | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+INPUTMC | 6 | 2 | 7 | 2 | 8 | 2 | 5 | 2 | 6 | 2 | 3 | 2 | 2
+EQ | 7 | 
+   N_PZ_650 = !Sensor/distance_calc/pulse_s<15> & 
+	!Sensor/distance_calc/pulse_s<16>
+	# !Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<14> & !Sensor/distance_calc/pulse_s<16>
+	# !Sensor/distance_calc/pulse_s<12> & 
+	!Sensor/distance_calc/pulse_s<14> & !Sensor/distance_calc/pulse_s<16> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010;	// (3 pt, 6 inp)
+
+MACROCELL | 5 | 14 | Sensor/distance_o_s<4>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 8 | 6 | 0 | 6 | 15 | 3 | 7 | 3 | 6 | 3 | 9 | 3 | 12 | 3 | 8 | 3 | 10
+INPUTS | 5 | Sensor/distance_calc/pulse_s<17>  | N_PZ_468  | Sensor/distance_calc/pulse_s<16>  | N_PZ_650  | N_PZ_428
+INPUTMC | 5 | 2 | 9 | 5 | 2 | 2 | 8 | 5 | 13 | 6 | 10
+EQ | 5 | 
+   !Sensor/distance_o_s<4>.D = !Sensor/distance_calc/pulse_s<17> & N_PZ_468
+	$ !Sensor/distance_calc/pulse_s<16> & N_PZ_468 & 
+	!N_PZ_650
+	# N_PZ_468 & !N_PZ_428 & !N_PZ_650;	// (3 pt, 5 inp)
+   Sensor/distance_o_s<4>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 5 | 5 | Sensor/distance_o_s<6>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 9 | 6 | 13 | 6 | 15 | 3 | 7 | 3 | 6 | 3 | 9 | 3 | 12 | 3 | 8 | 6 | 14 | 3 | 10
+INPUTS | 8 | Sensor/distance_calc/pulse_s<19>  | Sensor/distance_calc/pulse_s<21>  | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<18>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | N_PZ_650  | N_PZ_428
+INPUTMC | 8 | 2 | 11 | 2 | 14 | 2 | 12 | 2 | 10 | 2 | 8 | 2 | 9 | 5 | 13 | 6 | 10
+EQ | 18 | 
+   !Sensor/distance_o_s<6>.D = !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21>
+	$ Sensor/distance_calc/pulse_s<20> & 
+	Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<16> & 
+	!Sensor/distance_calc/pulse_s<17> & !Sensor/distance_calc/pulse_s<20> & 
+	Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<21>
+	# Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<20> & !Sensor/distance_calc/pulse_s<18> & 
+	!Sensor/distance_calc/pulse_s<21> & !N_PZ_650
+	# Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21> & !N_PZ_650
+	# !Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<20> & Sensor/distance_calc/pulse_s<18> & 
+	!Sensor/distance_calc/pulse_s<21> & !N_PZ_428;	// (6 pt, 8 inp)
+   Sensor/distance_o_s<6>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 5 | 15 | Sensor/distance_o_s<8>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 11 | 6 | 13 | 6 | 0 | 6 | 15 | 3 | 7 | 3 | 6 | 3 | 9 | 3 | 12 | 3 | 8 | 6 | 14 | 3 | 10 | 0 | 5
+INPUTS | 6 | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<19>  | Sensor/distance_calc/pulse_s<21>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<18>  | N_PZ_650
+INPUTMC | 6 | 2 | 12 | 2 | 11 | 2 | 14 | 2 | 9 | 2 | 10 | 5 | 13
+EQ | 8 | 
+   !Sensor/distance_o_s<8>.D = !Sensor/distance_calc/pulse_s<20> & 
+	!Sensor/distance_calc/pulse_s<19> & !Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<20> & !Sensor/distance_calc/pulse_s<18> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<20> & 
+	!Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<21> & N_PZ_650;	// (3 pt, 6 inp)
+   Sensor/distance_o_s<8>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 6 | 0 | Sensor/BCD_conv/bcd_9_mux0002_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 11 | 6 | 15 | 3 | 7 | 3 | 6 | 3 | 9 | 3 | 12 | 6 | 12 | 6 | 11 | 3 | 14 | 3 | 8 | 3 | 10 | 3 | 15
+INPUTS | 6 | Sensor/distance_o_s<4>  | N_PZ_566  | Sensor/distance_o_s<7>  | N_PZ_395  | Sensor/distance_o_s<8>  | Sensor/distance_o_s<5>
+INPUTMC | 6 | 5 | 14 | 6 | 13 | 5 | 4 | 6 | 1 | 5 | 15 | 5 | 6
+EQ | 8 | 
+   Sensor/BCD_conv/bcd_9_mux0002 = Sensor/distance_o_s<4> & N_PZ_566
+	$ N_PZ_566 & Sensor/distance_o_s<7> & !N_PZ_395
+	# Sensor/distance_o_s<4> & !Sensor/distance_o_s<8> & 
+	Sensor/distance_o_s<7> & !N_PZ_395
+	# !Sensor/distance_o_s<4> & Sensor/distance_o_s<8> & 
+	!N_PZ_566 & N_PZ_395
+	# !Sensor/distance_o_s<4> & !N_PZ_566 & !N_PZ_395 & 
+	Sensor/distance_o_s<5>;	// (5 pt, 6 inp)
+
+MACROCELL | 6 | 13 | N_PZ_566_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 6 | 0 | 3 | 6 | 3 | 9
+INPUTS | 2 | Sensor/distance_o_s<6>  | Sensor/distance_o_s<8>
+INPUTMC | 2 | 5 | 5 | 5 | 15
+EQ | 2 | 
+   N_PZ_566 = Sensor/distance_o_s<6> & Sensor/distance_o_s<8>
+	# !Sensor/distance_o_s<6> & !Sensor/distance_o_s<8>;	// (2 pt, 2 inp)
+
+MACROCELL | 5 | 4 | Sensor/distance_o_s<7>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 9 | 6 | 1 | 6 | 0 | 6 | 15 | 3 | 7 | 3 | 9 | 3 | 12 | 3 | 8 | 6 | 14 | 3 | 10
+INPUTS | 8 | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<18>  | Sensor/distance_calc/pulse_s<19>  | Sensor/distance_calc/pulse_s<21>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | N_PZ_650  | N_PZ_428
+INPUTMC | 8 | 2 | 12 | 2 | 10 | 2 | 11 | 2 | 14 | 2 | 8 | 2 | 9 | 5 | 13 | 6 | 10
+EQ | 16 | 
+   !Sensor/distance_o_s<7>.D = !Sensor/distance_calc/pulse_s<20> & 
+	Sensor/distance_calc/pulse_s<18> & Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<20> & 
+	!Sensor/distance_calc/pulse_s<18> & !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21>
+	# !Sensor/distance_calc/pulse_s<16> & 
+	!Sensor/distance_calc/pulse_s<17> & !Sensor/distance_calc/pulse_s<20> & 
+	!Sensor/distance_calc/pulse_s<19> & !Sensor/distance_calc/pulse_s<21>
+	# Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<20> & Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21> & !N_PZ_650
+	# !Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<20> & !Sensor/distance_calc/pulse_s<19> & 
+	!Sensor/distance_calc/pulse_s<21> & !N_PZ_428;	// (5 pt, 8 inp)
+   Sensor/distance_o_s<7>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 6 | 1 | N_PZ_395_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 6 | 0 | 3 | 7 | 3 | 6 | 3 | 9 | 3 | 8 | 3 | 10
+INPUTS | 2 | Sensor/distance_o_s<7>  | Sensor/distance_o_s<5>
+INPUTMC | 2 | 5 | 4 | 5 | 6
+EQ | 2 | 
+   N_PZ_395 = Sensor/distance_o_s<7> & Sensor/distance_o_s<5>
+	# !Sensor/distance_o_s<7> & !Sensor/distance_o_s<5>;	// (2 pt, 2 inp)
+
+MACROCELL | 5 | 6 | Sensor/distance_o_s<5>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 7 | 6 | 1 | 6 | 0 | 6 | 15 | 3 | 7 | 3 | 9 | 3 | 12 | 3 | 10
+INPUTS | 8 | N_PZ_468  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<20>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<18>  | N_PZ_650  | N_PZ_428
+INPUTMC | 8 | 5 | 2 | 2 | 7 | 2 | 8 | 2 | 12 | 2 | 9 | 2 | 10 | 5 | 13 | 6 | 10
+EQ | 16 | 
+   Sensor/distance_o_s<5>.D = !N_PZ_468
+	# Sensor/distance_calc/pulse_s<15> & 
+	Sensor/distance_calc/pulse_s<16> & Sensor/distance_calc/pulse_s<20>
+	# Sensor/distance_calc/pulse_s<16> & 
+	Sensor/distance_calc/pulse_s<17> & Sensor/distance_calc/pulse_s<18>
+	# !Sensor/distance_calc/pulse_s<16> & 
+	!Sensor/distance_calc/pulse_s<17> & Sensor/distance_calc/pulse_s<18>
+	# Sensor/distance_calc/pulse_s<17> & 
+	Sensor/distance_calc/pulse_s<18> & !N_PZ_650
+	# Sensor/distance_calc/pulse_s<17> & 
+	!Sensor/distance_calc/pulse_s<18> & N_PZ_650
+	# Sensor/distance_calc/pulse_s<18> & !N_PZ_428 & 
+	!N_PZ_650
+	# Sensor/distance_calc/pulse_s<16> & 
+	!Sensor/distance_calc/pulse_s<17> & !Sensor/distance_calc/pulse_s<18> & N_PZ_428;	// (8 pt, 8 inp)
+   Sensor/distance_o_s<5>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 6 | 15 | N_PZ_505_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 3 | 7 | 3 | 6 | 3 | 9 | 3 | 8 | 6 | 14 | 3 | 10 | 0 | 3 | 0 | 5
+INPUTS | 6 | Sensor/distance_o_s<8>  | Sensor/distance_o_s<7>  | Sensor/distance_o_s<4>  | Sensor/distance_o_s<6>  | Sensor/distance_o_s<5>  | Sensor/BCD_conv/bcd_9_mux0002
+INPUTMC | 6 | 5 | 15 | 5 | 4 | 5 | 14 | 5 | 5 | 5 | 6 | 6 | 0
+EQ | 9 | 
+   N_PZ_505 = !Sensor/distance_o_s<8> & !Sensor/distance_o_s<7>
+	# Sensor/distance_o_s<4> & Sensor/distance_o_s<8> & 
+	Sensor/distance_o_s<7>
+	# !Sensor/distance_o_s<6> & !Sensor/distance_o_s<8> & 
+	!Sensor/distance_o_s<5>
+	# Sensor/distance_o_s<8> & 
+	Sensor/BCD_conv/bcd_9_mux0002 & Sensor/distance_o_s<7>
+	# Sensor/distance_o_s<6> & Sensor/distance_o_s<8> & 
+	Sensor/distance_o_s<7> & Sensor/distance_o_s<5>;	// (5 pt, 6 inp)
+
+MACROCELL | 3 | 14 | N_PZ_410_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 0 | 12 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 7 | Sensor/BCD_conv/bcd_11_mux0003  | N_PZ_563  | Sensor/BCD_conv/bcd_9_mux0003  | Sensor/distance_o_s<2>  | N_PZ_559  | Sensor/distance_o_s<3>  | Sensor/BCD_conv/bcd_9_mux0002
+INPUTMC | 7 | 3 | 7 | 6 | 11 | 3 | 9 | 5 | 7 | 6 | 12 | 5 | 10 | 6 | 0
+EQ | 10 | 
+   N_PZ_410 = Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_563
+	# Sensor/BCD_conv/bcd_11_mux0003 & 
+	!Sensor/BCD_conv/bcd_9_mux0003 & !Sensor/distance_o_s<2>
+	# !Sensor/BCD_conv/bcd_11_mux0003 & 
+	Sensor/BCD_conv/bcd_9_mux0003 & N_PZ_559
+	# Sensor/BCD_conv/bcd_11_mux0003 & 
+	!Sensor/distance_o_s<3> & Sensor/BCD_conv/bcd_9_mux0002 & 
+	Sensor/BCD_conv/bcd_9_mux0003
+	# !Sensor/BCD_conv/bcd_11_mux0003 & 
+	!Sensor/BCD_conv/bcd_9_mux0003 & Sensor/distance_o_s<2> & N_PZ_563;	// (5 pt, 7 inp)
+
+MACROCELL | 3 | 9 | Sensor/BCD_conv/bcd_9_mux0003_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 3 | 12 | 3 | 14 | 0 | 12 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 11 | Sensor/distance_o_s<3>  | N_PZ_544  | Sensor/distance_o_s<4>  | Sensor/BCD_conv/bcd_9_mux0002  | N_PZ_566  | N_PZ_395  | Sensor/distance_o_s<5>  | N_PZ_505  | Sensor/distance_o_s<8>  | Sensor/distance_o_s<6>  | Sensor/distance_o_s<7>
+INPUTMC | 11 | 5 | 10 | 3 | 6 | 5 | 14 | 6 | 0 | 6 | 13 | 6 | 1 | 5 | 6 | 6 | 15 | 5 | 15 | 5 | 5 | 5 | 4
+EQ | 15 | 
+   Sensor/BCD_conv/bcd_9_mux0003 = Sensor/distance_o_s<3> & N_PZ_544
+	# !Sensor/distance_o_s<3> & Sensor/distance_o_s<4> & 
+	!Sensor/BCD_conv/bcd_9_mux0002 & N_PZ_566
+	# !Sensor/distance_o_s<3> & Sensor/distance_o_s<4> & 
+	N_PZ_566 & !N_PZ_544
+	# !Sensor/distance_o_s<3> & Sensor/distance_o_s<4> & 
+	!N_PZ_395 & Sensor/distance_o_s<5> & !N_PZ_505
+	# !Sensor/distance_o_s<3> & !Sensor/distance_o_s<4> & 
+	!Sensor/distance_o_s<8> & !N_PZ_566 & N_PZ_395
+	# !Sensor/distance_o_s<3> & !Sensor/distance_o_s<6> & 
+	!N_PZ_395 & !Sensor/distance_o_s<5> & !N_PZ_505
+	# !Sensor/distance_o_s<3> & 
+	Sensor/BCD_conv/bcd_9_mux0002 & !N_PZ_566 & !N_PZ_505 & !N_PZ_544
+	# !Sensor/distance_o_s<3> & 
+	Sensor/BCD_conv/bcd_9_mux0002 & Sensor/distance_o_s<7> & !N_PZ_395 & N_PZ_505;	// (8 pt, 11 inp)
+
+MACROCELL | 3 | 6 | N_PZ_544_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 3 | 9 | 3 | 12 | 3 | 8
+INPUTS | 7 | Sensor/BCD_conv/bcd_9_mux0002  | N_PZ_395  | N_PZ_566  | Sensor/distance_o_s<4>  | Sensor/distance_o_s<8>  | Sensor/distance_o_s<6>  | N_PZ_505
+INPUTMC | 7 | 6 | 0 | 6 | 1 | 6 | 13 | 5 | 14 | 5 | 15 | 5 | 5 | 6 | 15
+EQ | 8 | 
+   N_PZ_544 = Sensor/BCD_conv/bcd_9_mux0002 & N_PZ_395
+	# N_PZ_566 & N_PZ_395
+	# Sensor/distance_o_s<4> & !Sensor/distance_o_s<8> & 
+	N_PZ_395
+	# !Sensor/distance_o_s<4> & Sensor/distance_o_s<6> & 
+	!Sensor/distance_o_s<8> & Sensor/BCD_conv/bcd_9_mux0002
+	# Sensor/distance_o_s<4> & !Sensor/distance_o_s<6> & 
+	Sensor/distance_o_s<8> & !N_PZ_395 & N_PZ_505;	// (5 pt, 7 inp)
+
+MACROCELL | 5 | 7 | Sensor/distance_o_s<2>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 5 | 3 | 14 | 0 | 12 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 7 | Sensor/distance_calc/pulse_s<15>  | N_PZ_468  | N_PZ_428  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<14>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+INPUTMC | 7 | 2 | 7 | 5 | 2 | 6 | 10 | 2 | 5 | 2 | 6 | 2 | 3 | 2 | 2
+EQ | 20 | 
+   !Sensor/distance_o_s<2>.D = !Sensor/distance_calc/pulse_s<15> & N_PZ_468 & 
+	N_PZ_428
+	# !Sensor/distance_calc/pulse_s<15> & 
+	!Sensor/distance_calc/pulse_s<13> & !Sensor/distance_calc/pulse_s<14> & N_PZ_468
+	# !Sensor/distance_calc/pulse_s<15> & 
+	!Sensor/distance_calc/pulse_s<12> & !Sensor/distance_calc/pulse_s<14> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010 & N_PZ_468
+	# Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & !Sensor/distance_calc/pulse_s<14> & N_PZ_468 & 
+	N_PZ_428
+	# Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<14> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010 & N_PZ_468 & N_PZ_428
+	# !Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<12> & Sensor/distance_calc/pulse_s<14> & N_PZ_468 & 
+	N_PZ_428
+	# !Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<14> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010 & N_PZ_468 & N_PZ_428;	// (7 pt, 7 inp)
+   Sensor/distance_o_s<2>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 6 | 12 | N_PZ_559_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 5 | 3 | 14 | 0 | 12 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 3 | Sensor/distance_o_s<3>  | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/BCD_conv/bcd_12_mux0003
+INPUTMC | 3 | 5 | 10 | 6 | 0 | 3 | 12
+EQ | 4 | 
+   N_PZ_559 = Sensor/distance_o_s<3> & 
+	Sensor/BCD_conv/bcd_9_mux0002
+	# !Sensor/distance_o_s<3> & 
+	!Sensor/BCD_conv/bcd_9_mux0002 & !Sensor/BCD_conv/bcd_12_mux0003;	// (2 pt, 3 inp)
+
+MACROCELL | 3 | 12 | Sensor/BCD_conv/bcd_12_mux0003_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 6 | 12 | 6 | 11 | 3 | 8 | 6 | 14 | 3 | 10 | 0 | 3 | 3 | 15
+INPUTS | 10 | N_PZ_544  | Sensor/distance_o_s<3>  | Sensor/BCD_conv/bcd_9_mux0003  | Sensor/BCD_conv/bcd_11_mux0003  | Sensor/distance_o_s<4>  | Sensor/distance_o_s<6>  | Sensor/distance_o_s<8>  | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/distance_o_s<7>  | Sensor/distance_o_s<5>
+INPUTMC | 10 | 3 | 6 | 5 | 10 | 3 | 9 | 3 | 7 | 5 | 14 | 5 | 5 | 5 | 15 | 6 | 0 | 5 | 4 | 5 | 6
+EQ | 9 | 
+   Sensor/BCD_conv/bcd_12_mux0003 = N_PZ_544
+	# !Sensor/distance_o_s<3> & 
+	!Sensor/BCD_conv/bcd_9_mux0003
+	# !Sensor/BCD_conv/bcd_11_mux0003 & 
+	!Sensor/distance_o_s<4> & Sensor/distance_o_s<6> & !Sensor/distance_o_s<8> & 
+	Sensor/BCD_conv/bcd_9_mux0002
+	# !Sensor/BCD_conv/bcd_11_mux0003 & 
+	!Sensor/distance_o_s<6> & Sensor/distance_o_s<8> & 
+	Sensor/BCD_conv/bcd_9_mux0002 & Sensor/distance_o_s<7> & !Sensor/distance_o_s<5>;	// (4 pt, 10 inp)
+
+MACROCELL | 6 | 11 | N_PZ_563_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 3 | 14 | 0 | 12 | 0 | 5 | 0 | 11
+INPUTS | 3 | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/distance_o_s<3>  | Sensor/BCD_conv/bcd_12_mux0003
+INPUTMC | 3 | 6 | 0 | 5 | 10 | 3 | 12
+EQ | 3 | 
+   N_PZ_563 = Sensor/BCD_conv/bcd_9_mux0002
+	# !Sensor/distance_o_s<3> & 
+	!Sensor/BCD_conv/bcd_12_mux0003;	// (2 pt, 3 inp)
+
+MACROCELL | 6 | 14 | Sensor/BCD_conv/bcd_15_mux0001_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 6 | N_PZ_505  | Sensor/BCD_conv/bcd_12_mux0003  | Sensor/BCD_conv/bcd_13_mux0001  | Sensor/distance_o_s<6>  | Sensor/distance_o_s<8>  | Sensor/distance_o_s<7>
+INPUTMC | 6 | 6 | 15 | 3 | 12 | 3 | 8 | 5 | 5 | 5 | 15 | 5 | 4
+EQ | 6 | 
+   Sensor/BCD_conv/bcd_15_mux0001 = !N_PZ_505 & Sensor/BCD_conv/bcd_12_mux0003 & 
+	!Sensor/BCD_conv/bcd_13_mux0001
+	# Sensor/distance_o_s<6> & Sensor/distance_o_s<8> & 
+	!N_PZ_505 & !Sensor/BCD_conv/bcd_13_mux0001
+	# Sensor/distance_o_s<8> & Sensor/distance_o_s<7> & 
+	!N_PZ_505 & !Sensor/BCD_conv/bcd_13_mux0001;	// (3 pt, 6 inp)
+
+MACROCELL | 3 | 8 | Sensor/BCD_conv/bcd_13_mux0001_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 6 | 6 | 14 | 3 | 10 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 9 | Sensor/distance_o_s<8>  | N_PZ_505  | Sensor/BCD_conv/bcd_12_mux0003  | Sensor/distance_o_s<6>  | N_PZ_395  | N_PZ_544  | Sensor/distance_o_s<4>  | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/distance_o_s<7>
+INPUTMC | 9 | 5 | 15 | 6 | 15 | 3 | 12 | 5 | 5 | 6 | 1 | 3 | 6 | 5 | 14 | 6 | 0 | 5 | 4
+EQ | 9 | 
+   Sensor/BCD_conv/bcd_13_mux0001 = Sensor/distance_o_s<8> & !N_PZ_505 & 
+	Sensor/BCD_conv/bcd_12_mux0003
+	$ N_PZ_505 & !Sensor/BCD_conv/bcd_12_mux0003
+	# Sensor/distance_o_s<6> & !Sensor/distance_o_s<8> & 
+	N_PZ_395 & !N_PZ_505 & N_PZ_544 & 
+	Sensor/BCD_conv/bcd_12_mux0003
+	# !Sensor/distance_o_s<4> & !Sensor/distance_o_s<6> & 
+	Sensor/distance_o_s<8> & !Sensor/BCD_conv/bcd_9_mux0002 & 
+	!Sensor/distance_o_s<7> & !N_PZ_505 & Sensor/BCD_conv/bcd_12_mux0003;	// (4 pt, 9 inp)
+
+MACROCELL | 3 | 10 | Sensor/BCD_conv/bcd_14_mux0001_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 4 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+INPUTS | 10 | Sensor/distance_o_s<4>  | Sensor/distance_o_s<8>  | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/distance_o_s<6>  | Sensor/distance_o_s<5>  | Sensor/distance_o_s<7>  | Sensor/BCD_conv/bcd_13_mux0001  | N_PZ_395  | N_PZ_505  | Sensor/BCD_conv/bcd_12_mux0003
+INPUTMC | 10 | 5 | 14 | 5 | 15 | 6 | 0 | 5 | 5 | 5 | 6 | 5 | 4 | 3 | 8 | 6 | 1 | 6 | 15 | 3 | 12
+EQ | 15 | 
+   Sensor/BCD_conv/bcd_14_mux0001 = !Sensor/distance_o_s<4> & !Sensor/distance_o_s<8> & 
+	!Sensor/BCD_conv/bcd_9_mux0002
+	# !Sensor/distance_o_s<6> & !Sensor/distance_o_s<8> & 
+	Sensor/distance_o_s<5>
+	# !Sensor/distance_o_s<6> & !Sensor/distance_o_s<7> & 
+	Sensor/BCD_conv/bcd_13_mux0001
+	# !Sensor/distance_o_s<6> & N_PZ_395 & N_PZ_505
+	# Sensor/distance_o_s<8> & !N_PZ_395 & N_PZ_505
+	# !Sensor/distance_o_s<8> & !N_PZ_395 & !N_PZ_505
+	# !Sensor/distance_o_s<8> & !N_PZ_505 & 
+	Sensor/BCD_conv/bcd_13_mux0001
+	# !Sensor/distance_o_s<4> & 
+	!Sensor/BCD_conv/bcd_9_mux0002 & !N_PZ_505 & !Sensor/BCD_conv/bcd_13_mux0001
+	# Sensor/distance_o_s<6> & Sensor/distance_o_s<8> & 
+	!N_PZ_505 & !Sensor/BCD_conv/bcd_12_mux0003;	// (9 pt, 10 inp)
+
+MACROCELL | 0 | 5 | Driver/s_hex<2>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 7 | 11 | 7 | 0 | 7 | 1 | 7 | 10 | 7 | 5 | 7 | 2 | 7 | 4
+INPUTS | 15 | Sensor/distance_o_s<8>  | N_PZ_505  | disp_dp  | Driver/s_cnt<0>  | Driver/s_cnt<1>  | N_PZ_410  | Sensor/BCD_conv/bcd_15_mux0001  | Sensor/BCD_conv/bcd_13_mux0001  | Sensor/BCD_conv/bcd_14_mux0001  | Sensor/distance_o_s<1>  | Sensor/distance_o_s<2>  | Sensor/BCD_conv/bcd_9_mux0003  | N_PZ_559  | Sensor/BCD_conv/bcd_11_mux0003  | N_PZ_563
+INPUTMC | 15 | 5 | 15 | 6 | 15 | 3 | 3 | 0 | 0 | 0 | 13 | 3 | 14 | 6 | 14 | 3 | 8 | 3 | 10 | 5 | 9 | 5 | 7 | 3 | 9 | 6 | 12 | 3 | 7 | 6 | 11
+EQ | 26 | 
+   Driver/s_hex<2> = Sensor/distance_o_s<8> & N_PZ_505 & !disp_dp
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & N_PZ_410 & 
+	Sensor/BCD_conv/bcd_15_mux0001 & Sensor/BCD_conv/bcd_13_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & N_PZ_410 & 
+	Sensor/BCD_conv/bcd_13_mux0001 & !Sensor/BCD_conv/bcd_14_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & !N_PZ_410 & 
+	Sensor/BCD_conv/bcd_15_mux0001 & !Sensor/BCD_conv/bcd_13_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/BCD_conv/bcd_15_mux0001 & Sensor/BCD_conv/bcd_13_mux0001 & 
+	Sensor/BCD_conv/bcd_14_mux0001
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & N_PZ_410 & !Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/BCD_conv/bcd_9_mux0003 & !Sensor/distance_o_s<2> & N_PZ_559
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_410 & 
+	Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_11_mux0003 & N_PZ_410 & 
+	Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_9_mux0003 & 
+	Sensor/distance_o_s<2> & !N_PZ_563
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_410 & 
+	!Sensor/BCD_conv/bcd_9_mux0003 & N_PZ_563;	// (11 pt, 15 inp)
+
+MACROCELL | 0 | 11 | Driver/s_hex<0>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 7 | 11 | 7 | 0 | 7 | 1 | 7 | 10 | 7 | 5 | 7 | 2 | 7 | 4
+INPUTS | 14 | Driver/s_cnt<0>  | Driver/s_cnt<1>  | centimeters_s<0>  | Sensor/BCD_conv/bcd_15_mux0001  | Sensor/BCD_conv/bcd_14_mux0001  | disp_dp  | N_PZ_410  | Sensor/BCD_conv/bcd_13_mux0001  | Sensor/BCD_conv/bcd_9_mux0003  | N_PZ_563  | Sensor/distance_o_s<1>  | Sensor/distance_o_s<2>  | N_PZ_559  | Sensor/BCD_conv/bcd_11_mux0003
+INPUTMC | 14 | 0 | 0 | 0 | 13 | 5 | 8 | 6 | 14 | 3 | 10 | 3 | 3 | 3 | 14 | 3 | 8 | 3 | 9 | 6 | 11 | 5 | 9 | 5 | 7 | 6 | 12 | 3 | 7
+EQ | 27 | 
+   Driver/s_hex<0> = !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	centimeters_s<0>
+	# Sensor/BCD_conv/bcd_15_mux0001 & 
+	Sensor/BCD_conv/bcd_14_mux0001 & !disp_dp
+	# N_PZ_410 & !Sensor/BCD_conv/bcd_15_mux0001 & 
+	!Sensor/BCD_conv/bcd_14_mux0001 & !disp_dp
+	# !N_PZ_410 & Sensor/BCD_conv/bcd_15_mux0001 & 
+	!Sensor/BCD_conv/bcd_13_mux0001 & !disp_dp
+	# !Sensor/BCD_conv/bcd_15_mux0001 & 
+	Sensor/BCD_conv/bcd_13_mux0001 & !Sensor/BCD_conv/bcd_14_mux0001 & !disp_dp
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & N_PZ_410 & 
+	!Sensor/BCD_conv/bcd_9_mux0003 & !N_PZ_563
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_9_mux0003 & 
+	Sensor/distance_o_s<2> & N_PZ_559
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_9_mux0003 & 
+	!Sensor/distance_o_s<2> & !N_PZ_559
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_11_mux0003 & N_PZ_410 & 
+	Sensor/BCD_conv/bcd_9_mux0003
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_410 & Sensor/BCD_conv/bcd_9_mux0003 & 
+	Sensor/distance_o_s<2>
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_410 & !Sensor/BCD_conv/bcd_9_mux0003 & 
+	N_PZ_563;	// (11 pt, 14 inp)
+
+MACROCELL | 5 | 8 | centimeters_s<0>_MC
+ATTRIBUTES | 2148041472 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 8 | N_PZ_468  | Sensor/distance_calc/pulse_s<13>  | Sensor/distance_calc/pulse_s<12>  | Sensor/distance_calc/Mmult_multiplier_mult0000__or0010  | Sensor/distance_calc/pulse_s<15>  | Sensor/distance_calc/pulse_s<16>  | Sensor/distance_calc/pulse_s<17>  | Sensor/distance_calc/pulse_s<20>
+INPUTMC | 8 | 5 | 2 | 2 | 5 | 2 | 3 | 2 | 2 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 12
+EQ | 17 | 
+   centimeters_s<0>.D = !N_PZ_468
+	# Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<12> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# !Sensor/distance_calc/pulse_s<13> & 
+	Sensor/distance_calc/pulse_s<12> & 
+	!Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# !Sensor/distance_calc/pulse_s<13> & 
+	!Sensor/distance_calc/pulse_s<12> & 
+	Sensor/distance_calc/Mmult_multiplier_mult0000__or0010
+	# Sensor/distance_calc/pulse_s<15> & 
+	Sensor/distance_calc/pulse_s<16> & Sensor/distance_calc/pulse_s<17> & 
+	Sensor/distance_calc/pulse_s<20>;	// (6 pt, 8 inp)
+   centimeters_s<0>.LH  =  !pulse_pin;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | pulse_pin
+
+MACROCELL | 3 | 15 | Driver/s_hex<3>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 7 | 7 | 11 | 7 | 0 | 7 | 1 | 7 | 10 | 7 | 5 | 7 | 2 | 7 | 4
+INPUTS | 14 | Driver/s_cnt<0>  | Driver/s_cnt<1>  | N_PZ_410  | Sensor/BCD_conv/bcd_15_mux0001  | Sensor/BCD_conv/bcd_14_mux0001  | Sensor/BCD_conv/bcd_13_mux0001  | Sensor/distance_o_s<1>  | Sensor/BCD_conv/bcd_9_mux0003  | Sensor/distance_o_s<2>  | N_PZ_559  | Sensor/BCD_conv/bcd_11_mux0003  | Sensor/BCD_conv/bcd_9_mux0002  | Sensor/distance_o_s<3>  | Sensor/BCD_conv/bcd_12_mux0003
+INPUTMC | 14 | 0 | 0 | 0 | 13 | 3 | 14 | 6 | 14 | 3 | 10 | 3 | 8 | 5 | 9 | 3 | 9 | 5 | 7 | 6 | 12 | 3 | 7 | 6 | 0 | 5 | 10 | 3 | 12
+EQ | 29 | 
+   Driver/s_hex<3> = Driver/s_cnt<0> & !Driver/s_cnt<1> & N_PZ_410 & 
+	Sensor/BCD_conv/bcd_15_mux0001 & Sensor/BCD_conv/bcd_14_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & !N_PZ_410 & 
+	!Sensor/BCD_conv/bcd_13_mux0001 & !Sensor/BCD_conv/bcd_14_mux0001
+	# Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/BCD_conv/bcd_15_mux0001 & Sensor/BCD_conv/bcd_13_mux0001 & 
+	Sensor/BCD_conv/bcd_14_mux0001
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & N_PZ_410 & Sensor/BCD_conv/bcd_9_mux0003 & 
+	Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_9_mux0003 & 
+	Sensor/distance_o_s<2> & N_PZ_559
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/BCD_conv/bcd_11_mux0003 & N_PZ_410 & Sensor/BCD_conv/bcd_9_mux0003 & 
+	!Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & Sensor/BCD_conv/bcd_11_mux0003 & N_PZ_410 & 
+	!Sensor/BCD_conv/bcd_9_mux0003 & Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_11_mux0003 & 
+	Sensor/BCD_conv/bcd_9_mux0002 & !N_PZ_410 & !Sensor/BCD_conv/bcd_9_mux0003
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	!Sensor/distance_o_s<1> & !Sensor/BCD_conv/bcd_11_mux0003 & !N_PZ_410 & 
+	Sensor/BCD_conv/bcd_9_mux0003 & !Sensor/distance_o_s<2>
+	# !Driver/s_cnt<0> & !Driver/s_cnt<1> & 
+	Sensor/distance_o_s<1> & !Sensor/distance_o_s<3> & !N_PZ_410 & 
+	!Sensor/BCD_conv/bcd_9_mux0003 & !Sensor/distance_o_s<2> & 
+	!Sensor/BCD_conv/bcd_12_mux0003;	// (10 pt, 14 inp)
+
+MACROCELL | 7 | 0 | disp_seg_o<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<0>  | Driver/s_hex<3>  | Driver/s_hex<1>  | Driver/s_hex<2>
+INPUTMC | 4 | 0 | 11 | 3 | 15 | 0 | 3 | 0 | 5
+EQ | 5 | 
+   disp_seg_o<1> = Driver/s_hex<0> & !Driver/s_hex<3>
+	$ Driver/s_hex<1> & Driver/s_hex<2> & 
+	Driver/s_hex<0>
+	# !Driver/s_hex<1> & !Driver/s_hex<2> & 
+	!Driver/s_hex<0> & !Driver/s_hex<3>;	// (3 pt, 4 inp)
+
+MACROCELL | 7 | 1 | disp_seg_o<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<0>  | Driver/s_hex<3>  | Driver/s_hex<1>  | Driver/s_hex<2>
+INPUTMC | 4 | 0 | 11 | 3 | 15 | 0 | 3 | 0 | 5
+EQ | 5 | 
+   disp_seg_o<2> = Driver/s_hex<0> & !Driver/s_hex<3>
+	# Driver/s_hex<1> & Driver/s_hex<2> & 
+	!Driver/s_hex<3>
+	# Driver/s_hex<1> & !Driver/s_hex<2> & 
+	Driver/s_hex<0>;	// (3 pt, 4 inp)
+
+MACROCELL | 7 | 10 | disp_seg_o<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<1>  | Driver/s_hex<2>  | Driver/s_hex<0>  | Driver/s_hex<3>
+INPUTMC | 4 | 0 | 3 | 0 | 5 | 0 | 11 | 3 | 15
+EQ | 8 | 
+   disp_seg_o<3> = Driver/s_hex<1> & !Driver/s_hex<2> & 
+	Driver/s_hex<0>
+	# !Driver/s_hex<1> & Driver/s_hex<2> & 
+	Driver/s_hex<0>
+	# Driver/s_hex<1> & Driver/s_hex<2> & 
+	!Driver/s_hex<0> & !Driver/s_hex<3>
+	# !Driver/s_hex<1> & !Driver/s_hex<2> & 
+	!Driver/s_hex<0> & Driver/s_hex<3>;	// (4 pt, 4 inp)
+
+MACROCELL | 7 | 5 | disp_seg_o<4>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<1>  | Driver/s_hex<2>  | Driver/s_hex<3>  | Driver/s_hex<0>
+INPUTMC | 4 | 0 | 3 | 0 | 5 | 3 | 15 | 0 | 11
+EQ | 6 | 
+   disp_seg_o<4> = !Driver/s_hex<1> & Driver/s_hex<2> & 
+	Driver/s_hex<3>
+	# Driver/s_hex<2> & !Driver/s_hex<0> & 
+	Driver/s_hex<3>
+	# !Driver/s_hex<1> & !Driver/s_hex<2> & 
+	!Driver/s_hex<0> & !Driver/s_hex<3>;	// (3 pt, 4 inp)
+
+MACROCELL | 7 | 2 | disp_seg_o<5>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<2>  | Driver/s_hex<0>  | Driver/s_hex<1>  | Driver/s_hex<3>
+INPUTMC | 4 | 0 | 5 | 0 | 11 | 0 | 3 | 3 | 15
+EQ | 5 | 
+   disp_seg_o<5> = Driver/s_hex<2> & !Driver/s_hex<0>
+	$ Driver/s_hex<1> & Driver/s_hex<2> & 
+	!Driver/s_hex<3>
+	# !Driver/s_hex<1> & Driver/s_hex<0> & 
+	Driver/s_hex<3>;	// (3 pt, 4 inp)
+
+MACROCELL | 7 | 4 | disp_seg_o<6>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | Driver/s_hex<1>  | Driver/s_hex<0>  | Driver/s_hex<2>  | Driver/s_hex<3>
+INPUTMC | 4 | 0 | 3 | 0 | 11 | 0 | 5 | 3 | 15
+EQ | 5 | 
+   disp_seg_o<6> = Driver/s_hex<1> & Driver/s_hex<0>
+	$ Driver/s_hex<1> & Driver/s_hex<2> & 
+	!Driver/s_hex<3>
+	# !Driver/s_hex<2> & Driver/s_hex<0> & 
+	Driver/s_hex<3>;	// (3 pt, 4 inp)
+
+PIN | clk_i | 8192 | 16 | LVCMOS18 | 50 | 65 | 0 | 2 | 3 | 13 | 3 | 11 | 3 | 5 | 4 | 15 | 4 | 12 | 4 | 11 | 4 | 10 | 4 | 9 | 4 | 14 | 0 | 6 | 0 | 15 | 0 | 14 | 0 | 10 | 0 | 8 | 0 | 7 | 0 | 4 | 0 | 0 | 0 | 13 | 4 | 8 | 4 | 7 | 4 | 6 | 4 | 2 | 4 | 0 | 4 | 13 | 4 | 5 | 4 | 4 | 4 | 3 | 1 | 3 | 1 | 4 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 1 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 8 | 1 | 9 | 1 | 10 | 1 | 15 | 1 | 2 | 4 | 1 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14
+PIN | srst_n_i | 64 | 16 | LVCMOS18 | 20 | 7 | 0 | 6 | 0 | 1 | 0 | 8 | 0 | 7 | 0 | 4 | 0 | 0 | 0 | 13
+PIN | pulse_pin | 4160 | 16 | LVCMOS18 | 48 | 31 | 4 | 1 | 6 | 2 | 6 | 3 | 6 | 6 | 6 | 7 | 6 | 8 | 6 | 9 | 2 | 0 | 2 | 1 | 2 | 4 | 2 | 13 | 2 | 15 | 2 | 3 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 14 | 5 | 9 | 5 | 10 | 5 | 14 | 5 | 5 | 5 | 15 | 5 | 4 | 5 | 6 | 5 | 7 | 5 | 8
+PIN | disp_dig_o<0> | 536871040 | 0 | LVCMOS18 | 15
+PIN | disp_dig_o<1> | 536871040 | 0 | LVCMOS18 | 16
+PIN | disp_dig_o<2> | 536871040 | 0 | LVCMOS18 | 17
+PIN | disp_dig_o<3> | 536871040 | 0 | LVCMOS18 | 19
+PIN | disp_dp | 536871040 | 0 | LVCMOS18 | 18
+PIN | disp_seg_o<0> | 536871040 | 0 | LVCMOS18 | 76
+PIN | disp_seg_o<1> | 536871040 | 0 | LVCMOS18 | 68
+PIN | disp_seg_o<2> | 536871040 | 0 | LVCMOS18 | 69
+PIN | disp_seg_o<3> | 536871040 | 0 | LVCMOS18 | 75
+PIN | disp_seg_o<4> | 536871040 | 0 | LVCMOS18 | 74
+PIN | disp_seg_o<5> | 536871040 | 0 | LVCMOS18 | 70
+PIN | disp_seg_o<6> | 536871040 | 0 | LVCMOS18 | 73
+PIN | trigger_pin | 536871040 | 0 | LVCMOS18 | 1
