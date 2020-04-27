@@ -35,7 +35,7 @@ ARCHITECTURE behavior OF testbench_range_sensor IS
    signal centimeters_o : std_logic_vector(3 downto 0);
 
    -- Clock period definitions
-   constant clk_i_period : time := 10 ns;  
+   constant clk_i_period : time := 1 us;  
  
 BEGIN
  
