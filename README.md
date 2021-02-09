@@ -1,6 +1,6 @@
 [![university](https://img.shields.io/badge/university-Brno%20University%20of%20Technology-red.svg)](https://www.vutbr.cz/en/)
 
-# Digital electronics 1
+# Digital electronics xalkan
 
 | **Computer lab exercise** | **Description** |
 | :-- | :-- |
